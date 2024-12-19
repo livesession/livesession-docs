@@ -37,66 +37,251 @@ export default {
         </svg>
     },
     "structure": {
-        "navigation": [
+        "sidebar": [
+            // docs
             {
-                "group": "GET STARTED",
-                "pages": [
-                    "docs/get-started/hello",
-                    "docs/get-started/quickstart",
-                    "docs/get-started/frameworks",
+                "match": "docs",
+                "items": [
                     {
-                        "group": "Frameworks",
+                        "group": "GET STARTED",
                         "pages": [
-                            "docs/get-started/frameworks/mobile",
-                            "docs/get-started/frameworks/web",
+                            "docs/get-started/quickstart",
+                            "docs/get-started/frameworks",
+                            "docs/get-started/reverse-proxy",
+                            "docs/get-started/changelog"
+                        ]
+                    },
+                    {
+                        "group": "CAPABILITIES",
+                        "pages": [
+                            "docs/capabilities/alerting",
+                            "docs/capabilities/user-paths",
+                            "docs/capabilities/funnels",
+                            "docs/capabilities/trends",
+                        ]
+                    },
+                    {
+                        "group": "ANALYTICS",
+                        "pages": [
+                            "docs/analytics/overview",
+                            "docs/analytics/capturing-events",
+                            "docs/analytics/identifying-users",
+                            "docs/analytics/faq"
+                        ]
+                    },
+                    {
+                        "group": "SESSION REPLAY",
+                        "pages": [
+                            "docs/session-replay/overview",
+                            "docs/session-replay/privacy-controls",
+                            "docs/session-replay/recording-conditions",
+                            "docs/session-replay/faq"
+                        ]
+                    },
+                    {
+                        "group": "DATA I/O",
+                        "pages": [
+                            "docs/data-io/overview",
+                            "docs/data-io/data-export",
+                            "docs/data-io/faq",
+                        ]
+                    },
+                    {
+                        "group": "RESOURCES",
+                        "pages": [
+                            "docs/resources/apis-and-references",
+                            "docs/resources/apps",
+                            "docs/resources/sdks"
                         ]
                     }
                 ]
             },
+
+            // apps
             {
-                "group": "FEATURES",
-                "pages": [
+                "match": "docs/apps/build",
+                "items": [
                     {
-                        "group": "Session Replay",
+                        "group": "Getting Started",
                         "pages": [
-                            "docs/features/session-replay",
-                            "docs/features/iframe"
-                        ]
+                            "docs/apps/build/overview",
+                        ],
+                    },
+                    {
+                        "group": "Surfaces",
+                        "pages": [
+                            "docs/apps/build/surfaces/overview",
+                        ],
+                    },
+                ]
+            },
+            {
+                "match": "docs/apps/design",
+                "items": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "docs/apps/design/overview",
+                        ],
+                    }
+                ]
+            },
+            {
+                "match": "docs/apps/launch",
+                "items": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "docs/apps/launch/overview",
+                        ],
+                    }
+                ]
+            },
+
+            // api
+            {
+                "match": "docs/api",
+                "items": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "docs/api/quickstart",
+                        ],
+                    }
+                ]
+            },
+
+            {
+                "match": "docs/api/browser",
+                "items": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "docs/api/browser/overview",
+                        ],
+                    }
+                ]
+            },
+            {
+                "match": "docs/api/rest",
+                "items": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "docs/api/rest/overview",
+                        ],
+                    }
+                ]
+            },
+            {
+                "match": "docs/api/graphql",
+                "items": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "docs/api/graphql/overview",
+                        ],
                     }
                 ]
             },
         ],
-        "topbarLinks": [
+
+        "header": [
             {
                 "name": "Docs",
                 "url": "/docs"
             },
             {
-                "name": "Rest API",
-                "url": "/rest"
+                "name": "APIs and references",
+                "url": "/docs/api"
             },
             {
-                "name": "GraphQL",
-                "url": "/graphql"
+                "sub": {
+                    "match": "/docs/api",
+                    "name": "API",
+                    "items": [
+                        {
+                            "name": "Browser",
+                            "url": "/docs/api/browser"
+                        },
+                        {
+                            "name": "GraphQL",
+                            "url": "/docs/api/graphql"
+                        },
+                    ]
+                }
             },
+            {
+                "sub": {
+                    "match": "/docs/apps",
+                    "name": "Apps",
+                    "items": [
+                        {
+                            "name": "Build",
+                            "url": "/docs/apps/build"
+                        },
+                        {
+                            "name": "Design",
+                            "url": "/docs/apps/design"
+                        },
+                        {
+                            "name": "Launch",
+                            "url": "/docs/apps/launch"
+                        }
+                    ]
+                }
+            }
+
         ],
-        "tabs": [
-            {
-                "name": "Docs",
-                "url": "docs"
-            },
-            {
-                "name": "GraphQL",
-                "url": "graphql"
-            },
-            {
-                "name": "REST API",
-                "url": "rest"
-            },
-        ]
+
+        "anchors": {
+            "bottom": [
+                {
+                    "icon": "icon-cookbook",
+                    "name": "Cookbook",
+                    "url": "#"
+                },
+
+                {
+                    "icon": "icon-community",
+                    "name": "Community",
+                    "url": "#"
+                },
+
+                {
+                    "icon": "icon-marketplace",
+                    "name": "Marketplace",
+                    "url": "#"
+                },
+
+                {
+                    "icon": "icon-sdk",
+                    "name": "SDKs",
+                    "url": "#"
+                },
+            ]
+        }
+        // "tabs": [
+        //     {
+        //         "name": "Docs",
+        //         "url": "docs"
+        //     },
+        //     {
+        //         "name": "GraphQL",
+        //         "url": "graphql"
+        //     },
+        //     {
+        //         "name": "REST API",
+        //         "url": "rest"
+        //     },
+        // ]
     },
     "api": {
         "openapi": "./openapi.yaml",
-        "graphql": "./schema.graphqls"
+        "graphql": "./schema.graphqls",
+        "match": {
+            "graphql": "docs/api/graphql",
+            "openapi": "docs/api/rest"
+        }
     }
 }
