@@ -1,0 +1,182 @@
+---
+title: Methods
+description: Methods
+---
+
+export const themeSettings = {
+    bigArticle: true
+}
+
+# Methods
+
+## `init`
+Init LiveSession tracking stript. You can find your website tracking ID in **LiveSession** -> **Settings** -> **Websites**.
+
+###### **Type signture:**
+```ts
+function ("init", trackingID: string, options: InitOptions)
+```
+###### **Example usage:**
+```js
+__ls("init", "accountID.websiteID");
+```
+###### **with options:**
+```js init and track every input
+__ls("init", "accountID.websiteID", { keystrokes: true });
+```
+### options signature:
+```ts
+interface InitOptions {
+    // 	Your accountID. Automatically extracted from trackingID
+    accountID?: string
+
+    // Your websiteID. Automatically extracted from trackingID
+    websiteID?: string
+
+    // Enable global keystroke tracking
+    keystrokes?: boolean
+
+    // Set this to the highest-level hostname to record session across different subdomains on your site
+    // (e.g. `.your-domain.com`)
+    rootHostname?: string
+}
+```
+<Callout>
+    More info about `keystrokes` you can find [here](https://help.livesession.io/en/articles/8825436-recording-user-s-keystrokes).
+</Callout>
+
+<br/>
+
+## `identify`
+Identify user and custom data to session.
+
+###### **Type signture:**
+```ts
+function("identify", data: IdentifyData)
+```
+###### **Example usage:**
+```js
+__ls("identify", { name: "John Doe", email: "john.doe@example.com" });
+```
+###### **with params:**
+```js
+__ls("identify", {
+  name: "John Doe",
+  email: "john.doe@example.com",
+  params: {
+    order_id: "123-abc-def",
+    plan: "premium",
+  },
+});
+```
+### data signature:
+```ts
+interface IdentifyData {
+    // Displays usernames in app
+    // Maximum length: 128 characters
+    name: string
+
+    // Displays user email
+    // Maximum length: 128 characters
+    email: string
+
+    // Displays user context data
+    // Maximum length: 50 items
+    params: {[key: string]: string | number | boolean}
+}
+```
+<br/>
+
+## `track`
+This method allows you to send custom event that your users perform along with custom properties.
+
+###### **Type signture:**
+```ts
+function("track", event: string, properties: EventProperties)
+```
+###### **Example:**
+```js
+__ls("track", "User Subscribed");
+```
+###### **with properties:**
+```js
+__ls("track", "User Subscribed", {
+  plan_str: "premium",
+  seats_int: 1,
+  total_float: 255.50,
+  isPatron_bool: true
+});
+```
+You can use properties without type suffix in the property key (this variant is not recommended).
+```js
+__ls("track", "User Subscribed", {
+  plan: "premium",
+  seats: 1,
+  total: 255.50,
+  isPatron: true
+});
+```
+### properties signature:
+```ts
+type TypedEventProperty =
+    EventPropertyString |
+    EventPropertyInt |
+    EventPropertyFloat |
+    EventPropertyBool
+
+interface EventProperties {
+    // Displays event name in your system
+    // Maximum length: 128 characters
+    name: string
+
+    // Displays user email
+    // Maximum length: 50 items
+    properties: TypedEventProperty | {[key: string]: string | number | boolean}
+}
+```
+```ts
+// 	String property value, eg. {plan_str: "premium"}
+// Maximum length: 256 characters
+type EventPropertyString = {[key: `${string}_str`]: string }
+
+// Int property value, eg. {seats_int: 2}
+// Maximum length: int max. value
+type EventPropertyInt = {[key: `${string}_int`]: number }
+
+// Float property value, eg. {total_float: 255.50}
+// Maximum length: float max. value
+type EventPropertyFloat = {[key: `${string}_float`]: number }
+
+// Bool property value, eg. {isPatron_bool: true}
+type EventPropertyBool = {[key: `${string}_bool`]: boolean }
+````
+```js example usage
+__ls("track", "User Subscribed", { plan_str: "premium",  price: 1, total_float: 255.50, pro: true });
+```
+<br/>
+
+## New page view
+New page view
+
+## Set custom params
+Set custom params
+
+## Get session details
+Get session details
+
+## Set options
+Set options
+
+## Invalidate session
+Invalidate session
+
+## Debug
+Debug
+
+## Log
+Log
+
+## Off
+Off
+
+

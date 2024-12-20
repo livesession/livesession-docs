@@ -1,0 +1,24 @@
+---
+title: Custom properties
+description: Custom properties
+---
+
+export const themeSettings = {
+    bigArticle: false
+}
+
+# Introduction
+<Subtitle>
+    Learn how to use send custom data to LiveSession.
+</Subtitle>
+
+The LiveSession Browser API provides a way for clients to provide custom properties via a properties field like following:
+
+```js Send custom event
+__ls("track", "User Subscribed", {
+  plan_str: "premium",
+  seats_int: 1,
+  total_float: 255.50,
+  isPatron_bool: true
+});
+```

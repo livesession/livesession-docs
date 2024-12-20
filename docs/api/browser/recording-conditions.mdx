@@ -1,0 +1,41 @@
+---
+title: Recording conditions
+description: Recording conditions
+---
+
+export const themeSettings = {
+    bigArticle: false
+}
+
+# Recording conditions
+
+Using [newPageView](https://livesesssion.io) method you can specify your own conditions as a trigger for a recording.
+
+## Example condition
+
+```js
+{
+  type: "event",
+  name: "MouseClick",
+  operator: "contain",
+  key: "path",
+  value: ".add-cart",
+}
+```
+This condition will be fulfilled when user click on element where "path" contain ".add-cart" value.
+
+## Example use
+
+```js
+__ls("newPageView", {
+  conditions: [
+    {
+      type: "event",
+      name: "MouseClick",
+      operator: "contain",
+      key: "path",
+      value: ".add-cart",
+    },
+  ],
+});
+```

@@ -1,0 +1,63 @@
+---
+title: Access scopes
+description: Access scopes for the LiveSession API
+---
+
+# LiveSession API access scopes
+<Subtitle>
+    Learn about the access scopes required to use the LiveSession API
+</Subtitle>
+
+All apps need to request access to specific store data during the app authorization process. This guide provides a list of available access scopes for the GraphQL Admin, Storefront, Payment Apps APIs, and Customer Account APIs.
+
+---
+## How it works
+
+After you've [generated API credentials](https://livesession.io), your app needs to [be authorized to access store data](https://livesession.io).
+
+Authorization is the process of giving permissions to apps. Users can authorize Shopify apps to access data in a store. For example, an app might be authorized to access orders and product data in a store.
+
+An app can request authenticated or unauthenticated access scopes.
+
+
+<Table>
+    <thead>
+    <Table.Tr>
+        <Table.Th>
+            Name
+        </Table.Th>
+        <Table.Th>
+            Default
+        </Table.Th>
+        <Table.Th>
+            Description
+        </Table.Th>
+    </Table.Tr>
+    </thead>
+
+    <tbody>
+    <Table.Tr>
+        <Table.Td>
+            disabled
+        </Table.Td>
+        <Table.Td>
+            false
+        </Table.Td>
+        <Table.Td>
+            Controls the disabled state of the tab
+        </Table.Td>
+    </Table.Tr>
+
+    <Table.Tr>
+        <Table.Td>
+            active
+        </Table.Td>
+        <Table.Td>
+            false
+        </Table.Td>
+        <Table.Td>
+            Controls the active state of the tab
+        </Table.Td>
+    </Table.Tr>
+    </tbody>
+</Table>

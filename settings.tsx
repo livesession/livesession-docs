@@ -102,7 +102,7 @@ export default {
                 "match": "docs/apps/build",
                 "items": [
                     {
-                        "group": "Getting Started",
+                        "group": "GET STARTED",
                         "pages": [
                             "docs/apps/build/overview",
                         ],
@@ -119,7 +119,7 @@ export default {
                 "match": "docs/apps/design",
                 "items": [
                     {
-                        "group": "Getting Started",
+                        "group": "GET STARTED",
                         "pages": [
                             "docs/apps/design/overview",
                         ],
@@ -130,7 +130,7 @@ export default {
                 "match": "docs/apps/launch",
                 "items": [
                     {
-                        "group": "Getting Started",
+                        "group": "GET STARTED",
                         "pages": [
                             "docs/apps/launch/overview",
                         ],
@@ -143,11 +143,17 @@ export default {
                 "match": "docs/api",
                 "items": [
                     {
-                        "group": "Getting Started",
+                        "group": "GET STARTED",
                         "pages": [
                             "docs/api/quickstart",
+                            "docs/api/authentication",
+                            "docs/api/access-scopes",
+                            "docs/api/api-exploration",
+                            "docs/api/versioning",
+                            "docs/api/rate-limits",
+                            "docs/api/response-codes",
                         ],
-                    }
+                    },
                 ]
             },
 
@@ -155,18 +161,38 @@ export default {
                 "match": "docs/api/browser",
                 "items": [
                     {
-                        "group": "Getting Started",
+                        "group": "GET STARTED",
                         "pages": [
-                            "docs/api/browser/overview",
+                            "docs/api/browser/introduction",
+                            "docs/api/browser/custom-properties",
+                            "docs/api/browser/identification",
+                            "docs/api/browser/recording-conditions",
+                            "docs/api/browser/methods"
                         ],
-                    }
+                    },
+                    // {
+                    //     "group": "METHODS",
+                    //     "pages": [
+                    //         "docs/api/browser/methods/debug",
+                    //         "docs/api/browser/methods/get-session-details",
+                    //         "docs/api/browser/methods/identify",
+                    //         "docs/api/browser/methods/init",
+                    //         "docs/api/browser/methods/invalidate-session",
+                    //         "docs/api/browser/methods/log",
+                    //         "docs/api/browser/methods/new-pageview",
+                    //         "docs/api/browser/methods/off",
+                    //         "docs/api/browser/methods/set-custom-params",
+                    //         "docs/api/browser/methods/set-options",
+                    //         "docs/api/browser/methods/track",
+                    //     ],
+                    // }
                 ]
             },
             {
                 "match": "docs/api/rest",
                 "items": [
                     {
-                        "group": "Getting Started",
+                        "group": "GET STARTED",
                         "pages": [
                             "docs/api/rest/overview",
                         ],
@@ -177,7 +203,7 @@ export default {
                 "match": "docs/api/graphql",
                 "items": [
                     {
-                        "group": "Getting Started",
+                        "group": "GET STARTED",
                         "pages": [
                             "docs/api/graphql/overview",
                         ],
@@ -201,12 +227,24 @@ export default {
                     "name": "API",
                     "items": [
                         {
+                            "name": "Get started",
+                            "url": "/docs/api"
+                        },
+                        {
                             "name": "Browser",
                             "url": "/docs/api/browser"
                         },
                         {
+                            "name": "REST",
+                            "url": "/docs/api/rest"
+                        },
+                        {
                             "name": "GraphQL",
                             "url": "/docs/api/graphql"
+                        },
+                        {
+                            "name": "Webhooks",
+                            "url": "/docs/api/webhooks"
                         },
                     ]
                 }
