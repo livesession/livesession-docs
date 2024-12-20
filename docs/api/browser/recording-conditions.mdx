@@ -11,21 +11,7 @@ export const themeSettings = {
 
 Using [newPageView](https://livesesssion.io) method you can specify your own conditions as a trigger for a recording.
 
-## Example condition
-
-```js
-{
-  type: "event",
-  name: "MouseClick",
-  operator: "contain",
-  key: "path",
-  value: ".add-cart",
-}
-```
-This condition will be fulfilled when user click on element where "path" contain ".add-cart" value.
-
-## Example use
-
+###### **Examples:**
 ```js
 __ls("newPageView", {
   conditions: [
@@ -39,3 +25,6 @@ __ls("newPageView", {
   ],
 });
 ```
+above condition will be fulfilled when user click on element where
+`path` contain `.add-cart` value.
+
