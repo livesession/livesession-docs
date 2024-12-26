@@ -46,9 +46,7 @@ export default {
                         "group": "GET STARTED",
                         "pages": [
                             "docs/get-started/quickstart",
-                            "docs/get-started/frameworks",
-                            "docs/get-started/reverse-proxy",
-                            "docs/get-started/changelog"
+                            "docs/get-started/frameworks"
                         ]
                     },
                     {
@@ -84,14 +82,6 @@ export default {
                             "docs/data-io/overview",
                             "docs/data-io/data-export",
                             "docs/data-io/faq",
-                        ]
-                    },
-                    {
-                        "group": "RESOURCES",
-                        "pages": [
-                            "docs/resources/apis-and-references",
-                            "docs/resources/apps",
-                            "docs/resources/sdks"
                         ]
                     }
                 ]
@@ -146,12 +136,12 @@ export default {
                         "group": "GET STARTED",
                         "pages": [
                             "docs/api/quickstart",
-                            "docs/api/authentication",
+                            "docs/api/introduction",
                             "docs/api/access-scopes",
-                            "docs/api/api-exploration",
-                            "docs/api/versioning",
-                            "docs/api/rate-limits",
-                            "docs/api/response-codes",
+                            // "docs/api/api-exploration", TODO: in the future
+                            // "docs/api/versioning", TODO: in the future
+                            // "docs/api/rate-limits", TODO: in the future rate limits as a separate page
+                            // "docs/api/response-codes", TODO: in the future
                         ],
                     },
                 ]
@@ -170,22 +160,6 @@ export default {
                             "docs/api/browser/methods"
                         ],
                     },
-                    // {
-                    //     "group": "METHODS",
-                    //     "pages": [
-                    //         "docs/api/browser/methods/debug",
-                    //         "docs/api/browser/methods/get-session-details",
-                    //         "docs/api/browser/methods/identify",
-                    //         "docs/api/browser/methods/init",
-                    //         "docs/api/browser/methods/invalidate-session",
-                    //         "docs/api/browser/methods/log",
-                    //         "docs/api/browser/methods/new-pageview",
-                    //         "docs/api/browser/methods/off",
-                    //         "docs/api/browser/methods/set-custom-params",
-                    //         "docs/api/browser/methods/set-options",
-                    //         "docs/api/browser/methods/track",
-                    //     ],
-                    // }
                 ]
             },
             {
@@ -201,14 +175,7 @@ export default {
             },
             {
                 "match": "docs/api/graphql",
-                "items": [
-                    {
-                        "group": "GET STARTED",
-                        "pages": [
-                            "docs/api/graphql/overview",
-                        ],
-                    }
-                ]
+                "items": []
             },
         ],
 

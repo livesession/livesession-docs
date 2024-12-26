@@ -2,3 +2,67 @@
 title: Alerting
 description: Alerting
 ---
+
+# Alerting
+<Subtitle>
+    Learn how to react on events.
+</Subtitle>
+
+LiveSession [event stream](https://livesession.io) was designed to be a powerful tool for monitoring and alerting purposes.
+It allows you to react on events in real-time and take actions based on them.
+
+## Quickstart
+Alerts delivery can be configured in two ways. First, you can use third party delivery provider like [Slack](https://livesession.io).
+Second, you can set up a custom workflow using [webhooks](https://livesession.io). All methods receive events in real-time.
+
+```bash Creating a webhook
+curl https://api.livesession.io/v1/webhooks \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $LIVESESSION_PAT" \
+  -d '{
+    "website_id": "YOUR_WEBSITE_ID",
+    "url": "YOUR_WEBHOOK_URL",
+    "version": "v1.0",
+  }'
+```
+
+Once you have a webhook set up, you can create an alert to receive events in real-time.
+
+The main duty of alerts is to filter events and send them to the configured delivery provider.
+You can for example create a [custom event](https://livesession.io) and based on that event send a message to your server.
+
+## Creating an alert
+Alerts gives you a robust control which events you want to receive.
+You can use [built-in](https://livesession) events like `Error Click`, `Network Error` or based on [custom event](https://livesession) which gives you a full control of
+what and when you want to monitor.
+
+```bash Creating an alert
+curl https://api.livesession.io/v1/alerts \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $LIVESESSION_PAT" \
+  -d '{
+    "name": "YOUR_WEBSITE_ID",
+    "provider": "webhooks",
+    "webhook_id": "YOUR_WEBHOOK_ID",
+    "events": [
+      {
+        "kind": 26,
+        "value": "YOUR_CUSTOM_EVENT_NAME"
+      }
+    ],
+  }'
+```
+<Callout>
+    Based on above example, please make sure you used [Browser SDK](https://livesession.io) custom event tracking like `__ls("track",
+    "YOUR_CUSTOM_EVENT_NAME")`
+</Callout>
+
+## Examples
+<GuideCard
+    icon={<IconCustomEvent/>}
+    title="Custom Event alerting"
+>
+    Learn how to create an alert based on custom event.
+</GuideCard>
