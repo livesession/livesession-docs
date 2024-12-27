@@ -2,3 +2,71 @@
 title: Funnels
 description: Funnels
 ---
+
+# Funnels
+<Subtitle>
+    Analyze user behavior and optimize conversion flows with Funnels.
+</Subtitle>
+
+Funnels in LiveSession enable you to track and analyze the steps users take within your app to reach a desired outcome. Use this feature to:
+<Steps>
+    <Steps.Item>
+        Identify drop-off points in key workflows.
+    </Steps.Item>
+    <Steps.Item>
+        Measure the performance of your conversion funnels.
+    </Steps.Item>
+    <Steps.Item>
+        Gain actionable insights to improve user engagement and retention.
+    </Steps.Item>
+</Steps>
+
+## Overview
+
+Funnels allow you to define a sequence of steps (events or pages) that represent a process in your application, such as completing a purchase or signing up. These sequences help you understand user behavior at each stage and where users might abandon the process.
+
+With the LiveSession API, you can programmatically define, query, and analyze funnels to optimize user journeys.
+
+## Creating a Funnel
+
+You can create a funnel by specifying the steps users should take to complete a goal. For example:
+
+```bash Creating a Funnel
+curl https://api.livesession.io/v1/funnels \\
+  -X POST \\
+  -H "Content-Type: application/json" \\
+  -H "Authorization: Bearer $LIVESESSION_PAT" \\
+  -d '{
+    "name": "Signup Funnel",
+    "steps": [
+      {
+        "event": "Visited Signup Page"
+      },
+      {
+        "event": "Filled Signup Form"
+      },
+      {
+        "event": "Completed Signup"
+      }
+    ]
+  }'
+```
+
+This example defines a funnel for the signup process. Each step corresponds to a specific event tracked in LiveSession.
+
+Querying Funnel Data
+Use the LiveSession API to retrieve data about user progress through a funnel. Here's an example of querying data for a spec
+
+```bash
+curl https://api.livesession.io/v1/funnels/{id} \\
+-X GET \\
+-H "Authorization: Bearer $LIVESESSION_PAT"
+```
+
+Replace `{id}` with the ID of the funnel you want to query. This request returns data about user progression, including the number of users completing each step.
+
+Analyzing Drop-offs
+Funnels provide insights into where users drop off. For example, if many users abandon the funnel after visiting the "Signup Page" but before "Filling Signup Form," it might indicate issues with the form or its visibility.
+
+To analyze drop-offs, retrieve the funnel's breakdown by step:
+
