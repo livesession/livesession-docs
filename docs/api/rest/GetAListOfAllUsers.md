@@ -17,7 +17,7 @@ Get a list of all users
 
 #### !method get
 
-#### !path /users
+#### !path session.event
 
 ### !examples
 

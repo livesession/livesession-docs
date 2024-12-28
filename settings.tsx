@@ -53,37 +53,35 @@ export default {
                         "group": "CAPABILITIES",
                         "pages": [
                             "docs/capabilities/alerting",
-                            "docs/capabilities/user-paths",
                             "docs/capabilities/funnels",
                             "docs/capabilities/trends",
+                            "docs/capabilities/user-paths",
                         ]
                     },
-                    {
-                        "group": "ANALYTICS",
-                        "pages": [
-                            "docs/analytics/overview",
-                            "docs/analytics/capturing-events",
-                            "docs/analytics/identifying-users",
-                            "docs/analytics/faq"
-                        ]
-                    },
-                    {
-                        "group": "SESSION REPLAY",
-                        "pages": [
-                            "docs/session-replay/overview",
-                            "docs/session-replay/privacy-controls",
-                            "docs/session-replay/recording-conditions",
-                            "docs/session-replay/faq"
-                        ]
-                    },
-                    {
-                        "group": "DATA I/O",
-                        "pages": [
-                            "docs/data-io/overview",
-                            "docs/data-io/data-export",
-                            "docs/data-io/faq",
-                        ]
-                    }
+                    // { TODO: in the future
+                    //     "group": "ANALYTICS",
+                    //     "pages": [
+                    //         "docs/analytics/overview",
+                    //         "docs/analytics/faq"
+                    //     ]
+                    // },
+                    // { TODO: in the future
+                    //     "group": "SESSION REPLAY",
+                    //     "pages": [
+                    //         "docs/session-replay/overview",
+                    //         "docs/session-replay/privacy-controls",
+                    //         "docs/session-replay/recording-conditions",
+                    //         "docs/session-replay/faq"
+                    //     ]
+                    // },
+                    // { TODO: in the future
+                    //     "group": "DATA I/O",
+                    //     "pages": [
+                    //         "docs/data-io/overview",
+                    //         "docs/data-io/data-export",
+                    //         "docs/data-io/faq",
+                    //     ]
+                    // }
                 ]
             },
 
@@ -176,6 +174,19 @@ export default {
             {
                 "match": "docs/api/graphql",
                 "items": []
+            },
+            {
+                "match": "docs/api/webhooks",
+                "items": [
+                    {
+                        "group": "GET STARTED",
+                        "pages": [
+                            "docs/api/webhooks/configuration",
+                            "docs/api/webhooks/delivery",
+                            "docs/api/webhooks/verify",
+                        ],
+                    }
+                ]
             },
         ],
 
@@ -282,8 +293,8 @@ export default {
         // ]
     },
     "api": {
-        "openapi": "./openapi.yaml",
-        "graphql": "./schema.graphqls",
+        "openapi": "./api/rest/openapi.yaml",
+        "graphql": "./api/graphql/schema.graphqls",
         "match": {
             "graphql": "docs/api/graphql",
             "openapi": "docs/api/rest"

@@ -22,51 +22,87 @@ Funnels in LiveSession enable you to track and analyze the steps users take with
 </Steps>
 
 ## Overview
+Funnels allow you to define a sequence of steps ([events](https://livesession.io) or pages) that represent a process in your application, such as completing a `purchase` or `signing up`.
+These sequences help you understand [user behavior](https://livesession.io) at each stage and where users might abandon the process.
 
-Funnels allow you to define a sequence of steps (events or pages) that represent a process in your application, such as completing a purchase or signing up. These sequences help you understand user behavior at each stage and where users might abandon the process.
+With the [LiveSession API](https://livesession.io), you can programmatically define, query, and analyze funnels to optimize user journeys.
 
-With the LiveSession API, you can programmatically define, query, and analyze funnels to optimize user journeys.
+## Compute
+Thanks to compute you can analyze user behavior and conversion rates. Use the following API request to compute a funnel:
 
-## Creating a Funnel
-
-You can create a funnel by specifying the steps users should take to complete a goal. For example:
-
-```bash Creating a Funnel
-curl https://api.livesession.io/v1/funnels \\
+```bash Computing a funnel
+curl https://api.livesession.io/v1/compute/funnel \\
   -X POST \\
   -H "Content-Type: application/json" \\
   -H "Authorization: Bearer $LIVESESSION_PAT" \\
   -d '{
-    "name": "Signup Funnel",
-    "steps": [
-      {
-        "event": "Visited Signup Page"
+      "website_id": "YOUR_WEBSITE_ID",
+      "date_range": {
+        "from": "2024-12-01",
+        "to": "2024-12-07"
       },
-      {
-        "event": "Filled Signup Form"
-      },
-      {
-        "event": "Completed Signup"
-      }
-    ]
-  }'
+      "steps": [
+        {
+          "filters": {
+            "must": [
+              {
+                "name": "event.location.",
+                "group": "url",
+                "data": {
+                  "string": {
+                    "operator": "eq",
+                    "values": [
+                      "https://example.com/signup"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "filters": {
+            "must": [
+              {
+                "name": "event.custom_nam",
+                "data": {
+                  "string": {
+                    "operator": "eq",
+                    "values": [
+                      "Signup Form: filled"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "filters": {
+            "must": [
+              {
+                "name": "event.location.",
+                "group": "url",
+                "data": {
+                  "string": {
+                    "operator": "eq",
+                    "values": [
+                      "https://example.com/signup/completed"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }'
 ```
 
-This example defines a funnel for the signup process. Each step corresponds to a specific event tracked in LiveSession.
-
-Querying Funnel Data
-Use the LiveSession API to retrieve data about user progress through a funnel. Here's an example of querying data for a spec
-
-```bash
-curl https://api.livesession.io/v1/funnels/{id} \\
--X GET \\
--H "Authorization: Bearer $LIVESESSION_PAT"
-```
-
-Replace `{id}` with the ID of the funnel you want to query. This request returns data about user progression, including the number of users completing each step.
-
-Analyzing Drop-offs
-Funnels provide insights into where users drop off. For example, if many users abandon the funnel after visiting the "Signup Page" but before "Filling Signup Form," it might indicate issues with the form or its visibility.
-
-To analyze drop-offs, retrieve the funnel's breakdown by step:
-
+## Samples
+<GuideCard
+    icon={<IconFunnels/>}
+    title="Funnels"
+>
+    Learn how to use Funnels to analyze user behavior.
+</GuideCard>

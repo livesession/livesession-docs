@@ -1,0 +1,135 @@
+openapi: 3.1.0
+
+info:
+  title: Webhooks API
+  version: '1.0'
+
+webhooks:
+  session.event:
+    post:
+      summary: Handle session event
+      description: Triggers when an event from session is handled.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionEvent'
+      responses:
+        '200':
+          description: Event handled successfully
+
+components:
+  schemas:
+    CommonProperties:
+      type: object
+      properties:
+        message_id:
+          type: string
+        webhook_id:
+          type: string
+        webhook_type:
+          type: string
+        api_version:
+          type: string
+        account_id:
+          type: string
+        website_id:
+          type: string
+        created_at:
+          type: integer
+
+    CommonPayloadProperties:
+      type: object
+      properties:
+        visitor:
+          $ref: '#/components/schemas/Visitor'
+        event_name:
+          type: string
+        time:
+          type: integer
+        name:
+          type: string
+
+    Visitor:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The unique ID of the visitor
+        name:
+          type: string
+          description: The name of the visitor
+        email:
+          type: string
+          description: The email of the visitor
+        params:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              value:
+                type: string
+        geolocation:
+          type: object
+          properties:
+            country_code:
+              type: string
+            city:
+              type: string
+            region:
+              type: string
+
+    JSErrorPayload:
+      type: object
+      properties:
+        count:
+          type: integer
+        value:
+          type: string
+
+    NetErrorPayload:
+      type: object
+      properties:
+        method:
+          type: string
+        url:
+          type: string
+        status:
+          type: integer
+
+    ErrorClickPayload:
+      type: object
+      properties:
+        message:
+          type: string
+
+    RageClickPayload:
+      type: object
+      properties:
+        clicks:
+          type: integer
+
+    CustomPayload:
+      type: object
+      properties:
+        properties:
+          type: object
+          additionalProperties: true
+
+    SessionEvent:
+      allOf:
+        - $ref: '#/components/schemas/CommonProperties'
+        - type: object
+          properties:
+            payload:
+              allOf:
+                - $ref: '#/components/schemas/CommonPayloadProperties'
+                - oneOf:
+                    - $ref: '#/components/schemas/JSErrorPayload'
+                    - $ref: '#/components/schemas/NetErrorPayload'
+                    - $ref: '#/components/schemas/ErrorClickPayload'
+                    - $ref: '#/components/schemas/RageClickPayload'
+                    - $ref: '#/components/schemas/CustomPayload'
