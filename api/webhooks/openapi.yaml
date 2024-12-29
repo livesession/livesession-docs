@@ -4,17 +4,93 @@ info:
   title: Webhooks API
   version: '1.0'
 
-webhooks:
-  session.event:
+paths:
+  /session.event.JSError:
     post:
-      summary: Handle session event
-      description: Triggers when an event from session is handled.
+      summary: JSerror
+      description: |
+        ---
+        title: JSError
+        group: [EVENT TYPES, session.event]
+        ---
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SessionEvent'
+              $ref: '#/components/schemas/SessionEventJSErrorPayload'
+      responses:
+        '200':
+          description: Event handled successfully
+
+  /session.event.NetError:
+    post:
+      summary: NetError
+      description: |
+        ---
+        title: NetError
+        group: [EVENT TYPES, session.event]
+        ---
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionEventNetErrorPayload'
+      responses:
+        '200':
+          description: Event handled successfully
+
+  /session.event.ErrorClick:
+    post:
+      summary: ErrorClick
+      description: |
+        ---
+        title: ErrorClick
+        group: [EVENT TYPES, session.event]
+        ---
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionEventErrorClickPayload'
+      responses:
+        '200':
+          description: Event handled successfully
+
+  /session.event.RageClick:
+    post:
+      summary: Handle session event
+      description: |
+        ---
+        title: RageClick
+        group: [EVENT TYPES, session.event]
+        ---
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionEventRageClickPayload'
+      responses:
+        '200':
+          description: Event handled successfully
+
+  /session.event.Custom:
+    post:
+      summary: Custom
+      description: |
+        ---
+        title: Custom
+        group: [EVENT TYPES, session.event]
+        ---
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionEventCustomPayload'
       responses:
         '200':
           description: Event handled successfully
@@ -119,7 +195,7 @@ components:
           type: object
           additionalProperties: true
 
-    SessionEvent:
+    SessionEventJSErrorPayload:
       allOf:
         - $ref: '#/components/schemas/CommonProperties'
         - type: object
@@ -127,9 +203,46 @@ components:
             payload:
               allOf:
                 - $ref: '#/components/schemas/CommonPayloadProperties'
-                - oneOf:
-                    - $ref: '#/components/schemas/JSErrorPayload'
-                    - $ref: '#/components/schemas/NetErrorPayload'
-                    - $ref: '#/components/schemas/ErrorClickPayload'
-                    - $ref: '#/components/schemas/RageClickPayload'
-                    - $ref: '#/components/schemas/CustomPayload'
+                - $ref: '#/components/schemas/JSErrorPayload'
+
+
+    SessionEventNetErrorPayload:
+      allOf:
+        - $ref: '#/components/schemas/CommonProperties'
+        - type: object
+          properties:
+            payload:
+              allOf:
+                - $ref: '#/components/schemas/CommonPayloadProperties'
+                - $ref: '#/components/schemas/NetErrorPayload'
+
+
+    SessionEventErrorClickPayload:
+      allOf:
+        - $ref: '#/components/schemas/CommonProperties'
+        - type: object
+          properties:
+            payload:
+              allOf:
+                - $ref: '#/components/schemas/CommonPayloadProperties'
+                - $ref: '#/components/schemas/ErrorClickPayload'
+
+    SessionEventRageClickPayload:
+      allOf:
+        - $ref: '#/components/schemas/CommonProperties'
+        - type: object
+          properties:
+            payload:
+              allOf:
+                - $ref: '#/components/schemas/CommonPayloadProperties'
+                - $ref: '#/components/schemas/RageClickPayload'
+
+    SessionEventCustomPayload:
+      allOf:
+        - $ref: '#/components/schemas/CommonProperties'
+        - type: object
+          properties:
+            payload:
+              allOf:
+                - $ref: '#/components/schemas/CommonPayloadProperties'
+                - $ref: '#/components/schemas/CustomPayload'

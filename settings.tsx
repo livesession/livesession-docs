@@ -152,7 +152,6 @@ export default {
                         "group": "GET STARTED",
                         "pages": [
                             "docs/api/browser/introduction",
-                            "docs/api/browser/custom-properties",
                             "docs/api/browser/identification",
                             "docs/api/browser/recording-conditions",
                             "docs/api/browser/methods"
@@ -293,11 +292,17 @@ export default {
         // ]
     },
     "api": {
-        "openapi": "./api/rest/openapi.yaml",
+        "openapi": {
+            "rest": "./api/rest/openapi.yaml",
+            "webhooks": "./api/webhooks/openapi.yaml"
+        },
         "graphql": "./api/graphql/schema.graphqls",
         "match": {
             "graphql": "docs/api/graphql",
-            "openapi": "docs/api/rest"
+            "openapi": {
+                "rest": "docs/api/rest",
+                "webhooks": "docs/api/webhooks",
+            }
         }
     }
 }

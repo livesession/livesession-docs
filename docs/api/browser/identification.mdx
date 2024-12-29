@@ -3,26 +3,21 @@ title: Identification
 description: Identification
 ---
 
-export const themeSettings = {
-    bigArticle: false,
-}
-
-export const config = {
-    template: "atlas"
-}
-
 # Identification
 <Subtitle>
-    Learn how to use send custom data to LiveSession.
+    Learn how to identify users in your application.
 </Subtitle>
 
-The LiveSession Browser API provides a way for clients to provide custom properties via a properties field like following:
+To identify users, you can set a user data.
+This is useful for tracking users across multiple devices and sessions.
+Learn more about identify API [here](https://livesession.io).
 
-```js Send custom event
-__ls("track", "User Subscribed", {
-  plan_str: "premium",
-  seats_int: 1,
-  total_float: 255.50,
-  isPatron_bool: true
-});
+```js
+__ls("identify", { name: "John Doe", email: "john.doe@example.com" })
 ```
+
+You can also set user properties to track additional information about your users.
+```js
+__ls("setCustomParams", { plan: "premium", team: "marketing" })
+```
+Learn more about user params API [here](https://livesession.io).

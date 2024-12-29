@@ -12,15 +12,15 @@ LiveSession is a powerful tool that helps you understand how users [interact](ht
 This guide will help you get started with LiveSession and start capturing [user interactions](https://livesession.io) and analyzing them.
 
 ## Overview
-LiveSession collects data about [user interactions](https://livesession.io), such as clicks, scrolls, and others in different platforms like [web](https://livesession.io)
-or [mobile](https://livesession.io). Each platform can be configured in different environment like [specific framework](https://livesession.) or using a raw protocol like http.
+LiveSession collects data about [user interactions](https://livesession.io), such as clicks, scrolls or touches in different platforms like [web](https://livesession.io)
+or [mobile](https://livesession.io). Each platform can be accessed in different environment like [specific framework](https://livesession.) or using a raw protocol like http.
 That's why we provide a variety of ways to integrate LiveSession into your product.
 
 <Tabs items={["Browser", "Frameworks", "API"]}>
     <Tabs.Content value="Browser">
         <Content>
             #### Install code snippet
-            This is the simplest way to get LiveSession up and running. It only takes a few minutes.
+            This is the simplest way to get LiveSession up and running on browser environment. It only takes a few minutes.
 
             Copy the snippet below and replace `YOUR_TRACK_ID` with your project's values,
             then add it within the `
@@ -95,21 +95,22 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             This is useful for tracking users across multiple devices and sessions.
             Learn more about identify API [here](https://livesession.io).
             ```js
-            __ls("identify", { name: "John Doe", email: "john.doe@example.com" });
+            __ls("identify", { name: "John Doe", email: "john.doe@example.com" })
             ```
 
             #### User params
             You can also set user properties to track additional information about your users.
             ```js
-            __ls("setCustomParams", { plan: "premium", team: "marketing" });
+            __ls("setCustomParams", { plan: "premium", team: "marketing" })
             ```
             Learn more about user params API [here](https://livesession.io).
 
             #### Send events
             Most of events are [autocaptured](https://livesession.io) by LiveSession, but you can also send custom events.
             ```js
-            __ls("track", "User Subscribed", { plan: "premium" });
+            __ls("track", "User Subscribed", { plan: "premium" })
             ```
+            More details about events API can be found [here](https://livesession.io).
         </Content>
     </Tabs.Content>
 
@@ -166,9 +167,9 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                         <Tabs items={["Get sessions", "Get funnels"]}>
                             <Tabs.Content value="Get sessions">
                                ```js
-                               import { LiveSession } from 'livesession';
+                               import livesession from 'livesession';
 
-                               const ls = new LiveSession();
+                               const ls = new livesession();
 
                                const sessions = await ls.sessions.list();
                                console.log(sessions);
@@ -176,9 +177,9 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                             </Tabs.Content>
                             <Tabs.Content value="Get funnels">
                                 ```js
-                                import { LiveSession } from 'livesession';
+                                import livesession from 'livesession';
 
-                                const ls = new LiveSession();
+                                const ls = new livesession();
 
                                 const funnels = await ls.funnels.list();
                                 console.log(funnels);
@@ -217,6 +218,7 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
 </Tabs>
 
 ## Samples
+The [LiveSession Samples](https://livesession.io) has several end-to-end examples to help you start in different platforms.
 <GuideCard
     icon={<IconCode/>}
     title="Quickstart"

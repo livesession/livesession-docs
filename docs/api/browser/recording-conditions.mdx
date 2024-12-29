@@ -3,15 +3,10 @@ title: Recording conditions
 description: Recording conditions
 ---
 
-export const themeSettings = {
-    bigArticle: false
-}
-
 # Recording conditions
 
-Using [newPageView](https://livesesssion.io) method you can specify your own conditions as a trigger for a recording.
+Using [newPageView](https://livesesssion.io) method you can specify your own conditions as a trigger for a recording like:
 
-###### **Examples:**
 ```js
 __ls("newPageView", {
   conditions: [
@@ -26,5 +21,5 @@ __ls("newPageView", {
 });
 ```
 above condition will be fulfilled when user click on element where
-`path` contain `.add-cart` value.
+[path](https://livesession.io) contain `.add-cart` value.
 

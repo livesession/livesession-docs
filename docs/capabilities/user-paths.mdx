@@ -88,7 +88,7 @@ Here's an illustrative example:
 ```js Query subscription journey
 import livesession from 'livesession'
 import qx from '@queryx/qx'
-import $ from '@queryx/dom'
+import $q from '@queryx/dom'
 import subscription0x from '@queryx/subscription-0x'
 
 const ls = new livesession();
@@ -100,7 +100,7 @@ const query = qx(subscription0x)
     .where(
         qx.session.events.path.includes(subscriptionUrlsUsage),
         qx.session.events.click.target(
-            $("subscribe-button", {disabled: false})
+            $q("subscribe-button", {disabled: false})
         )
     )
 
@@ -108,11 +108,12 @@ const journeys = await ls.journeys.find(query)
 
 console.log(journeys)
 ```
-
 Advanced queries requires a deep understanding of the `qx` and the data model.<br/>
 For more information, refer to the [documentation](https://livesession.io).
 
 ## Samples
+More code samples of the trends you can explore the following resources:
+
 <GuideCard
     icon={<IconFunnels/>}
     title="User paths"
