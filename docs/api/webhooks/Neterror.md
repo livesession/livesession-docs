@@ -1,11 +1,13 @@
 ---
 title: NetError
 ---
+## !description
+
+
+
 ## !!references NetError
 
 ### !canonical Neterror
-
-
 
 ### !category rest
 

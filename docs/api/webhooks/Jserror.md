@@ -1,11 +1,13 @@
 ---
 title: JSError
 ---
+## !description
+
+
+
 ## !!references JSerror
 
 ### !canonical Jserror
-
-
 
 ### !category rest
 

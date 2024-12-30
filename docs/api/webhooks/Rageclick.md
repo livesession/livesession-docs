@@ -1,17 +1,13 @@
 ---
-title: Custom
+title: RageClick
 ---
 ## !description
 
 
-\# Heading1
-\## Heading2
-\### Heading3
 
+## !!references RageClick
 
-## !!references Custom
-
-### !canonical Custom
+### !canonical Rageclick
 
 ### !category rest
 
@@ -21,7 +17,7 @@ title: Custom
 
 #### !method post
 
-#### !path /session.event.Custom
+#### !path /session.event.RageClick
 
 ### !examples
 
@@ -39,7 +35,7 @@ title: Custom
 
 ```bash !code curl
 curl --request POST \
-     --url https://example.com/session.event.Custom \
+     --url https://example.com/session.event.RageClick \
      --header 'content-type: application/json' \
      --data '
 {
@@ -69,7 +65,8 @@ curl --request POST \
     },
     "event_name": "string",
     "time": 0,
-    "name": "string"
+    "name": "string",
+    "clicks": 0
   }
 }
 '
@@ -243,11 +240,11 @@ The email of the visitor
 
 
 
-##### !!properties properties
+##### !!properties clicks
 
-!name properties
+!name clicks
 
-!type object
+!type integer
 
 
 

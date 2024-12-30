@@ -61,7 +61,7 @@ paths:
 
   /session.event.RageClick:
     post:
-      summary: Handle session event
+      summary: RageClick
       description: |
         ---
         title: RageClick
@@ -85,6 +85,10 @@ paths:
         title: Custom
         group: [EVENT TYPES, session.event]
         ---
+        
+        # Heading1
+        ## Heading2
+        ### Heading3
       requestBody:
         required: true
         content:

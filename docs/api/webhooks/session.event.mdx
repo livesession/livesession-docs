@@ -2,13 +2,207 @@
 title: session.event
 group_index: true
 ---
+export const themeSettings = {
+    bigArticle: true
+}
 
 # session.event
 
 Triggers when an event from [session](https://livesession.io) is handled. Currently supported events are:
+[`JSError`](https://livesession.io),
+[`NetError`](https://livesession.io),<br/>
+[`ErrorClick`](https://livesession.io),
+[`RageClick`](https://livesession.io) and
+[`Custom`](https://livesession.io).
 
-* JSError
-* NetError
-* ErrorClick
-* RageClick
-* Custom
+## `JSError`
+Triggers when a JS error is handled.
+
+```json Example JSError payload
+{
+  "message_id": "d5932de4-a8da-4546-4439-3c640ba8dc05",
+  "webhook_id": "542de45",
+  "webhook_type": "session.event",
+  "api_version": "v1.0",
+  "account_id": "3ca3b1b",
+  "website_id": "8d53ea3",
+  "created_at": 1691161881,
+  "payload": {
+    "visitor": {
+      "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
+      "name": "John Doe",
+      "email": "john.doe@livesession.io",
+      "params": [
+        {
+          "name": "plan",
+          "value": "pro"
+        }
+      ],
+      "geolocation": {
+        "country_code": "PL",
+        "city": "Wroclaw",
+        "region": "Dolnoslaskie"
+      }
+    },
+    "event_name": "JSError",
+    "time": 16911618810,
+    "count": 1,
+    "value": "ProductCatalog: product is not valid"
+  }
+}
+```
+
+## `NetError`
+Triggers when a network request error is handled.
+
+```json Example NetError payload
+{
+  "message_id": "d5932de4-a8da-4546-4439-3c640ba8dc05",
+  "webhook_id": "542de45",
+  "webhook_type": "session.event",
+  "api_version": "v1.0",
+  "account_id": "3ca3b1b",
+  "website_id": "8d53ea3",
+  "created_at": 1691161881,
+  "payload": {
+    "visitor": {
+      "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
+      "name": "John Doe",
+      "email": "john.doe@livesession.io",
+      "params": [
+        {
+          "name": "plan",
+          "value": "pro"
+        }
+      ],
+      "geolocation": {
+        "country_code": "PL",
+        "city": "Wroclaw",
+        "region": "Dolnoslaskie"
+      }
+    },
+    "event_name": "NetError",
+    "time": 16911618810,
+    "method": "GET",
+    "url": "https://api.livesession.io/products/1",
+    "status": 500
+  }
+}
+```
+## `ErrorClick`
+Triggers when a [error click](https://livesession.io) is handled.
+
+```json Example ErrorClick payload
+{
+  "message_id": "d5932de4-a8da-4546-4439-3c640ba8dc05",
+  "webhook_id": "542de45",
+  "webhook_type": "session.event",
+  "api_version": "v1.0",
+  "account_id": "3ca3b1b",
+  "website_id": "8d53ea3",
+  "created_at": 1691161881,
+  "payload": {
+    "visitor": {
+      "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
+      "name": "John Doe",
+      "email": "john.doe@livesession.io",
+      "params": [
+        {
+          "name": "plan",
+          "value": "pro"
+        }
+      ],
+      "geolocation": {
+        "country_code": "PL",
+        "city": "Wroclaw",
+        "region": "Dolnoslaskie"
+      }
+    },
+    "event_name": "ErrorClick",
+    "time": 16911618810,
+    "messsage": "product is not defined"
+  }
+}
+```
+
+## `RageClick`
+Triggers when a [rage click](https://livesession.io) is handled.
+
+```json exmple RageClick payload
+{
+  "message_id": "d5932de4-a8da-4546-4439-3c640ba8dc05",
+  "webhook_id": "542de45",
+  "webhook_type": "session.event",
+  "api_version": "v1.0",
+  "account_id": "3ca3b1b",
+  "website_id": "8d53ea3",
+  "created_at": 1691161881,
+  "payload": {
+    "visitor": {
+      "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
+      "name": "John Doe",
+      "email": "john.doe@livesession.io",
+      "params": [
+        {
+          "name": "plan",
+          "value": "pro"
+        }
+      ],
+      "geolocation": {
+        "country_code": "PL",
+        "city": "Wroclaw",
+        "region": "Dolnoslaskie"
+      }
+    },
+    "event_name": "RageClick",
+    "time": 16911618810,
+    "clicks": 5
+  }
+}
+```
+
+## `Custom`
+Triggers when a [custom event](https://livesession.io) is handled.
+These events are made during recording through the [`__ls('track')`](https://livesession.io) Browser API function.
+The payload includes event specifics and potential validation errors for added properties.
+
+The properties field is a map with varying value types.
+Value type depends on the property key. For instance, `_str` suffixed keys hold string values and `_bool` suffixed keys contain boolean values.
+Additional details are available in the knowledge base.
+
+```json Example Custom paylod
+{
+  "message_id": "d5932de4-a8da-4546-4439-3c640ba8dc05",
+  "webhook_id": "542de45",
+  "webhook_type": "session.event",
+  "api_version": "v1.0",
+  "account_id": "3ca3b1b",
+  "website_id": "8d53ea3",
+  "created_at": 1691161881,
+  "payload": {
+    "visitor": {
+      "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
+      "name": "John Doe",
+      "email": "john.doe@livesession.io",
+      "params": [
+        {
+          "name": "plan",
+          "value": "pro"
+        }
+      ],
+      "geolocation": {
+        "country_code": "PL",
+        "city": "Wroclaw",
+        "region": "Dolnoslaskie"
+      }
+    },
+    "event_name": "Custom",
+    "time": 16911618810,
+    "name": "Product added",
+    "properties": {
+      "product_id_int": 1,
+      "product_name_str": "Product 1"
+    }
+  }
+}
+```

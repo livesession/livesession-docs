@@ -184,6 +184,12 @@ export default {
                             "docs/api/webhooks/delivery",
                             "docs/api/webhooks/verify",
                         ],
+                    },
+                    {
+                        "group": "EVENT TYPES",
+                        "pages": [
+                            "docs/api/webhooks/session.event",
+                        ],
                     }
                 ]
             },
@@ -294,14 +300,14 @@ export default {
     "api": {
         "openapi": {
             "rest": "./api/rest/openapi.yaml",
-            "webhooks": "./api/webhooks/openapi.yaml"
+            // "webhooks": "./api/webhooks/openapi.yaml" // TODO: in the future
         },
         "graphql": "./api/graphql/schema.graphqls",
         "match": {
             "graphql": "docs/api/graphql",
             "openapi": {
                 "rest": "docs/api/rest",
-                "webhooks": "docs/api/webhooks",
+                // "webhooks": "docs/api/webhooks", // TODO: in the future
             }
         }
     }

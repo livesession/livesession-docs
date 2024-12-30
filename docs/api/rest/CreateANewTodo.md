@@ -1,13 +1,15 @@
 ---
 title: Create Todo
 ---
-## !!references Create a new todo
-
-### !canonical CreateANewTodo
+## !description
 
 
 Create a new todo
 
+
+## !!references Create a new todo
+
+### !canonical CreateANewTodo
 
 ### !category rest
 
@@ -33,7 +35,7 @@ Create a new todo
 
 ####### !!tabs
 
-```bash !code curl
+```curl !code curl
 curl --request POST \
      --url https://api.example.com/v1/todos \
      --header 'accept: application/json' \

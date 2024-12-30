@@ -24,18 +24,46 @@ Given potential event volume, the webhook platform prioritizes throughput over r
 Once an event is dispatched, a payload signature is computed and included in the request.
 The request sent to your chosen endpoint bears these details:
 
-* HTTP method is POST
-* Content-Type of the request body is application/json
-* There will be a request header named LiveSession-Signature; this includes the request signature which the recipient should verify.
-* Every request body will contain a JSON object with the following fields:
-    * message id - the message identifier
-    * webhook_id - the webhook identifier
-    * webhook_type - the webhook type
-    * api_version - the webhook API version
-    * account id - the account identifier
-    * website id - the website identifier
-    * created_at - the message creation timestamp
-    * payload - the event payload
+<Steps>
+    <Steps.Item>
+        HTTP method is `POST`
+    </Steps.Item>
+    <Steps.Item>
+        Content-Type of the request body is `application/json`
+    </Steps.Item>
+    <Steps.Item>
+        There will be a request header named `LiveSession-Signature` - this includes the request signature which the recipient should verify.
+    </Steps.Item>
+    <Steps.Item>
+        Every request body will contain a JSON object with the following fields:
+        <Steps>
+            <Steps.Item>
+                `message_id` - the message identifier
+            </Steps.Item>
+            <Steps.Item>
+                `webhook_id` - the webhook identifier
+            </Steps.Item>
+            <Steps.Item>
+                `webhook_type` - the webhook type
+            </Steps.Item>
+            <Steps.Item>
+                `api_version` - the webhook API version
+            </Steps.Item>
+            <Steps.Item>
+                `account_id` - the account identifier
+            </Steps.Item>
+            <Steps.Item>
+                `website_id` - the website identifier
+            </Steps.Item>
+            <Steps.Item>
+                `created_at` - the message creation timestamp
+            </Steps.Item>
+            <Steps.Item>
+                `payload` - the event payload
+            </Steps.Item>
+        </Steps>
+    </Steps.Item>
+</Steps>
 
 Below is a representation of the entire HTTP request:
 
