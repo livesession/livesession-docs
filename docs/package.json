@@ -1,0 +1,17 @@
+{
+  "name": "livesession-docs-temporary",
+  "version": "1.0.0",
+  "description": "it's temporary repo due to issues with `xyd` with package.json in same folder",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.0.0"
+  }
+}

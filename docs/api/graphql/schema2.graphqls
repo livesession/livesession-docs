@@ -1,0 +1,342 @@
+scalar DateTime
+scalar UnixTimestamp # int64
+scalar RelativeDate
+
+#--- CORE
+type DateRange {
+    from: RelativeDate
+    to: RelativeDate
+}
+
+type CachedResponse {
+    ttl: String!
+    id: String!
+    computed_at: UnixTimestamp!
+    fresh: Boolean!
+}
+#--- CORE
+
+type Funnel {
+    funnel_id: ID!
+    created_by_agent_id: String!
+    created_by_login: String!
+    website_id: ID!
+    name: String!
+    description: String!
+    segment_id: String!
+    compute: ComputeFunnel
+    is_favourite: Boolean!
+    is_owner: Boolean!
+    is_public: Boolean!
+}
+
+type ComputeFunnel {
+    date_range: DateRange
+    steps: [FunnelStep]!
+    conversion_value: FunnelConversionValue
+    type: String
+    filters: Filters
+}
+
+type FunnelStep {
+    name: String
+    filters: Filters
+}
+
+input FunnelComputeWriteInput {
+    type: String
+    date_range: DateRangeInput!
+    steps: [FunnelStepInput]!
+    filters: FiltersInput
+    conversion_value: FunnelConversionValueInput
+}
+
+input FunnelComputeInput {
+    date_range: DateRangeInput!
+    filters: FiltersInput!
+    steps: [FunnelStepInput]!
+    conversion_value: FunnelConversionValueInput
+    type: String
+}
+
+input FunnelConversionValueInput {
+    property_name: String!
+    value_type: String!
+    label: String!
+}
+
+type FunnelConversionValue {
+    property_name: String!
+    value_type: String!
+    label: String!
+}
+
+type FunnelStepCompute {
+    sessions: Int!
+    visitors: Int!
+    events: Int!
+}
+
+type FunnelComputeResponse {
+    cached_response: CachedResponse!
+    total_sessions: Int!
+    total_visitors: Int!
+    total_events: Int!
+    conversion_value: FunnelConversionValueResponse
+    steps: [FunnelStepCompute]!
+}
+
+type FunnelConversionValueResponse {
+    value: Float!
+    label: String!
+}
+
+input FunnelSetFavouriteInput {
+    is_favourite: Boolean!
+}
+
+type Filters {
+    must: [Filter]!
+    should: [Filter]!
+    must_not: [Filter]!
+}
+
+type Filter {
+    name: String!
+    unit: String
+    group: String
+    data: FilterData!
+    defined_event_id: String
+    stable_id: String
+    parent_filter_stable_id: String
+}
+
+type FilterDataString {
+    value: String
+    values: [String]
+    operator: String!
+}
+
+type FilterDataInt {
+    value: Int
+    values: [Int]
+    operator: String!
+}
+
+type FilterDataFloat {
+    value: Float!
+    values: [Float!]
+    operator: String!
+}
+
+type FilterDataBool {
+    value: Boolean
+    operator: String!
+}
+
+type FilterDataParam {
+    name: String!
+    value: FilterDataString
+}
+
+type FilterDataEvent {
+    type: String!
+    group: FilterDataString
+    element: FilterDataString
+    txt: FilterDataString
+    element_path: FilterDataString
+    location: FilterDataString
+    value: FilterDataString
+    height: FilterDataInt
+    width: FilterDataInt
+    timestamp: FilterDataInt
+    x: FilterDataInt
+    y: FilterDataInt
+}
+
+type FilterData {
+    string: FilterDataString
+    int: FilterDataInt
+    bool: FilterDataBool
+    event: FilterDataEvent
+    param: FilterDataParam
+    event_properties: [FilterDataCustomEventProperty]
+}
+
+type FilterDataCustomEventProperty {
+    name: String!
+    value_str: FilterDataString
+    value_bool: FilterDataBool
+    value_int: FilterDataInt
+    value_float: FilterDataFloat
+}
+
+input FunnelInput {
+    name: String!
+    description: String
+    website_id: ID
+    segment_id: String!
+    compute: FunnelComputeWriteInput!
+    is_public: Boolean
+}
+
+input FunnelStepInput {
+    name: String
+    filters: FiltersInput
+}
+
+input FiltersInput {
+    must: [FilterInput]
+    should: [FilterInput]
+    must_not: [FilterInput]
+}
+
+input FilterInput {
+    name: String!
+    unit: String
+    group: String
+    data: FilterDataInput!
+    defined_event_id: String
+    stable_id: String
+    parent_filter_stable_id: String
+}
+
+input FilterDataInput {
+    string: FilterDataStringInput
+    int: FilterDataIntInput
+    bool: FilterDataBoolInput
+    event: FilterDataEventInput
+    param: FilterDataParamInput
+    event_properties: [FilterDataCustomEventPropertyInput]
+}
+
+input FilterDataStringInput {
+    value: String
+    values: [String!]
+    operator: String!
+}
+
+input FilterDataIntInput {
+    value: Int
+    values: [Int!]
+    operator: String!
+}
+
+input FilterDataBoolInput {
+    value: Boolean!
+    operator: String!
+}
+
+input FilterDataParamInput {
+    name: String!
+    value: FilterDataStringInput
+}
+
+input FilterDataEventInput {
+    type: String!
+    group: FilterDataStringInput
+    element: FilterDataStringInput
+    txt: FilterDataStringInput
+    element_path: FilterDataStringInput
+    location: FilterDataStringInput
+    value: FilterDataStringInput
+    height: FilterDataIntInput
+    width: FilterDataIntInput
+    timestamp: FilterDataIntInput
+    x: FilterDataIntInput
+    y: FilterDataIntInput
+}
+
+input FilterDataFloatInput {
+    values: [Float]
+    value: Float
+    operator: String!
+}
+
+input FilterDataCustomEventPropertyInput {
+    name: String!
+    value_str: FilterDataStringInput
+    value_int: FilterDataIntInput
+    value_bool: FilterDataBoolInput
+    value_float: FilterDataFloatInput
+}
+
+input MetricSetFavouriteInput {
+    is_favourite: Boolean!
+}
+type MetricSetFavouriteResponse {
+    success: Boolean!
+    metric_id: ID!
+}
+
+input DateRangeInput {
+    from: RelativeDate
+    to: RelativeDate
+}
+
+# Define the Mutation type
+"""
+---
+title: Mutation
+group: [Root Types]
+---
+
+The root mutation type
+"""
+type Mutation {
+    """
+    ---
+    title: Create Funnel
+    group: [GraphQL, Funnels]
+    ---
+
+    Create a new funnel
+    """
+    funnelCreate(input: FunnelInput!): Funnel!
+
+    """
+    ---
+    title: Delete Funnel
+    group: [GraphQL, Funnels]
+    ---
+
+    Delete a funnel by ID
+    """
+    funnelDelete(funnel_id: ID!): Boolean!
+
+    """
+    ---
+    title: Update Funnel
+    group: [GraphQL, Funnels]
+    ---
+
+    Update an existing funnel
+    """
+    updateFunnel(funnel_id: ID!): Boolean!
+
+    """
+    ---
+    title: Set Funnel Favourite
+    group: [GraphQL, Funnels]
+    ---
+
+    Set a funnel as favourite
+    """
+    funnelSetFavourite(funnel_id: ID!, input: FunnelSetFavouriteInput!): Boolean!
+
+    """
+    ---
+    title: Compute Funnel
+    group: [GraphQL, Funnels]
+    ---
+
+    Compute a funnel
+    """
+    funnelCompute(website_id: ID, input: FunnelComputeInput!): FunnelComputeResponse!
+}
+
+
+#extend type Query {
+#    funnels: [Funnel!]!
+#}
+

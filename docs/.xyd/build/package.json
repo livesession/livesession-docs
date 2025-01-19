@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@xyd-js/content": "latest",
+    "@xyd-js/components": "latest",
+    "@xyd-js/framework": "latest",
+    "@xyd-js/theme-poetry": "latest",
+    "@react-router/node": "^7.1.1",
+    "isbot": "^5"
+  },
+  "devDependencies": {}
+}

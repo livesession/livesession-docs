@@ -1,0 +1,267 @@
+---
+title: Quickstart
+description: Quickstart
+---
+
+export const installationTabs = {
+    platformChoose: ""
+}
+
+# Developer quickstart
+<Subtitle>
+    Learn how to start with LiveSession.
+</Subtitle>
+
+LiveSession is a powerful tool that helps you understand how users [interact](https://livesession.io) with your product.
+This guide will help you get started with LiveSession and start capturing [user interactions](https://livesession.io) and analyzing them.
+
+## Overview
+LiveSession collects data about [user interactions](https://livesession.io), such as clicks, scrolls or touches in different platforms like [web](https://livesession.io)
+or [mobile](https://livesession.io). Each platform can be accessed in different environment like [specific framework](https://livesession.) or using a raw protocol like http.
+That's why we provide a variety of ways to integrate LiveSession into your product.
+
+<Tabs ijs="installation-tabs" items={["Browser", "Frameworks", "API"]}>
+    <Tabs.Content value="Browser">
+        <Content>
+            #### Install code snippet
+            This is the simplest way to get LiveSession up and running on browser environment. It only takes a few
+            minutes.
+
+            Copy the snippet below and replace `YOUR_TRACK_ID` with your project's values,
+            then add it within the `
+            <head>` tags at the base of your product - ideally just before the closing `</head>
+            ` tag.
+            This ensures LiveSession loads on any page users visit.
+
+            You can find the snippet pre-filled with this data in [your project settings](https://livesession.io).
+
+            ```html LiveSession tracking-code snippet
+            <script type="text/javascript">
+                window["__ls_namespace"] = "__ls";
+                window["__ls_script_url"] = "https://cdn.livesession.io/track.js";
+
+                !(function (w, d, t, u, n
+                ) {
+                if (n in w) {
+                if (w.console && w.console.log) {
+                w.console.log(
+                'LiveSession namespace conflict. Please set window["__ls_namespace"].',
+                );
+            }
+
+                return;
+            }
+
+                if (w[n]) return;
+
+                var f = (w[n] = function() {
+                f.push ? f.push.apply(f, arguments) : f.store.push(arguments);
+            });
+
+                if (!w[n]) w[n] = f;
+                f.store = [];
+                f.v = "1.1";
+
+                var ls = d.createElement(t);
+                ls.async = true;
+                ls.src = u;
+                var s = d.getElementsByTagName(t)[0];
+                s.parentNode.insertBefore(ls, s);
+            })
+                (
+                window,
+                document,
+                "script",
+                window["__ls_script_url"],
+                window["__ls_namespace"],
+                )
+                ;
+
+                __ls("init", "<YOUR_TRACK_ID>", {
+                keystrokes: false
+            });
+                __ls("newPageView");
+            </script>
+            ```
+
+            <Details kind="secondary" title="(recommended)" label="Set up a reverse proxy">
+                We recommend setting up a reverse proxy so that events are less likely to be intercepted by tracking
+                blockers.
+                <br/>
+                We have our [own managed reverse proxy service](https://livesession.io) included in the Teams plan,
+                which routes
+                through our infrastructure and makes setting up your proxy easy.
+                <br/>
+                If you don't want to use our managed service then there are several other
+                [options for creating a reverse proxy](https://livesession.io),
+                including using [Cloudflare](https://livesession.io),
+                [AWS Cloudfront](https://livesession.io), and [Vercel](https://livesession.io).
+            </Details>
+
+            #### Identify users
+            To identify users, you can set a user data.
+            This is useful for tracking users across multiple devices and sessions.
+            Learn more about identify API [here](https://livesession.io).
+            ```js
+            __ls("identify", {name: "John Doe", email: "john.doe@example.com"})
+            ```
+
+            #### User params
+            You can also set user properties to track additional information about your users.
+            ```js
+            __ls("setCustomParams", {plan: "premium", team: "marketing"})
+            ```
+            Learn more about user params API [here](https://livesession.io).
+
+            #### Send events
+            Most of events are [autocaptured](https://livesession.io) by LiveSession, but you can also send custom
+            events.
+            ```js
+            __ls("track", "User Subscribed", {plan: "premium"})
+            ```
+            More details about events API can be found [here](https://livesession.io).
+        </Content>
+    </Tabs.Content>
+
+    <Tabs.Content value="Frameworks">
+        <Content>
+            #### Choose a framework
+
+            LiveSession provides SDKs for popular frameworks and languages to make it easier to integrate into your
+            product
+            like [React](https://livesession.io), [Vue](https://livesession.io) or [Angular](https://livesession.io).
+            More information about how to install and use the SDKs can be found [here](https://livesession.io).
+        </Content>
+    </Tabs.Content>
+
+    <Tabs.Content value="API">
+        <Content>
+            #### Create and export a PAT
+            [Create a PAT in the dashboard here](https://livesession.io), which you'll use to securely [access the
+            API](https://livesession.io).
+            Store the key in a safe location, like a [`.zshrc file`](https://livesession.io) or another text file on
+            your computer.
+            Once you've generated a PAT, export it as an [environment variable](https://livesession.io) in your
+            terminal.
+
+            <Tabs ijs="os-choose" items={["mac OS / Linux", "Windows"]}>
+                <Tabs.Content value="mac OS / Linux">
+                    <Content>
+                        ```bash Export an environment variable on macOS or Linux systems
+                        export LIVESESSION_PAT="you_pat_here"
+                        ```
+                    </Content>
+                </Tabs.Content>
+                <Tabs.Content value="Windows">
+                    <Content>
+                        ```bash Export an environment variable in PowerShell
+                        setx LIVESESSION_PAT="you_pat_here"
+                        ```
+                    </Content>
+                </Tabs.Content>
+            </Tabs>
+
+            #### Making your first API Request
+            With your LiveSession [Personal Access Token (PAT)](https://livesession.io) exported as an environment
+            variable, you're ready to make your first API request.
+            You can either use the API directly with the HTTP client of your choice, or use one of our official SDKs as
+            shown below.
+
+            <Tabs ijs="snippet-choose" items={["JavaScript", "curl"]}>
+                <Tabs.Content value="JavaScript">
+                    <Content>
+                        To use the [LiveSession API](https://livesession.io) in server-side JavaScript environments
+                        like Node.js, Deno, or Bun, you can use the official [LiveSession SDK](https://livesession.io)
+                        for TypeScript and JavaScript.
+                        Get started by installing the SDK using npm or your preferred package manager:
+
+                        ```bash Install the LiveSession SDK with npm
+                        npm install livesession
+                        ```
+
+                        With the LiveSession SDK installed, copy one of the following examples into it:
+                        <Tabs items={["Get sessions", "Get funnels"]}>
+                            <Tabs.Content value="Get sessions">
+                                ```js
+                                import livesession from 'livesession';
+
+                                const ls = new livesession();
+
+                                const sessions = await ls.sessions.list();
+                                console.log(sessions);
+                                ```
+                            </Tabs.Content>
+                            <Tabs.Content value="Get funnels">
+                                ```js
+                                import livesession from 'livesession';
+
+                                const ls = new livesession();
+
+                                const funnels = await ls.funnels.list();
+                                console.log(funnels);
+                                ```
+                            </Tabs.Content>
+                        </Tabs>
+                    </Content>
+                </Tabs.Content>
+                <Tabs.Content value="curl">
+                    <Content>
+                        On Unix-based systems, you can test out the LiveSession API using curl.
+                        The following commands assume that you have exported the LIVESESSION_PAT system environment
+                        variable as shown above.
+
+                        <Tabs items={["Get sessions", "Get funnels"]}>
+                            <Tabs.Content value="Get sessions">
+                                ```bash
+                                curl https://api.livesession.io/v1/sessions \
+                                -H "Content-Type: application/json" \
+                                -H "Authorization: Bearer $LIVESESSION_PAT"
+                                ```
+                            </Tabs.Content>
+                            <Tabs.Content value="Get funnels">
+                                ```bash
+                                curl https://api.livesession.io/v1/funnels \
+                                -H "Content-Type: application/json" \
+                                -H "Authorization: Bearer $LIVESESSION_PAT"
+                                ```
+                            </Tabs.Content>
+                        </Tabs>
+                    </Content>
+                </Tabs.Content>
+            </Tabs>
+
+        </Content>
+    </Tabs.Content>
+</Tabs>
+
+## Samples
+The [LiveSession Samples](https://livesession.io) has several end-to-end examples to help you start in different platforms.
+<GuideCard
+    icon={<IconCode/>}
+    title="Quickstart"
+>
+    Explore our sample projects to get started with LiveSession.
+</GuideCard>
+
+## Next Steps
+Now that you've set up your LiveSession instance, now you can explore the following resources:
+<GuideCard
+    icon={<IconSessionReplay/>}
+    title="Session Replay"
+>
+    Visualize user interactions in your product with detailed session replays.
+</GuideCard>
+
+<GuideCard
+    icon={<IconMetrics/>}
+    title="Product Analytics"
+>
+    Analyze user interactions and understand how users interact with your product.
+</GuideCard>
+
+<GuideCard
+    icon={<IconFunnels/>}
+    title="Data I/O"
+>
+    Learn how to import and export data from LiveSession.
+</GuideCard>
