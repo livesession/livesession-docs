@@ -1,11 +1,11 @@
 ---
 title: RelativeDate
 ---
-## !!references RelativeDate
-
-### !description
+## !description
 
 A scalar representing a relative date
+
+## !!references RelativeDate
 
 ### !canonical scalar-RelativeDate
 
@@ -13,6 +13,6 @@ A scalar representing a relative date
 
 #### !graphqlName RelativeDate
 
-#### !graphqlTypeShort scalar
+#### !graphqlType scalar
 
 ### !examples

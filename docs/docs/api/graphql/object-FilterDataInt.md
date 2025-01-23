@@ -1,11 +1,11 @@
 ---
 title: FilterDataInt
 ---
-## !!references FilterDataInt
-
-### !description
+## !description
 
 Filter data int object
+
+## !!references FilterDataInt
 
 ### !canonical object-FilterDataInt
 
@@ -13,7 +13,7 @@ Filter data int object
 
 #### !graphqlName FilterDataInt
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Filter data int object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName value
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar
-
 #### !!properties values
 
 !name values
@@ -47,30 +37,9 @@ Filter data int object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName values
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar
-
 #### !!properties operator
 
 !name operator
 
 !type String!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName operator
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar

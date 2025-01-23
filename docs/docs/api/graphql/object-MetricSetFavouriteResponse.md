@@ -1,11 +1,11 @@
 ---
 title: MetricSetFavouriteResponse
 ---
-## !!references MetricSetFavouriteResponse
-
-### !description
+## !description
 
 Response for setting metric as favourite
+
+## !!references MetricSetFavouriteResponse
 
 ### !canonical object-MetricSetFavouriteResponse
 
@@ -13,7 +13,7 @@ Response for setting metric as favourite
 
 #### !graphqlName MetricSetFavouriteResponse
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,30 +29,9 @@ Response for setting metric as favourite
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName success
-
-###### !graphqlTypeFlat Boolean
-
-###### !graphqlTypeShort scalar
-
 #### !!properties metric_id
 
 !name metric\_id
 
 !type ID!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName metric_id
-
-###### !graphqlTypeFlat ID
-
-###### !graphqlTypeShort scalar

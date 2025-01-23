@@ -1,11 +1,11 @@
 ---
 title: Update Funnel
 ---
-## !!references updateFunnel
-
-### !description
+## !description
 
 Update an existing funnel
+
+## !!references updateFunnel
 
 ### !canonical updateFunnel
 

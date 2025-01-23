@@ -1,11 +1,11 @@
 ---
 title: Delete Funnel
 ---
-## !!references funnelDelete
-
-### !description
+## !description
 
 Delete a funnel by ID
+
+## !!references funnelDelete
 
 ### !canonical funnelDelete
 

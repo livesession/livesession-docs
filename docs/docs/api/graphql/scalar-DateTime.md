@@ -1,11 +1,11 @@
 ---
 title: DateTime
 ---
-## !!references DateTime
-
-### !description
+## !description
 
 A scalar representing date and time
+
+## !!references DateTime
 
 ### !canonical scalar-DateTime
 
@@ -13,6 +13,6 @@ A scalar representing date and time
 
 #### !graphqlName DateTime
 
-#### !graphqlTypeShort scalar
+#### !graphqlType scalar
 
 ### !examples

@@ -1,11 +1,11 @@
 ---
 title: FilterInput
 ---
-## !!references FilterInput
-
-### !description
+## !description
 
 Input for filter
+
+## !!references FilterInput
 
 ### !canonical input-FilterInput
 
@@ -13,7 +13,7 @@ Input for filter
 
 #### !graphqlName FilterInput
 
-#### !graphqlTypeShort input
+#### !graphqlType input
 
 ### !examples
 
@@ -29,16 +29,6 @@ Input for filter
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName name
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties unit
 
 !name unit
@@ -46,16 +36,6 @@ Input for filter
 !type String
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName unit
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
 
 #### !!properties group
 
@@ -65,16 +45,6 @@ Input for filter
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName group
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties data
 
 !name data
@@ -82,16 +52,6 @@ Input for filter
 !type FilterDataInput!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName data
-
-###### !graphqlTypeFlat FilterDataInput
-
-###### !graphqlTypeShort input
 
 ##### !!properties string
 
@@ -101,16 +61,6 @@ Input for filter
 
 
 
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName string
-
-####### !graphqlTypeFlat FilterDataStringInput
-
-####### !graphqlTypeShort input
-
 ###### !!properties value
 
 !name value
@@ -118,16 +68,6 @@ Input for filter
 !type String
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName value
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
 
 ###### !!properties values
 
@@ -137,16 +77,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName values
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
-
 ###### !!properties operator
 
 !name operator
@@ -154,16 +84,6 @@ Input for filter
 !type String!
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName operator
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
 
 ##### !!properties int
 
@@ -173,16 +93,6 @@ Input for filter
 
 
 
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName int
-
-####### !graphqlTypeFlat FilterDataIntInput
-
-####### !graphqlTypeShort input
-
 ###### !!properties value
 
 !name value
@@ -190,16 +100,6 @@ Input for filter
 !type Int
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName value
-
-######## !graphqlTypeFlat Int
-
-######## !graphqlTypeShort scalar
 
 ###### !!properties values
 
@@ -209,16 +109,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName values
-
-######## !graphqlTypeFlat Int
-
-######## !graphqlTypeShort scalar
-
 ###### !!properties operator
 
 !name operator
@@ -226,16 +116,6 @@ Input for filter
 !type String!
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName operator
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
 
 ##### !!properties bool
 
@@ -245,16 +125,6 @@ Input for filter
 
 
 
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName bool
-
-####### !graphqlTypeFlat FilterDataBoolInput
-
-####### !graphqlTypeShort input
-
 ###### !!properties value
 
 !name value
@@ -262,16 +132,6 @@ Input for filter
 !type Boolean!
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName value
-
-######## !graphqlTypeFlat Boolean
-
-######## !graphqlTypeShort scalar
 
 ###### !!properties operator
 
@@ -281,16 +141,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName operator
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
-
 ##### !!properties event
 
 !name event
@@ -298,16 +148,6 @@ Input for filter
 !type FilterDataEventInput
 
 
-
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName event
-
-####### !graphqlTypeFlat FilterDataEventInput
-
-####### !graphqlTypeShort input
 
 ###### !!properties type
 
@@ -317,16 +157,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName type
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
-
 ###### !!properties group
 
 !name group
@@ -334,16 +164,6 @@ Input for filter
 !type FilterDataStringInput
 
 
-
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName group
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
 
 ####### !!properties value
 
@@ -353,16 +173,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties values
 
 !name values
@@ -371,16 +181,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -388,16 +188,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties element
 
@@ -407,16 +197,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName element
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -424,16 +204,6 @@ Input for filter
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -443,16 +213,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -460,16 +220,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties txt
 
@@ -479,16 +229,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName txt
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -496,16 +236,6 @@ Input for filter
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -515,16 +245,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -532,16 +252,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties element_path
 
@@ -551,16 +261,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName element_path
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -568,16 +268,6 @@ Input for filter
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -587,16 +277,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -604,16 +284,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties location
 
@@ -623,16 +293,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName location
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -640,16 +300,6 @@ Input for filter
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -659,16 +309,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -676,16 +316,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties value
 
@@ -695,16 +325,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName value
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -712,16 +332,6 @@ Input for filter
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -731,16 +341,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -748,16 +348,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties height
 
@@ -767,16 +357,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName height
-
-######## !graphqlTypeFlat FilterDataIntInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -784,16 +364,6 @@ Input for filter
 !type Int
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -803,16 +373,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -820,16 +380,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties width
 
@@ -839,16 +389,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName width
-
-######## !graphqlTypeFlat FilterDataIntInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -856,16 +396,6 @@ Input for filter
 !type Int
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -875,16 +405,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -892,16 +412,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties timestamp
 
@@ -911,16 +421,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName timestamp
-
-######## !graphqlTypeFlat FilterDataIntInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -928,16 +428,6 @@ Input for filter
 !type Int
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -947,16 +437,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -964,16 +444,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties x
 
@@ -983,16 +453,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName x
-
-######## !graphqlTypeFlat FilterDataIntInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -1000,16 +460,6 @@ Input for filter
 !type Int
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -1019,16 +469,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -1036,16 +476,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties y
 
@@ -1055,16 +485,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName y
-
-######## !graphqlTypeFlat FilterDataIntInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -1072,16 +492,6 @@ Input for filter
 !type Int
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -1091,16 +501,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -1108,16 +508,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ##### !!properties param
 
@@ -1127,16 +517,6 @@ Input for filter
 
 
 
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName param
-
-####### !graphqlTypeFlat FilterDataParamInput
-
-####### !graphqlTypeShort input
-
 ###### !!properties name
 
 !name name
@@ -1144,16 +524,6 @@ Input for filter
 !type String!
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName name
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
 
 ###### !!properties value
 
@@ -1163,16 +533,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName value
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -1180,16 +540,6 @@ Input for filter
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -1199,16 +549,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -1216,16 +556,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ##### !!properties event_properties
 
@@ -1235,16 +565,6 @@ Input for filter
 
 
 
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName event_properties
-
-####### !graphqlTypeFlat FilterDataCustomEventPropertyInput
-
-####### !graphqlTypeShort input
-
 ###### !!properties name
 
 !name name
@@ -1252,16 +572,6 @@ Input for filter
 !type String!
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName name
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
 
 ###### !!properties value_str
 
@@ -1271,16 +581,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName value_str
-
-######## !graphqlTypeFlat FilterDataStringInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -1288,16 +588,6 @@ Input for filter
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -1307,16 +597,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -1324,16 +604,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties value_int
 
@@ -1343,16 +613,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName value_int
-
-######## !graphqlTypeFlat FilterDataIntInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -1360,16 +620,6 @@ Input for filter
 !type Int
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties values
 
@@ -1379,16 +629,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat Int
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -1396,16 +636,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties value_bool
 
@@ -1415,16 +645,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName value_bool
-
-######## !graphqlTypeFlat FilterDataBoolInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties value
 
 !name value
@@ -1433,16 +653,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Boolean
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -1450,16 +660,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties value_float
 
@@ -1469,16 +669,6 @@ Input for filter
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName value_float
-
-######## !graphqlTypeFlat FilterDataFloatInput
-
-######## !graphqlTypeShort input
-
 ####### !!properties values
 
 !name values
@@ -1486,16 +676,6 @@ Input for filter
 !type \[Float]
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName values
-
-######### !graphqlTypeFlat Float
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties value
 
@@ -1505,16 +685,6 @@ Input for filter
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName value
-
-######### !graphqlTypeFlat Float
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties operator
 
 !name operator
@@ -1522,16 +692,6 @@ Input for filter
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName operator
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 #### !!properties defined_event_id
 
@@ -1541,16 +701,6 @@ Input for filter
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName defined_event_id
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties stable_id
 
 !name stable\_id
@@ -1559,30 +709,9 @@ Input for filter
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName stable_id
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
 
 !type String
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName parent_filter_stable_id
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar

@@ -1,11 +1,11 @@
 ---
 title: FilterDataFloatInput
 ---
-## !!references FilterDataFloatInput
-
-### !description
+## !description
 
 Input for filter data float
+
+## !!references FilterDataFloatInput
 
 ### !canonical input-FilterDataFloatInput
 
@@ -13,7 +13,7 @@ Input for filter data float
 
 #### !graphqlName FilterDataFloatInput
 
-#### !graphqlTypeShort input
+#### !graphqlType input
 
 ### !examples
 
@@ -29,16 +29,6 @@ Input for filter data float
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName values
-
-###### !graphqlTypeFlat Float
-
-###### !graphqlTypeShort scalar
-
 #### !!properties value
 
 !name value
@@ -47,30 +37,9 @@ Input for filter data float
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName value
-
-###### !graphqlTypeFlat Float
-
-###### !graphqlTypeShort scalar
-
 #### !!properties operator
 
 !name operator
 
 !type String!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName operator
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar

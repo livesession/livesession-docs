@@ -1,13 +1,13 @@
 ---
 title: Update Todo
 ---
-## !!references Update an existing todo
-
-### !description
+## !description
 
 
 Update an existing todo
 
+
+## !!references Update an existing todo
 
 ### !canonical UpdateAnExistingTodo
 

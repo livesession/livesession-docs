@@ -1,11 +1,11 @@
 ---
 title: FunnelConversionValue
 ---
-## !!references FunnelConversionValue
-
-### !description
+## !description
 
 Funnel conversion value object
+
+## !!references FunnelConversionValue
 
 ### !canonical object-FunnelConversionValue
 
@@ -13,7 +13,7 @@ Funnel conversion value object
 
 #### !graphqlName FunnelConversionValue
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Funnel conversion value object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName property_name
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties value_type
 
 !name value\_type
@@ -47,30 +37,9 @@ Funnel conversion value object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName value_type
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties label
 
 !name label
 
 !type String!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName label
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar

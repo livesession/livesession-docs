@@ -1,11 +1,11 @@
 ---
 title: UnixTimestamp
 ---
-## !!references UnixTimestamp
-
-### !description
+## !description
 
 A scalar representing Unix timestamp
+
+## !!references UnixTimestamp
 
 ### !canonical scalar-UnixTimestamp
 
@@ -13,6 +13,6 @@ A scalar representing Unix timestamp
 
 #### !graphqlName UnixTimestamp
 
-#### !graphqlTypeShort scalar
+#### !graphqlType scalar
 
 ### !examples

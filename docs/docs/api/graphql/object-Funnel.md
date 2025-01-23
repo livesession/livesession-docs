@@ -1,11 +1,11 @@
 ---
 title: Funnel
 ---
-## !!references Funnel
-
-### !description
+## !description
 
 Funnel object
+
+## !!references Funnel
 
 ### !canonical object-Funnel
 
@@ -13,7 +13,7 @@ Funnel object
 
 #### !graphqlName Funnel
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Funnel object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName funnel_id
-
-###### !graphqlTypeFlat ID
-
-###### !graphqlTypeShort scalar
-
 #### !!properties created_by_agent_id
 
 !name created\_by\_agent\_id
@@ -46,16 +36,6 @@ Funnel object
 !type String!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName created_by_agent_id
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
 
 #### !!properties created_by_login
 
@@ -65,16 +45,6 @@ Funnel object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName created_by_login
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties website_id
 
 !name website\_id
@@ -82,16 +52,6 @@ Funnel object
 !type ID!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName website_id
-
-###### !graphqlTypeFlat ID
-
-###### !graphqlTypeShort scalar
 
 #### !!properties name
 
@@ -101,16 +61,6 @@ Funnel object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName name
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties description
 
 !name description
@@ -118,16 +68,6 @@ Funnel object
 !type String!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName description
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
 
 #### !!properties segment_id
 
@@ -137,16 +77,6 @@ Funnel object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName segment_id
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties compute
 
 !name compute
@@ -154,16 +84,6 @@ Funnel object
 !type ComputeFunnel
 
 
-
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName compute
-
-###### !graphqlTypeFlat ComputeFunnel
-
-###### !graphqlTypeShort object
 
 ##### !!properties date_range
 
@@ -173,16 +93,6 @@ Funnel object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName date_range
-
-####### !graphqlTypeFlat DateRange
-
-####### !graphqlTypeShort object
-
 ###### !!properties from
 
 !name from
@@ -190,16 +100,6 @@ Funnel object
 !type RelativeDate
 
 
-
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName from
-
-######## !graphqlTypeFlat RelativeDate
-
-######## !graphqlTypeShort scalar
 
 ###### !!properties to
 
@@ -209,16 +109,6 @@ Funnel object
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName to
-
-######## !graphqlTypeFlat RelativeDate
-
-######## !graphqlTypeShort scalar
-
 ##### !!properties steps
 
 !name steps
@@ -226,16 +116,6 @@ Funnel object
 !type \[FunnelStep]!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName steps
-
-####### !graphqlTypeFlat FunnelStep
-
-####### !graphqlTypeShort object
 
 ###### !!properties name
 
@@ -245,16 +125,6 @@ Funnel object
 
 
 
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName name
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
-
 ###### !!properties filters
 
 !name filters
@@ -262,16 +132,6 @@ Funnel object
 !type Filters
 
 
-
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName filters
-
-######## !graphqlTypeFlat Filters
-
-######## !graphqlTypeShort object
 
 ####### !!properties must
 
@@ -281,16 +141,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType false
-
-######### !graphqlName must
-
-######### !graphqlTypeFlat Filter
-
-######### !graphqlTypeShort object
-
 ######## !!properties name
 
 !name name
@@ -298,16 +148,6 @@ Funnel object
 !type String!
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName name
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ######## !!properties unit
 
@@ -317,16 +157,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName unit
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties group
 
 !name group
@@ -334,16 +164,6 @@ Funnel object
 !type String
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName group
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ######## !!properties data
 
@@ -353,16 +173,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName data
-
-########## !graphqlTypeFlat FilterData
-
-########## !graphqlTypeShort object
-
 ######### !!properties string
 
 !name string
@@ -370,16 +180,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName string
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
 
 ########## !!properties value
 
@@ -389,16 +189,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties values
 
 !name values
@@ -407,16 +197,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -424,16 +204,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties int
 
@@ -443,16 +213,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName int
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -460,16 +220,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -479,16 +229,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -496,16 +236,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties bool
 
@@ -515,16 +245,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName bool
-
-########### !graphqlTypeFlat FilterDataBool
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -532,16 +252,6 @@ Funnel object
 !type Boolean
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Boolean
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties operator
 
@@ -551,16 +261,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ######### !!properties event
 
 !name event
@@ -568,16 +268,6 @@ Funnel object
 !type FilterDataEvent
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName event
-
-########### !graphqlTypeFlat FilterDataEvent
-
-########### !graphqlTypeShort object
 
 ########## !!properties type
 
@@ -587,16 +277,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName type
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties group
 
 !name group
@@ -604,16 +284,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName group
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
 
 ########### !!properties value
 
@@ -623,16 +293,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties values
 
 !name values
@@ -641,16 +301,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -658,16 +308,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties element
 
@@ -677,16 +317,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName element
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -694,16 +324,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -713,16 +333,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -730,16 +340,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties txt
 
@@ -749,16 +349,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName txt
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -766,16 +356,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -785,16 +365,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -802,16 +372,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties element_path
 
@@ -821,16 +381,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName element_path
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -838,16 +388,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -857,16 +397,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -874,16 +404,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties location
 
@@ -893,16 +413,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName location
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -910,16 +420,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -929,16 +429,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -946,16 +436,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -965,16 +445,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -982,16 +452,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1001,16 +461,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1018,16 +468,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties height
 
@@ -1037,16 +477,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName height
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1054,16 +484,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1073,16 +493,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1090,16 +500,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties width
 
@@ -1109,16 +509,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName width
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1126,16 +516,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1145,16 +525,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1162,16 +532,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties timestamp
 
@@ -1181,16 +541,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName timestamp
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1198,16 +548,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1217,16 +557,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1234,16 +564,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties x
 
@@ -1253,16 +573,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName x
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1270,16 +580,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1289,16 +589,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1306,16 +596,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties y
 
@@ -1325,16 +605,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName y
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1342,16 +612,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1361,16 +621,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1378,16 +628,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######### !!properties param
 
@@ -1397,16 +637,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName param
-
-########### !graphqlTypeFlat FilterDataParam
-
-########### !graphqlTypeShort object
-
 ########## !!properties name
 
 !name name
@@ -1414,16 +644,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName name
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -1433,16 +653,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1450,16 +660,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1469,16 +669,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1486,16 +676,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######### !!properties event_properties
 
@@ -1505,16 +685,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName event_properties
-
-########### !graphqlTypeFlat FilterDataCustomEventProperty
-
-########### !graphqlTypeShort object
-
 ########## !!properties name
 
 !name name
@@ -1522,16 +692,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName name
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties value_str
 
@@ -1541,16 +701,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_str
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1558,16 +708,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1577,16 +717,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1594,16 +724,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_bool
 
@@ -1613,16 +733,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_bool
-
-############ !graphqlTypeFlat FilterDataBool
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1631,16 +741,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Boolean
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1648,16 +748,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_int
 
@@ -1667,16 +757,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_int
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1684,16 +764,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1703,16 +773,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1720,16 +780,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_float
 
@@ -1739,16 +789,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_float
-
-############ !graphqlTypeFlat FilterDataFloat
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -1756,16 +796,6 @@ Funnel object
 !type Float!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Float
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -1775,16 +805,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Float
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -1792,16 +812,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######## !!properties defined_event_id
 
@@ -1811,16 +821,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName defined_event_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties stable_id
 
 !name stable\_id
@@ -1829,16 +829,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName stable_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -1846,16 +836,6 @@ Funnel object
 !type String
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName parent_filter_stable_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ####### !!properties should
 
@@ -1865,16 +845,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType false
-
-######### !graphqlName should
-
-######### !graphqlTypeFlat Filter
-
-######### !graphqlTypeShort object
-
 ######## !!properties name
 
 !name name
@@ -1882,16 +852,6 @@ Funnel object
 !type String!
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName name
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ######## !!properties unit
 
@@ -1901,16 +861,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName unit
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties group
 
 !name group
@@ -1918,16 +868,6 @@ Funnel object
 !type String
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName group
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ######## !!properties data
 
@@ -1937,16 +877,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName data
-
-########## !graphqlTypeFlat FilterData
-
-########## !graphqlTypeShort object
-
 ######### !!properties string
 
 !name string
@@ -1954,16 +884,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName string
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
 
 ########## !!properties value
 
@@ -1973,16 +893,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties values
 
 !name values
@@ -1991,16 +901,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -2008,16 +908,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties int
 
@@ -2027,16 +917,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName int
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -2044,16 +924,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2063,16 +933,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -2080,16 +940,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties bool
 
@@ -2099,16 +949,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName bool
-
-########### !graphqlTypeFlat FilterDataBool
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -2116,16 +956,6 @@ Funnel object
 !type Boolean
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Boolean
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties operator
 
@@ -2135,16 +965,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ######### !!properties event
 
 !name event
@@ -2152,16 +972,6 @@ Funnel object
 !type FilterDataEvent
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName event
-
-########### !graphqlTypeFlat FilterDataEvent
-
-########### !graphqlTypeShort object
 
 ########## !!properties type
 
@@ -2171,16 +981,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName type
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties group
 
 !name group
@@ -2188,16 +988,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName group
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
 
 ########### !!properties value
 
@@ -2207,16 +997,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties values
 
 !name values
@@ -2225,16 +1005,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2242,16 +1012,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties element
 
@@ -2261,16 +1021,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName element
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2278,16 +1028,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2297,16 +1037,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2314,16 +1044,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties txt
 
@@ -2333,16 +1053,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName txt
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2350,16 +1060,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2369,16 +1069,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2386,16 +1076,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties element_path
 
@@ -2405,16 +1085,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName element_path
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2422,16 +1092,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2441,16 +1101,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2458,16 +1108,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties location
 
@@ -2477,16 +1117,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName location
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2494,16 +1124,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2513,16 +1133,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2530,16 +1140,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -2549,16 +1149,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2566,16 +1156,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2585,16 +1165,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2602,16 +1172,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties height
 
@@ -2621,16 +1181,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName height
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2638,16 +1188,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2657,16 +1197,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2674,16 +1204,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties width
 
@@ -2693,16 +1213,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName width
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2710,16 +1220,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2729,16 +1229,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2746,16 +1236,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties timestamp
 
@@ -2765,16 +1245,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName timestamp
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2782,16 +1252,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2801,16 +1261,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2818,16 +1268,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties x
 
@@ -2837,16 +1277,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName x
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2854,16 +1284,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2873,16 +1293,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2890,16 +1300,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties y
 
@@ -2909,16 +1309,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName y
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -2926,16 +1316,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2945,16 +1325,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -2962,16 +1332,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######### !!properties param
 
@@ -2981,16 +1341,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName param
-
-########### !graphqlTypeFlat FilterDataParam
-
-########### !graphqlTypeShort object
-
 ########## !!properties name
 
 !name name
@@ -2998,16 +1348,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName name
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -3017,16 +1357,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3034,16 +1364,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3053,16 +1373,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3070,16 +1380,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######### !!properties event_properties
 
@@ -3089,16 +1389,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName event_properties
-
-########### !graphqlTypeFlat FilterDataCustomEventProperty
-
-########### !graphqlTypeShort object
-
 ########## !!properties name
 
 !name name
@@ -3106,16 +1396,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName name
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties value_str
 
@@ -3125,16 +1405,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_str
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3142,16 +1412,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3161,16 +1421,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3178,16 +1428,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_bool
 
@@ -3197,16 +1437,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_bool
-
-############ !graphqlTypeFlat FilterDataBool
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3215,16 +1445,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Boolean
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3232,16 +1452,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_int
 
@@ -3251,16 +1461,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_int
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3268,16 +1468,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3287,16 +1477,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3304,16 +1484,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_float
 
@@ -3323,16 +1493,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_float
-
-############ !graphqlTypeFlat FilterDataFloat
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3340,16 +1500,6 @@ Funnel object
 !type Float!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Float
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3359,16 +1509,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Float
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3376,16 +1516,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######## !!properties defined_event_id
 
@@ -3395,16 +1525,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName defined_event_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties stable_id
 
 !name stable\_id
@@ -3413,16 +1533,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName stable_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -3430,16 +1540,6 @@ Funnel object
 !type String
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName parent_filter_stable_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ####### !!properties must_not
 
@@ -3449,16 +1549,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType false
-
-######### !graphqlName must_not
-
-######### !graphqlTypeFlat Filter
-
-######### !graphqlTypeShort object
-
 ######## !!properties name
 
 !name name
@@ -3466,16 +1556,6 @@ Funnel object
 !type String!
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName name
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ######## !!properties unit
 
@@ -3485,16 +1565,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName unit
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties group
 
 !name group
@@ -3502,16 +1572,6 @@ Funnel object
 !type String
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName group
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ######## !!properties data
 
@@ -3521,16 +1581,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName data
-
-########## !graphqlTypeFlat FilterData
-
-########## !graphqlTypeShort object
-
 ######### !!properties string
 
 !name string
@@ -3538,16 +1588,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName string
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
 
 ########## !!properties value
 
@@ -3557,16 +1597,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties values
 
 !name values
@@ -3575,16 +1605,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -3592,16 +1612,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties int
 
@@ -3611,16 +1621,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName int
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -3628,16 +1628,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3647,16 +1637,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -3664,16 +1644,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties bool
 
@@ -3683,16 +1653,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName bool
-
-########### !graphqlTypeFlat FilterDataBool
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -3701,16 +1661,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Boolean
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -3718,16 +1668,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties event
 
@@ -3737,16 +1677,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName event
-
-########### !graphqlTypeFlat FilterDataEvent
-
-########### !graphqlTypeShort object
-
 ########## !!properties type
 
 !name type
@@ -3754,16 +1684,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName type
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties group
 
@@ -3773,16 +1693,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName group
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3790,16 +1700,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3809,16 +1709,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3826,16 +1716,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties element
 
@@ -3845,16 +1725,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName element
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3862,16 +1732,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3881,16 +1741,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3898,16 +1748,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties txt
 
@@ -3917,16 +1757,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName txt
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -3934,16 +1764,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3953,16 +1773,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -3970,16 +1780,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties element_path
 
@@ -3989,16 +1789,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName element_path
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4006,16 +1796,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4025,16 +1805,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4042,16 +1812,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties location
 
@@ -4061,16 +1821,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName location
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4078,16 +1828,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4097,16 +1837,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4114,16 +1844,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -4133,16 +1853,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4150,16 +1860,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4169,16 +1869,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4186,16 +1876,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties height
 
@@ -4205,16 +1885,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName height
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4222,16 +1892,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4241,16 +1901,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4258,16 +1908,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties width
 
@@ -4277,16 +1917,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName width
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4294,16 +1924,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4313,16 +1933,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4330,16 +1940,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties timestamp
 
@@ -4349,16 +1949,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName timestamp
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4366,16 +1956,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4385,16 +1965,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4402,16 +1972,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties x
 
@@ -4421,16 +1981,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName x
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4438,16 +1988,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4457,16 +1997,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4474,16 +2004,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties y
 
@@ -4493,16 +2013,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName y
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4510,16 +2020,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4529,16 +2029,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4546,16 +2036,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######### !!properties param
 
@@ -4565,16 +2045,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName param
-
-########### !graphqlTypeFlat FilterDataParam
-
-########### !graphqlTypeShort object
-
 ########## !!properties name
 
 !name name
@@ -4582,16 +2052,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName name
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -4601,16 +2061,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4618,16 +2068,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4637,16 +2077,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4654,16 +2084,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######### !!properties event_properties
 
@@ -4673,16 +2093,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName event_properties
-
-########### !graphqlTypeFlat FilterDataCustomEventProperty
-
-########### !graphqlTypeShort object
-
 ########## !!properties name
 
 !name name
@@ -4690,16 +2100,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName name
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties value_str
 
@@ -4709,16 +2109,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_str
-
-############ !graphqlTypeFlat FilterDataString
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4726,16 +2116,6 @@ Funnel object
 !type String
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4745,16 +2125,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4762,16 +2132,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_bool
 
@@ -4781,16 +2141,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_bool
-
-############ !graphqlTypeFlat FilterDataBool
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4799,16 +2149,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Boolean
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4816,16 +2156,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_int
 
@@ -4835,16 +2165,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_int
-
-############ !graphqlTypeFlat FilterDataInt
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4852,16 +2172,6 @@ Funnel object
 !type Int
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4871,16 +2181,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Int
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4888,16 +2188,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ########## !!properties value_float
 
@@ -4907,16 +2197,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType false
-
-############ !graphqlName value_float
-
-############ !graphqlTypeFlat FilterDataFloat
-
-############ !graphqlTypeShort object
-
 ########### !!properties value
 
 !name value
@@ -4924,16 +2204,6 @@ Funnel object
 !type Float!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName value
-
-############# !graphqlTypeFlat Float
-
-############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4943,16 +2213,6 @@ Funnel object
 
 
 
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName values
-
-############# !graphqlTypeFlat Float
-
-############# !graphqlTypeShort scalar
-
 ########### !!properties operator
 
 !name operator
@@ -4960,16 +2220,6 @@ Funnel object
 !type String!
 
 
-
-############ !context
-
-############# !graphqlBuiltInType true
-
-############# !graphqlName operator
-
-############# !graphqlTypeFlat String
-
-############# !graphqlTypeShort scalar
 
 ######## !!properties defined_event_id
 
@@ -4979,16 +2229,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName defined_event_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ######## !!properties stable_id
 
 !name stable\_id
@@ -4996,16 +2236,6 @@ Funnel object
 !type String
 
 
-
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName stable_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
 
 ######## !!properties parent_filter_stable_id
 
@@ -5015,16 +2245,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType true
-
-########## !graphqlName parent_filter_stable_id
-
-########## !graphqlTypeFlat String
-
-########## !graphqlTypeShort scalar
-
 ##### !!properties conversion_value
 
 !name conversion\_value
@@ -5032,16 +2252,6 @@ Funnel object
 !type FunnelConversionValue
 
 
-
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName conversion_value
-
-####### !graphqlTypeFlat FunnelConversionValue
-
-####### !graphqlTypeShort object
 
 ###### !!properties property_name
 
@@ -5051,16 +2261,6 @@ Funnel object
 
 
 
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName property_name
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
-
 ###### !!properties value_type
 
 !name value\_type
@@ -5068,16 +2268,6 @@ Funnel object
 !type String!
 
 
-
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName value_type
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
 
 ###### !!properties label
 
@@ -5087,16 +2277,6 @@ Funnel object
 
 
 
-####### !context
-
-######## !graphqlBuiltInType true
-
-######## !graphqlName label
-
-######## !graphqlTypeFlat String
-
-######## !graphqlTypeShort scalar
-
 ##### !!properties type
 
 !name type
@@ -5104,16 +2284,6 @@ Funnel object
 !type String
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName type
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties filters
 
@@ -5123,16 +2293,6 @@ Funnel object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName filters
-
-####### !graphqlTypeFlat Filters
-
-####### !graphqlTypeShort object
-
 ###### !!properties must
 
 !name must
@@ -5140,16 +2300,6 @@ Funnel object
 !type \[Filter]!
 
 
-
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName must
-
-######## !graphqlTypeFlat Filter
-
-######## !graphqlTypeShort object
 
 ####### !!properties name
 
@@ -5159,16 +2309,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName name
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties unit
 
 !name unit
@@ -5176,16 +2316,6 @@ Funnel object
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName unit
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties group
 
@@ -5195,16 +2325,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName group
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties data
 
 !name data
@@ -5212,16 +2332,6 @@ Funnel object
 !type FilterData!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType false
-
-######### !graphqlName data
-
-######### !graphqlTypeFlat FilterData
-
-######### !graphqlTypeShort object
 
 ######## !!properties string
 
@@ -5231,16 +2341,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName string
-
-########## !graphqlTypeFlat FilterDataString
-
-########## !graphqlTypeShort object
-
 ######### !!properties value
 
 !name value
@@ -5248,16 +2348,6 @@ Funnel object
 !type String
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -5267,16 +2357,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName values
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties operator
 
 !name operator
@@ -5284,16 +2364,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -5303,16 +2373,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName int
-
-########## !graphqlTypeFlat FilterDataInt
-
-########## !graphqlTypeShort object
-
 ######### !!properties value
 
 !name value
@@ -5320,16 +2380,6 @@ Funnel object
 !type Int
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat Int
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -5339,16 +2389,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName values
-
-########### !graphqlTypeFlat Int
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties operator
 
 !name operator
@@ -5356,16 +2396,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -5375,16 +2405,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName bool
-
-########## !graphqlTypeFlat FilterDataBool
-
-########## !graphqlTypeShort object
-
 ######### !!properties value
 
 !name value
@@ -5392,16 +2412,6 @@ Funnel object
 !type Boolean
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat Boolean
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -5411,16 +2421,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######## !!properties event
 
 !name event
@@ -5428,16 +2428,6 @@ Funnel object
 !type FilterDataEvent
 
 
-
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName event
-
-########## !graphqlTypeFlat FilterDataEvent
-
-########## !graphqlTypeShort object
 
 ######### !!properties type
 
@@ -5447,16 +2437,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName type
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties group
 
 !name group
@@ -5464,16 +2444,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName group
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
 
 ########## !!properties value
 
@@ -5483,16 +2453,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties values
 
 !name values
@@ -5501,16 +2461,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -5518,16 +2468,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -5537,16 +2477,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName element
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -5554,16 +2484,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -5573,16 +2493,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -5590,16 +2500,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -5609,16 +2509,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName txt
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -5626,16 +2516,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -5645,16 +2525,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -5662,16 +2532,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -5681,16 +2541,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName element_path
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -5698,16 +2548,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -5717,16 +2557,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -5734,16 +2564,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -5753,16 +2573,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName location
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -5770,16 +2580,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -5789,16 +2589,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -5806,16 +2596,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -5825,16 +2605,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -5842,16 +2612,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -5861,16 +2621,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -5878,16 +2628,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -5897,16 +2637,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName height
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -5914,16 +2644,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -5933,16 +2653,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -5950,16 +2660,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -5969,16 +2669,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName width
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -5986,16 +2676,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6005,16 +2685,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6022,16 +2692,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -6041,16 +2701,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName timestamp
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6058,16 +2708,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6077,16 +2717,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6094,16 +2724,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -6113,16 +2733,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName x
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6130,16 +2740,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6149,16 +2749,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6166,16 +2756,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -6185,16 +2765,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName y
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6202,16 +2772,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6221,16 +2781,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6238,16 +2788,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -6257,16 +2797,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName param
-
-########## !graphqlTypeFlat FilterDataParam
-
-########## !graphqlTypeShort object
-
 ######### !!properties name
 
 !name name
@@ -6274,16 +2804,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName name
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -6293,16 +2813,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6310,16 +2820,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6329,16 +2829,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6346,16 +2836,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -6365,16 +2845,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName event_properties
-
-########## !graphqlTypeFlat FilterDataCustomEventProperty
-
-########## !graphqlTypeShort object
-
 ######### !!properties name
 
 !name name
@@ -6382,16 +2852,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName name
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -6401,16 +2861,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_str
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6418,16 +2868,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6437,16 +2877,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6454,16 +2884,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -6473,16 +2893,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_bool
-
-########### !graphqlTypeFlat FilterDataBool
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6491,16 +2901,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Boolean
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6508,16 +2908,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -6527,16 +2917,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_int
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6544,16 +2924,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6563,16 +2933,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6580,16 +2940,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -6599,16 +2949,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_float
-
-########### !graphqlTypeFlat FilterDataFloat
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -6616,16 +2956,6 @@ Funnel object
 !type Float!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Float
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -6635,16 +2965,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Float
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -6652,16 +2972,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -6671,16 +2981,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName defined_event_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties stable_id
 
 !name stable\_id
@@ -6689,16 +2989,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName stable_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -6706,16 +2996,6 @@ Funnel object
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName parent_filter_stable_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties should
 
@@ -6725,16 +3005,6 @@ Funnel object
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName should
-
-######## !graphqlTypeFlat Filter
-
-######## !graphqlTypeShort object
-
 ####### !!properties name
 
 !name name
@@ -6742,16 +3012,6 @@ Funnel object
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName name
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties unit
 
@@ -6761,16 +3021,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName unit
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties group
 
 !name group
@@ -6778,16 +3028,6 @@ Funnel object
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName group
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties data
 
@@ -6797,16 +3037,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType false
-
-######### !graphqlName data
-
-######### !graphqlTypeFlat FilterData
-
-######### !graphqlTypeShort object
-
 ######## !!properties string
 
 !name string
@@ -6814,16 +3044,6 @@ Funnel object
 !type FilterDataString
 
 
-
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName string
-
-########## !graphqlTypeFlat FilterDataString
-
-########## !graphqlTypeShort object
 
 ######### !!properties value
 
@@ -6833,16 +3053,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties values
 
 !name values
@@ -6851,16 +3061,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName values
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties operator
 
 !name operator
@@ -6868,16 +3068,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -6887,16 +3077,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName int
-
-########## !graphqlTypeFlat FilterDataInt
-
-########## !graphqlTypeShort object
-
 ######### !!properties value
 
 !name value
@@ -6904,16 +3084,6 @@ Funnel object
 !type Int
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat Int
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -6923,16 +3093,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName values
-
-########### !graphqlTypeFlat Int
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties operator
 
 !name operator
@@ -6940,16 +3100,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -6959,16 +3109,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName bool
-
-########## !graphqlTypeFlat FilterDataBool
-
-########## !graphqlTypeShort object
-
 ######### !!properties value
 
 !name value
@@ -6976,16 +3116,6 @@ Funnel object
 !type Boolean
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat Boolean
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -6995,16 +3125,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######## !!properties event
 
 !name event
@@ -7012,16 +3132,6 @@ Funnel object
 !type FilterDataEvent
 
 
-
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName event
-
-########## !graphqlTypeFlat FilterDataEvent
-
-########## !graphqlTypeShort object
 
 ######### !!properties type
 
@@ -7031,16 +3141,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName type
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties group
 
 !name group
@@ -7048,16 +3148,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName group
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
 
 ########## !!properties value
 
@@ -7067,16 +3157,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties values
 
 !name values
@@ -7085,16 +3165,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7102,16 +3172,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -7121,16 +3181,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName element
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7138,16 +3188,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7157,16 +3197,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7174,16 +3204,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -7193,16 +3213,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName txt
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7210,16 +3220,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7229,16 +3229,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7246,16 +3236,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -7265,16 +3245,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName element_path
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7282,16 +3252,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7301,16 +3261,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7318,16 +3268,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -7337,16 +3277,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName location
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7354,16 +3284,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7373,16 +3293,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7390,16 +3300,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -7409,16 +3309,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7426,16 +3316,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7445,16 +3325,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7462,16 +3332,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -7481,16 +3341,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName height
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7498,16 +3348,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7517,16 +3357,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7534,16 +3364,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -7553,16 +3373,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName width
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7570,16 +3380,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7589,16 +3389,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7606,16 +3396,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -7625,16 +3405,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName timestamp
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7642,16 +3412,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7661,16 +3421,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7678,16 +3428,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -7697,16 +3437,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName x
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7714,16 +3444,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7733,16 +3453,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7750,16 +3460,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -7769,16 +3469,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName y
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7786,16 +3476,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7805,16 +3485,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7822,16 +3492,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -7841,16 +3501,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName param
-
-########## !graphqlTypeFlat FilterDataParam
-
-########## !graphqlTypeShort object
-
 ######### !!properties name
 
 !name name
@@ -7858,16 +3508,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName name
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -7877,16 +3517,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -7894,16 +3524,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -7913,16 +3533,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -7930,16 +3540,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -7949,16 +3549,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName event_properties
-
-########## !graphqlTypeFlat FilterDataCustomEventProperty
-
-########## !graphqlTypeShort object
-
 ######### !!properties name
 
 !name name
@@ -7966,16 +3556,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName name
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -7985,16 +3565,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_str
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8002,16 +3572,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -8021,16 +3581,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8038,16 +3588,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -8057,16 +3597,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_bool
-
-########### !graphqlTypeFlat FilterDataBool
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8075,16 +3605,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Boolean
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8092,16 +3612,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -8111,16 +3621,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_int
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8128,16 +3628,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -8147,16 +3637,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8164,16 +3644,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -8183,16 +3653,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_float
-
-########### !graphqlTypeFlat FilterDataFloat
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8200,16 +3660,6 @@ Funnel object
 !type Float!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Float
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -8219,16 +3669,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Float
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8236,16 +3676,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -8255,16 +3685,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName defined_event_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties stable_id
 
 !name stable\_id
@@ -8273,16 +3693,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName stable_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -8290,16 +3700,6 @@ Funnel object
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName parent_filter_stable_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ###### !!properties must_not
 
@@ -8309,16 +3709,6 @@ Funnel object
 
 
 
-####### !context
-
-######## !graphqlBuiltInType false
-
-######## !graphqlName must_not
-
-######## !graphqlTypeFlat Filter
-
-######## !graphqlTypeShort object
-
 ####### !!properties name
 
 !name name
@@ -8326,16 +3716,6 @@ Funnel object
 !type String!
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName name
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties unit
 
@@ -8345,16 +3725,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName unit
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties group
 
 !name group
@@ -8362,16 +3732,6 @@ Funnel object
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName group
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties data
 
@@ -8381,16 +3741,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType false
-
-######### !graphqlName data
-
-######### !graphqlTypeFlat FilterData
-
-######### !graphqlTypeShort object
-
 ######## !!properties string
 
 !name string
@@ -8398,16 +3748,6 @@ Funnel object
 !type FilterDataString
 
 
-
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName string
-
-########## !graphqlTypeFlat FilterDataString
-
-########## !graphqlTypeShort object
 
 ######### !!properties value
 
@@ -8417,16 +3757,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties values
 
 !name values
@@ -8435,16 +3765,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName values
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties operator
 
 !name operator
@@ -8452,16 +3772,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -8471,16 +3781,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName int
-
-########## !graphqlTypeFlat FilterDataInt
-
-########## !graphqlTypeShort object
-
 ######### !!properties value
 
 !name value
@@ -8488,16 +3788,6 @@ Funnel object
 !type Int
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat Int
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -8507,16 +3797,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName values
-
-########### !graphqlTypeFlat Int
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties operator
 
 !name operator
@@ -8524,16 +3804,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -8543,16 +3813,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName bool
-
-########## !graphqlTypeFlat FilterDataBool
-
-########## !graphqlTypeShort object
-
 ######### !!properties value
 
 !name value
@@ -8560,16 +3820,6 @@ Funnel object
 !type Boolean
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat Boolean
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -8579,16 +3829,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName operator
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######## !!properties event
 
 !name event
@@ -8596,16 +3836,6 @@ Funnel object
 !type FilterDataEvent
 
 
-
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName event
-
-########## !graphqlTypeFlat FilterDataEvent
-
-########## !graphqlTypeShort object
 
 ######### !!properties type
 
@@ -8615,16 +3845,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName type
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
-
 ######### !!properties group
 
 !name group
@@ -8632,16 +3852,6 @@ Funnel object
 !type FilterDataString
 
 
-
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName group
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
 
 ########## !!properties value
 
@@ -8651,16 +3861,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties values
 
 !name values
@@ -8669,16 +3869,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8686,16 +3876,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -8705,16 +3885,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName element
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8722,16 +3892,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -8741,16 +3901,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8758,16 +3908,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -8777,16 +3917,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName txt
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8794,16 +3924,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -8813,16 +3933,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8830,16 +3940,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -8849,16 +3949,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName element_path
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8866,16 +3956,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -8885,16 +3965,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8902,16 +3972,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -8921,16 +3981,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName location
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -8938,16 +3988,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -8957,16 +3997,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -8974,16 +4004,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -8993,16 +4013,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9010,16 +4020,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9029,16 +4029,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9046,16 +4036,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -9065,16 +4045,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName height
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9082,16 +4052,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9101,16 +4061,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9118,16 +4068,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -9137,16 +4077,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName width
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9154,16 +4084,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9173,16 +4093,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9190,16 +4100,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -9209,16 +4109,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName timestamp
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9226,16 +4116,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9245,16 +4125,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9262,16 +4132,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -9281,16 +4141,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName x
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9298,16 +4148,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9317,16 +4157,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9334,16 +4164,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -9353,16 +4173,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName y
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9370,16 +4180,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9389,16 +4189,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9406,16 +4196,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -9425,16 +4205,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName param
-
-########## !graphqlTypeFlat FilterDataParam
-
-########## !graphqlTypeShort object
-
 ######### !!properties name
 
 !name name
@@ -9442,16 +4212,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName name
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -9461,16 +4221,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9478,16 +4228,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9497,16 +4237,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9514,16 +4244,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -9533,16 +4253,6 @@ Funnel object
 
 
 
-######### !context
-
-########## !graphqlBuiltInType false
-
-########## !graphqlName event_properties
-
-########## !graphqlTypeFlat FilterDataCustomEventProperty
-
-########## !graphqlTypeShort object
-
 ######### !!properties name
 
 !name name
@@ -9550,16 +4260,6 @@ Funnel object
 !type String!
 
 
-
-########## !context
-
-########### !graphqlBuiltInType true
-
-########### !graphqlName name
-
-########### !graphqlTypeFlat String
-
-########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -9569,16 +4269,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_str
-
-########### !graphqlTypeFlat FilterDataString
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9586,16 +4276,6 @@ Funnel object
 !type String
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9605,16 +4285,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9622,16 +4292,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -9641,16 +4301,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_bool
-
-########### !graphqlTypeFlat FilterDataBool
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9659,16 +4309,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Boolean
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9676,16 +4316,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -9695,16 +4325,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_int
-
-########### !graphqlTypeFlat FilterDataInt
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9712,16 +4332,6 @@ Funnel object
 !type Int
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9731,16 +4341,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Int
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9748,16 +4348,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -9767,16 +4357,6 @@ Funnel object
 
 
 
-########## !context
-
-########### !graphqlBuiltInType false
-
-########### !graphqlName value_float
-
-########### !graphqlTypeFlat FilterDataFloat
-
-########### !graphqlTypeShort object
-
 ########## !!properties value
 
 !name value
@@ -9784,16 +4364,6 @@ Funnel object
 !type Float!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName value
-
-############ !graphqlTypeFlat Float
-
-############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -9803,16 +4373,6 @@ Funnel object
 
 
 
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName values
-
-############ !graphqlTypeFlat Float
-
-############ !graphqlTypeShort scalar
-
 ########## !!properties operator
 
 !name operator
@@ -9820,16 +4380,6 @@ Funnel object
 !type String!
 
 
-
-########### !context
-
-############ !graphqlBuiltInType true
-
-############ !graphqlName operator
-
-############ !graphqlTypeFlat String
-
-############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -9839,16 +4389,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName defined_event_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 ####### !!properties stable_id
 
 !name stable\_id
@@ -9856,16 +4396,6 @@ Funnel object
 !type String
 
 
-
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName stable_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
 
 ####### !!properties parent_filter_stable_id
 
@@ -9875,16 +4405,6 @@ Funnel object
 
 
 
-######## !context
-
-######### !graphqlBuiltInType true
-
-######### !graphqlName parent_filter_stable_id
-
-######### !graphqlTypeFlat String
-
-######### !graphqlTypeShort scalar
-
 #### !!properties is_favourite
 
 !name is\_favourite
@@ -9892,16 +4412,6 @@ Funnel object
 !type Boolean!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName is_favourite
-
-###### !graphqlTypeFlat Boolean
-
-###### !graphqlTypeShort scalar
 
 #### !!properties is_owner
 
@@ -9911,30 +4421,9 @@ Funnel object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName is_owner
-
-###### !graphqlTypeFlat Boolean
-
-###### !graphqlTypeShort scalar
-
 #### !!properties is_public
 
 !name is\_public
 
 !type Boolean!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName is_public
-
-###### !graphqlTypeFlat Boolean
-
-###### !graphqlTypeShort scalar

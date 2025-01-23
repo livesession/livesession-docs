@@ -1,11 +1,11 @@
 ---
 title: FunnelStepCompute
 ---
-## !!references FunnelStepCompute
-
-### !description
+## !description
 
 Funnel step compute object
+
+## !!references FunnelStepCompute
 
 ### !canonical object-FunnelStepCompute
 
@@ -13,7 +13,7 @@ Funnel step compute object
 
 #### !graphqlName FunnelStepCompute
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Funnel step compute object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName sessions
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar
-
 #### !!properties visitors
 
 !name visitors
@@ -47,30 +37,9 @@ Funnel step compute object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName visitors
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar
-
 #### !!properties events
 
 !name events
 
 !type Int!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName events
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar

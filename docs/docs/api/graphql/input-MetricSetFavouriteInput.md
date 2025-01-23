@@ -1,11 +1,11 @@
 ---
 title: MetricSetFavouriteInput
 ---
-## !!references MetricSetFavouriteInput
-
-### !description
+## !description
 
 Input for setting metric as favourite
+
+## !!references MetricSetFavouriteInput
 
 ### !canonical input-MetricSetFavouriteInput
 
@@ -13,7 +13,7 @@ Input for setting metric as favourite
 
 #### !graphqlName MetricSetFavouriteInput
 
-#### !graphqlTypeShort input
+#### !graphqlType input
 
 ### !examples
 
@@ -27,14 +27,3 @@ Input for setting metric as favourite
 
 !type Boolean!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName is_favourite
-
-###### !graphqlTypeFlat Boolean
-
-###### !graphqlTypeShort scalar

@@ -1,13 +1,13 @@
 ---
 title: Todos
 ---
-## !!references Get a list of all todos
-
-### !description
+## !description
 
 
 Get a list of all todos
 
+
+## !!references Get a list of all todos
 
 ### !canonical GetAListOfAllTodos
 

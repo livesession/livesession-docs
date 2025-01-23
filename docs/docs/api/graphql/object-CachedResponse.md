@@ -1,11 +1,11 @@
 ---
 title: CachedResponse
 ---
-## !!references CachedResponse
-
-### !description
+## !description
 
 Cached response object
+
+## !!references CachedResponse
 
 ### !canonical object-CachedResponse
 
@@ -13,7 +13,7 @@ Cached response object
 
 #### !graphqlName CachedResponse
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Cached response object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName ttl
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties id
 
 !name id
@@ -46,16 +36,6 @@ Cached response object
 !type String!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName id
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
 
 #### !!properties computed_at
 
@@ -65,30 +45,9 @@ Cached response object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName computed_at
-
-###### !graphqlTypeFlat UnixTimestamp
-
-###### !graphqlTypeShort scalar
-
 #### !!properties fresh
 
 !name fresh
 
 !type Boolean!
 
-
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName fresh
-
-###### !graphqlTypeFlat Boolean
-
-###### !graphqlTypeShort scalar

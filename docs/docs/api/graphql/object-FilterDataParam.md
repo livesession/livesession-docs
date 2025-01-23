@@ -1,11 +1,11 @@
 ---
 title: FilterDataParam
 ---
-## !!references FilterDataParam
-
-### !description
+## !description
 
 Filter data param object
+
+## !!references FilterDataParam
 
 ### !canonical object-FilterDataParam
 
@@ -13,7 +13,7 @@ Filter data param object
 
 #### !graphqlName FilterDataParam
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Filter data param object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName name
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties value
 
 !name value
@@ -46,16 +36,6 @@ Filter data param object
 !type FilterDataString
 
 
-
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName value
-
-###### !graphqlTypeFlat FilterDataString
-
-###### !graphqlTypeShort object
 
 ##### !!properties value
 
@@ -65,16 +45,6 @@ Filter data param object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties values
 
 !name values
@@ -83,30 +53,9 @@ Filter data param object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
 
 !type String!
 
-
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar

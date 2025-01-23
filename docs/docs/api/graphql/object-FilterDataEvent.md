@@ -1,11 +1,11 @@
 ---
 title: FilterDataEvent
 ---
-## !!references FilterDataEvent
-
-### !description
+## !description
 
 Filter data event object
+
+## !!references FilterDataEvent
 
 ### !canonical object-FilterDataEvent
 
@@ -13,7 +13,7 @@ Filter data event object
 
 #### !graphqlName FilterDataEvent
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName type
-
-###### !graphqlTypeFlat String
-
-###### !graphqlTypeShort scalar
-
 #### !!properties group
 
 !name group
@@ -46,16 +36,6 @@ Filter data event object
 !type FilterDataString
 
 
-
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName group
-
-###### !graphqlTypeFlat FilterDataString
-
-###### !graphqlTypeShort object
 
 ##### !!properties value
 
@@ -65,16 +45,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties values
 
 !name values
@@ -83,16 +53,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -100,16 +60,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties element
 
@@ -119,16 +69,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName element
-
-###### !graphqlTypeFlat FilterDataString
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -136,16 +76,6 @@ Filter data event object
 !type String
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -155,16 +85,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -172,16 +92,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties txt
 
@@ -191,16 +101,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName txt
-
-###### !graphqlTypeFlat FilterDataString
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -208,16 +108,6 @@ Filter data event object
 !type String
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -227,16 +117,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -244,16 +124,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties element_path
 
@@ -263,16 +133,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName element_path
-
-###### !graphqlTypeFlat FilterDataString
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -280,16 +140,6 @@ Filter data event object
 !type String
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -299,16 +149,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -316,16 +156,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties location
 
@@ -335,16 +165,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName location
-
-###### !graphqlTypeFlat FilterDataString
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -352,16 +172,6 @@ Filter data event object
 !type String
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -371,16 +181,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -388,16 +188,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties value
 
@@ -407,16 +197,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName value
-
-###### !graphqlTypeFlat FilterDataString
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -424,16 +204,6 @@ Filter data event object
 !type String
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -443,16 +213,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -460,16 +220,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties height
 
@@ -479,16 +229,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName height
-
-###### !graphqlTypeFlat FilterDataInt
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -496,16 +236,6 @@ Filter data event object
 !type Int
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -515,16 +245,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -532,16 +252,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties width
 
@@ -551,16 +261,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName width
-
-###### !graphqlTypeFlat FilterDataInt
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -568,16 +268,6 @@ Filter data event object
 !type Int
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -587,16 +277,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -604,16 +284,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties timestamp
 
@@ -623,16 +293,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName timestamp
-
-###### !graphqlTypeFlat FilterDataInt
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -640,16 +300,6 @@ Filter data event object
 !type Int
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -659,16 +309,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -676,16 +316,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties x
 
@@ -695,16 +325,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName x
-
-###### !graphqlTypeFlat FilterDataInt
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -712,16 +332,6 @@ Filter data event object
 !type Int
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -731,16 +341,6 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
@@ -748,16 +348,6 @@ Filter data event object
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 #### !!properties y
 
@@ -767,16 +357,6 @@ Filter data event object
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName y
-
-###### !graphqlTypeFlat FilterDataInt
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -784,16 +364,6 @@ Filter data event object
 !type Int
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties values
 
@@ -803,30 +373,9 @@ Filter data event object
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName values
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties operator
 
 !name operator
 
 !type String!
 
-
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName operator
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar

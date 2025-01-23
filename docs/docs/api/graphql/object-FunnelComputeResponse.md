@@ -1,11 +1,11 @@
 ---
 title: FunnelComputeResponse
 ---
-## !!references FunnelComputeResponse
-
-### !description
+## !description
 
 Response for funnel compute
+
+## !!references FunnelComputeResponse
 
 ### !canonical object-FunnelComputeResponse
 
@@ -13,7 +13,7 @@ Response for funnel compute
 
 #### !graphqlName FunnelComputeResponse
 
-#### !graphqlTypeShort object
+#### !graphqlType object
 
 ### !examples
 
@@ -29,16 +29,6 @@ Response for funnel compute
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName cached_response
-
-###### !graphqlTypeFlat CachedResponse
-
-###### !graphqlTypeShort object
-
 ##### !!properties ttl
 
 !name ttl
@@ -46,16 +36,6 @@ Response for funnel compute
 !type String!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName ttl
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties id
 
@@ -65,16 +45,6 @@ Response for funnel compute
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName id
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties computed_at
 
 !name computed\_at
@@ -82,16 +52,6 @@ Response for funnel compute
 !type UnixTimestamp!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType false
-
-####### !graphqlName computed_at
-
-####### !graphqlTypeFlat UnixTimestamp
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties fresh
 
@@ -101,16 +61,6 @@ Response for funnel compute
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName fresh
-
-####### !graphqlTypeFlat Boolean
-
-####### !graphqlTypeShort scalar
-
 #### !!properties total_sessions
 
 !name total\_sessions
@@ -118,16 +68,6 @@ Response for funnel compute
 !type Int!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName total_sessions
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar
 
 #### !!properties total_visitors
 
@@ -137,16 +77,6 @@ Response for funnel compute
 
 
 
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName total_visitors
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar
-
 #### !!properties total_events
 
 !name total\_events
@@ -154,16 +84,6 @@ Response for funnel compute
 !type Int!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType true
-
-###### !graphqlName total_events
-
-###### !graphqlTypeFlat Int
-
-###### !graphqlTypeShort scalar
 
 #### !!properties conversion_value
 
@@ -173,16 +93,6 @@ Response for funnel compute
 
 
 
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName conversion_value
-
-###### !graphqlTypeFlat FunnelConversionValueResponse
-
-###### !graphqlTypeShort object
-
 ##### !!properties value
 
 !name value
@@ -190,16 +100,6 @@ Response for funnel compute
 !type Float!
 
 
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName value
-
-####### !graphqlTypeFlat Float
-
-####### !graphqlTypeShort scalar
 
 ##### !!properties label
 
@@ -209,16 +109,6 @@ Response for funnel compute
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName label
-
-####### !graphqlTypeFlat String
-
-####### !graphqlTypeShort scalar
-
 #### !!properties steps
 
 !name steps
@@ -226,16 +116,6 @@ Response for funnel compute
 !type \[FunnelStepCompute]!
 
 
-
-##### !context
-
-###### !graphqlBuiltInType false
-
-###### !graphqlName steps
-
-###### !graphqlTypeFlat FunnelStepCompute
-
-###### !graphqlTypeShort object
 
 ##### !!properties sessions
 
@@ -245,16 +125,6 @@ Response for funnel compute
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName sessions
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties visitors
 
 !name visitors
@@ -263,30 +133,9 @@ Response for funnel compute
 
 
 
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName visitors
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar
-
 ##### !!properties events
 
 !name events
 
 !type Int!
 
-
-
-###### !context
-
-####### !graphqlBuiltInType true
-
-####### !graphqlName events
-
-####### !graphqlTypeFlat Int
-
-####### !graphqlTypeShort scalar

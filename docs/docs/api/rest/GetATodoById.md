@@ -1,13 +1,13 @@
 ---
 title: Todo
 ---
-## !!references Get a todo by ID
-
-### !description
+## !description
 
 
 Get a todo by ID
 
+
+## !!references Get a todo by ID
 
 ### !canonical GetATodoById
 
