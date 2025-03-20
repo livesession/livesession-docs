@@ -1,11 +1,11 @@
 ---
 title: DateRange
 ---
-## !description
+## !!references DateRange
+
+### !description
 
 Date range object
-
-## !!references DateRange
 
 ### !canonical object-DateRange
 
@@ -13,7 +13,7 @@ Date range object
 
 #### !graphqlName DateRange
 
-#### !graphqlType object
+#### !graphqlTypeShort object
 
 ### !examples
 
@@ -29,9 +29,30 @@ Date range object
 
 
 
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName from
+
+###### !graphqlTypeFlat RelativeDate
+
+###### !graphqlTypeShort scalar
+
 #### !!properties to
 
 !name to
 
 !type RelativeDate
 
+
+
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName to
+
+###### !graphqlTypeFlat RelativeDate
+
+###### !graphqlTypeShort scalar

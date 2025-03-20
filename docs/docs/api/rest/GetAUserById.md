@@ -1,13 +1,13 @@
 ---
 title: User
 ---
-## !description
+## !!references Get a user by ID
+
+### !description
 
 
 Get a user by ID
 
-
-## !!references Get a user by ID
 
 ### !canonical GetAUserById
 

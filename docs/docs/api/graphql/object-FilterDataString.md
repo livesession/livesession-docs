@@ -1,11 +1,11 @@
 ---
 title: FilterDataString
 ---
-## !description
+## !!references FilterDataString
+
+### !description
 
 Filter data string object
-
-## !!references FilterDataString
 
 ### !canonical object-FilterDataString
 
@@ -13,7 +13,7 @@ Filter data string object
 
 #### !graphqlName FilterDataString
 
-#### !graphqlType object
+#### !graphqlTypeShort object
 
 ### !examples
 
@@ -29,6 +29,16 @@ Filter data string object
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar
+
 #### !!properties values
 
 !name values
@@ -37,9 +47,30 @@ Filter data string object
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName values
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar
+
 #### !!properties operator
 
 !name operator
 
 !type String!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName operator
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar

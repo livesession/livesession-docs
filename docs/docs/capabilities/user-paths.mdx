@@ -1,11 +1,12 @@
 ---
+title: User paths
 description: User paths
 ---
 
 export const reactFrontmatter = {
     title: () => <Frontmatter.Title>
         User paths
-        <Badge>RFC</Badge>
+        <Badge kind="warning">RFC</Badge>
     </Frontmatter.Title>
 }
 
@@ -37,9 +38,9 @@ For developers, our experimental *query language* **queryx(`qx`)** can be used t
 </Callout>
 
 ## Querying
-The `qx`  provides a structured way to create queries for user path analysis. Here's an example:
+The `qx`  provides a structured, type-safe way to create queries for a user path analysis. Here's an example:
 
-```javascript Query US dashboard
+```js Query /dashboard path within US in some range
 import qx from '@queryx/qx'
 
 qx()
@@ -50,7 +51,7 @@ qx()
   )
 ```
 
-This query fetches user sessions where users visited `/dashboard` and are based in the United States during 2024.
+This query fetches sessions where users visited `/dashboard` and are based in the United States during 2024.
 
 ## Real-world use case
 Imagine you're analyzing why users abandon the checkout process. Here's how you can use [user paths](https://livesession.io):
@@ -96,7 +97,7 @@ const ls = new livesession();
 const subscriptionUrlsUsage = [
     "plan-and-billing"
 ]
-const query = qx(subscription0x)
+const query = qx()
     .where(
         qx.session.events.path.includes(subscriptionUrlsUsage),
         qx.session.events.click.target(
@@ -107,19 +108,19 @@ const query = qx(subscription0x)
         )
     )
 
+/*
+// alternative query using `0x` concept:
+
+const query = qx(subscription0x).downgradeSwitch("pro", "basic")
+// `downgradeSwitch` is a custom function in `0x` space
+*/
+
 const journeys = await ls.journeys.find(query)
 
 console.log(journeys)
 ```
-Advanced queries requires a deep understanding of the `qx` and the data model.<br/>
-For more information, refer to the [documentation](https://livesession.io).
 
-## Samples
-More code samples of the trends you can explore the following resources:
+<Callout>
+    This concept is still in research. Share your [feedback](https://github.com/livesession) with us to help improve it.
+</Callout>
 
-<GuideCard
-    icon={<IconFunnels/>}
-    title="User paths"
->
-    Learn how to use `qx` to analyze user paths.
-</GuideCard>

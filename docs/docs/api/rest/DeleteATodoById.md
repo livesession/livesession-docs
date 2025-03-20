@@ -1,13 +1,13 @@
 ---
 title: Delete Todo
 ---
-## !description
+## !!references Delete a todo by ID
+
+### !description
 
 
 Delete a todo by ID
 
-
-## !!references Delete a todo by ID
 
 ### !canonical DeleteATodoById
 

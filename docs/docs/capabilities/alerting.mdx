@@ -15,7 +15,22 @@ It allows you to react on events in real-time and take actions based on them.
 Alerts delivery can be configured in two ways. First, you can use third party delivery provider like [Slack](https://livesession.io).
 Second, you can set up a custom workflow using [webhooks](https://livesession.io). All methods receive events in real-time.
 
-```bash Creating a webhook
+:::code-group{title="Creating a webhook"}
+```ts sdk
+import {ApiClient} from "livesession"
+
+const client = new ApiClient({
+    apiKey: process.env.LIVESESSION_API_KEY
+})
+
+await client.webhooks.create({
+    webhook_id: "YOUR_WEBHOOK_ID",
+    url: "YOUR_WEBHOOK_URL",
+   version: "v1.0",
+})
+```
+
+```sh curl
 curl https://api.livesession.io/v1/webhooks \
   -X POST \
   -H "Content-Type: application/json" \
@@ -26,6 +41,7 @@ curl https://api.livesession.io/v1/webhooks \
     "version": "v1.0",
   }'
 ```
+:::
 
 Once you have a webhook set up, you can create an alert to receive events in real-time.
 
@@ -37,13 +53,34 @@ Alerts gives you a robust control which events you want to receive.
 You can use [built-in](https://livesession) events like `Error Click`, `Network Error` or based on [custom event](https://livesession) which gives you a full control of
 what and when you want to monitor.
 
-```bash Creating an alert
+:::code-group{title="Creating an alert"}
+```ts sdk
+import {ApiClient} from "livesession"
+
+const client = new ApiClient({
+    apiKey: process.env.LIVESESSION_API_KEY
+})
+
+await client.alerts.create({
+    name: "YOUR_ALERT_NAME",
+    provider: "webhooks",
+    webhook_id: "YOUR_WEBHOOK_ID",
+    events: [
+        {
+            kind: 26,
+            value: "YOUR_CUSTOM_EVENT_NAME"
+        }
+    ]
+})
+```
+
+```sh curl
 curl https://api.livesession.io/v1/alerts \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $LIVESESSION_PAT" \
   -d '{
-    "name": "YOUR_WEBSITE_ID",
+    "name": "YOUR_ALERT_NAME",
     "provider": "webhooks",
     "webhook_id": "YOUR_WEBHOOK_ID",
     "events": [
@@ -54,15 +91,20 @@ curl https://api.livesession.io/v1/alerts \
     ],
   }'
 ```
+:::
+
 <Callout>
-    Based on above example, please make sure you used [Browser SDK](https://livesession.io) custom event tracking like `__ls("track",
-    "YOUR_CUSTOM_EVENT_NAME")`
+    Based on above example, please make sure you used [Browser SDK](https://livesession.io) custom event tracking like
+    [`ls("track",
+    "YOUR_CUSTOM_EVENT_NAME")`](https://livesession.io).
 </Callout>
 
 ## Samples
+More code samples for custom events you can explore the following resources:
+
 <GuideCard
-    icon={<IconCustomEvent/>}
+    icon={<IconCode/>}
     title="Custom Event alerting"
 >
-    Learn how to create an alert based on custom event.
+    Show code how to create an alert based on custom event.
 </GuideCard>

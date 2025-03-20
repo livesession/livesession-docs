@@ -1,11 +1,11 @@
 ---
 title: FilterDataBoolInput
 ---
-## !description
+## !!references FilterDataBoolInput
+
+### !description
 
 Input for filter data bool
-
-## !!references FilterDataBoolInput
 
 ### !canonical input-FilterDataBoolInput
 
@@ -13,7 +13,7 @@ Input for filter data bool
 
 #### !graphqlName FilterDataBoolInput
 
-#### !graphqlType input
+#### !graphqlTypeShort input
 
 ### !examples
 
@@ -29,9 +29,30 @@ Input for filter data bool
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat Boolean
+
+###### !graphqlTypeShort scalar
+
 #### !!properties operator
 
 !name operator
 
 !type String!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName operator
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar

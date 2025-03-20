@@ -7,8 +7,12 @@ description: Recording conditions
 
 Using [newPageView](https://livesesssion.io) method you can specify your own conditions as a trigger for a recording like:
 
-```js
-__ls("newPageView", {
+
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.newPageView({
   conditions: [
     {
       type: "event",
@@ -20,6 +24,21 @@ __ls("newPageView", {
   ],
 });
 ```
+
+```js window
+__ls("newPageView", {
+  conditions: [
+    {
+      type: "event",
+      name: "MouseClick",
+      operator: "contain",
+      key: "path",
+      value: ".add-cart",
+    },
+  ],
+});
+:::
+
 above condition will be fulfilled when user click on element where
 [path](https://livesession.io) contain `.add-cart` value.
 

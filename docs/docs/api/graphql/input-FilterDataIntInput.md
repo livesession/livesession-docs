@@ -1,11 +1,11 @@
 ---
 title: FilterDataIntInput
 ---
-## !description
+## !!references FilterDataIntInput
+
+### !description
 
 Input for filter data int
-
-## !!references FilterDataIntInput
 
 ### !canonical input-FilterDataIntInput
 
@@ -13,7 +13,7 @@ Input for filter data int
 
 #### !graphqlName FilterDataIntInput
 
-#### !graphqlType input
+#### !graphqlTypeShort input
 
 ### !examples
 
@@ -29,6 +29,16 @@ Input for filter data int
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat Int
+
+###### !graphqlTypeShort scalar
+
 #### !!properties values
 
 !name values
@@ -37,9 +47,30 @@ Input for filter data int
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName values
+
+###### !graphqlTypeFlat Int
+
+###### !graphqlTypeShort scalar
+
 #### !!properties operator
 
 !name operator
 
 !type String!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName operator
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar

@@ -1,11 +1,11 @@
 ---
 title: FunnelSetFavouriteInput
 ---
-## !description
+## !!references FunnelSetFavouriteInput
+
+### !description
 
 Input for setting funnel as favourite
-
-## !!references FunnelSetFavouriteInput
 
 ### !canonical input-FunnelSetFavouriteInput
 
@@ -13,7 +13,7 @@ Input for setting funnel as favourite
 
 #### !graphqlName FunnelSetFavouriteInput
 
-#### !graphqlType input
+#### !graphqlTypeShort input
 
 ### !examples
 
@@ -27,3 +27,14 @@ Input for setting funnel as favourite
 
 !type Boolean!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName is_favourite
+
+###### !graphqlTypeFlat Boolean
+
+###### !graphqlTypeShort scalar

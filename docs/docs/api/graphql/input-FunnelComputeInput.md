@@ -1,11 +1,11 @@
 ---
 title: FunnelComputeInput
 ---
-## !description
+## !!references FunnelComputeInput
+
+### !description
 
 Input for computing funnel
-
-## !!references FunnelComputeInput
 
 ### !canonical input-FunnelComputeInput
 
@@ -13,7 +13,7 @@ Input for computing funnel
 
 #### !graphqlName FunnelComputeInput
 
-#### !graphqlType input
+#### !graphqlTypeShort input
 
 ### !examples
 
@@ -29,6 +29,16 @@ Input for computing funnel
 
 
 
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName date_range
+
+###### !graphqlTypeFlat DateRangeInput
+
+###### !graphqlTypeShort input
+
 ##### !!properties from
 
 !name from
@@ -36,6 +46,16 @@ Input for computing funnel
 !type RelativeDate
 
 
+
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName from
+
+####### !graphqlTypeFlat RelativeDate
+
+####### !graphqlTypeShort scalar
 
 ##### !!properties to
 
@@ -45,6 +65,16 @@ Input for computing funnel
 
 
 
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName to
+
+####### !graphqlTypeFlat RelativeDate
+
+####### !graphqlTypeShort scalar
+
 #### !!properties filters
 
 !name filters
@@ -52,6 +82,16 @@ Input for computing funnel
 !type FiltersInput!
 
 
+
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName filters
+
+###### !graphqlTypeFlat FiltersInput
+
+###### !graphqlTypeShort input
 
 ##### !!properties must
 
@@ -61,6 +101,16 @@ Input for computing funnel
 
 
 
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName must
+
+####### !graphqlTypeFlat FilterInput
+
+####### !graphqlTypeShort input
+
 ###### !!properties name
 
 !name name
@@ -68,6 +118,16 @@ Input for computing funnel
 !type String!
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName name
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties unit
 
@@ -77,6 +137,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName unit
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties group
 
 !name group
@@ -84,6 +154,16 @@ Input for computing funnel
 !type String
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName group
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties data
 
@@ -93,6 +173,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName data
+
+######## !graphqlTypeFlat FilterDataInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties string
 
 !name string
@@ -100,6 +190,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName string
+
+######### !graphqlTypeFlat FilterDataStringInput
+
+######### !graphqlTypeShort input
 
 ######## !!properties value
 
@@ -109,6 +209,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties values
 
 !name values
@@ -117,6 +227,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName values
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties operator
 
 !name operator
@@ -124,6 +244,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties int
 
@@ -133,6 +263,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName int
+
+######### !graphqlTypeFlat FilterDataIntInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties value
 
 !name value
@@ -140,6 +280,16 @@ Input for computing funnel
 !type Int
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat Int
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties values
 
@@ -149,6 +299,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName values
+
+########## !graphqlTypeFlat Int
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties operator
 
 !name operator
@@ -156,6 +316,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties bool
 
@@ -165,6 +335,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName bool
+
+######### !graphqlTypeFlat FilterDataBoolInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties value
 
 !name value
@@ -172,6 +352,16 @@ Input for computing funnel
 !type Boolean!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat Boolean
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties operator
 
@@ -181,6 +371,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ####### !!properties event
 
 !name event
@@ -188,6 +388,16 @@ Input for computing funnel
 !type FilterDataEventInput
 
 
+
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName event
+
+######### !graphqlTypeFlat FilterDataEventInput
+
+######### !graphqlTypeShort input
 
 ######## !!properties type
 
@@ -197,6 +407,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName type
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties group
 
 !name group
@@ -204,6 +424,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName group
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -213,6 +443,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -221,6 +461,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -228,6 +478,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties element
 
@@ -237,6 +497,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName element
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -244,6 +514,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -253,6 +533,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -260,6 +550,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties txt
 
@@ -269,6 +569,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName txt
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -276,6 +586,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -285,6 +605,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -292,6 +622,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties element_path
 
@@ -301,6 +641,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName element_path
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -308,6 +658,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -317,6 +677,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -324,6 +694,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties location
 
@@ -333,6 +713,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName location
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -340,6 +730,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -349,6 +749,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -356,6 +766,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value
 
@@ -365,6 +785,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -372,6 +802,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -381,6 +821,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -388,6 +838,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties height
 
@@ -397,6 +857,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName height
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -404,6 +874,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -413,6 +893,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -420,6 +910,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties width
 
@@ -429,6 +929,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName width
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -436,6 +946,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -445,6 +965,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -452,6 +982,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties timestamp
 
@@ -461,6 +1001,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName timestamp
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -468,6 +1018,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -477,6 +1037,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -484,6 +1054,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties x
 
@@ -493,6 +1073,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName x
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -500,6 +1090,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -509,6 +1109,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -516,6 +1126,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties y
 
@@ -525,6 +1145,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName y
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -532,6 +1162,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -541,6 +1181,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -548,6 +1198,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ####### !!properties param
 
@@ -557,6 +1217,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName param
+
+######### !graphqlTypeFlat FilterDataParamInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -564,6 +1234,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties value
 
@@ -573,6 +1253,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -580,6 +1270,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -589,6 +1289,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -596,6 +1306,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ####### !!properties event_properties
 
@@ -605,6 +1325,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName event_properties
+
+######### !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -612,6 +1342,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties value_str
 
@@ -621,6 +1361,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_str
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -628,6 +1378,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -637,6 +1397,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -644,6 +1414,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_int
 
@@ -653,6 +1433,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -660,6 +1450,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -669,6 +1469,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -676,6 +1486,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_bool
 
@@ -685,6 +1505,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -693,6 +1523,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -700,6 +1540,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_float
 
@@ -709,6 +1559,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_float
+
+########## !graphqlTypeFlat FilterDataFloatInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties values
 
 !name values
@@ -716,6 +1576,16 @@ Input for computing funnel
 !type \[Float]
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Float
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -725,6 +1595,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Float
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -732,6 +1612,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ###### !!properties defined_event_id
 
@@ -741,6 +1631,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName defined_event_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties stable_id
 
 !name stable\_id
@@ -749,6 +1649,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName stable_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -756,6 +1666,16 @@ Input for computing funnel
 !type String
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName parent_filter_stable_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ##### !!properties should
 
@@ -765,6 +1685,16 @@ Input for computing funnel
 
 
 
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName should
+
+####### !graphqlTypeFlat FilterInput
+
+####### !graphqlTypeShort input
+
 ###### !!properties name
 
 !name name
@@ -772,6 +1702,16 @@ Input for computing funnel
 !type String!
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName name
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties unit
 
@@ -781,6 +1721,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName unit
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties group
 
 !name group
@@ -788,6 +1738,16 @@ Input for computing funnel
 !type String
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName group
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties data
 
@@ -797,6 +1757,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName data
+
+######## !graphqlTypeFlat FilterDataInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties string
 
 !name string
@@ -804,6 +1774,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName string
+
+######### !graphqlTypeFlat FilterDataStringInput
+
+######### !graphqlTypeShort input
 
 ######## !!properties value
 
@@ -813,6 +1793,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties values
 
 !name values
@@ -821,6 +1811,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName values
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties operator
 
 !name operator
@@ -828,6 +1828,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties int
 
@@ -837,6 +1847,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName int
+
+######### !graphqlTypeFlat FilterDataIntInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties value
 
 !name value
@@ -844,6 +1864,16 @@ Input for computing funnel
 !type Int
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat Int
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties values
 
@@ -853,6 +1883,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName values
+
+########## !graphqlTypeFlat Int
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties operator
 
 !name operator
@@ -860,6 +1900,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties bool
 
@@ -869,6 +1919,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName bool
+
+######### !graphqlTypeFlat FilterDataBoolInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties value
 
 !name value
@@ -876,6 +1936,16 @@ Input for computing funnel
 !type Boolean!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat Boolean
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties operator
 
@@ -885,6 +1955,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ####### !!properties event
 
 !name event
@@ -892,6 +1972,16 @@ Input for computing funnel
 !type FilterDataEventInput
 
 
+
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName event
+
+######### !graphqlTypeFlat FilterDataEventInput
+
+######### !graphqlTypeShort input
 
 ######## !!properties type
 
@@ -901,6 +1991,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName type
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties group
 
 !name group
@@ -908,6 +2008,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName group
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -917,6 +2027,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -925,6 +2045,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -932,6 +2062,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties element
 
@@ -941,6 +2081,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName element
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -948,6 +2098,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -957,6 +2117,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -964,6 +2134,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties txt
 
@@ -973,6 +2153,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName txt
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -980,6 +2170,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -989,6 +2189,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -996,6 +2206,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties element_path
 
@@ -1005,6 +2225,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName element_path
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1012,6 +2242,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1021,6 +2261,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1028,6 +2278,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties location
 
@@ -1037,6 +2297,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName location
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1044,6 +2314,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1053,6 +2333,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1060,6 +2350,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value
 
@@ -1069,6 +2369,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1076,6 +2386,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1085,6 +2405,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1092,6 +2422,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties height
 
@@ -1101,6 +2441,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName height
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1108,6 +2458,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1117,6 +2477,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1124,6 +2494,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties width
 
@@ -1133,6 +2513,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName width
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1140,6 +2530,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1149,6 +2549,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1156,6 +2566,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties timestamp
 
@@ -1165,6 +2585,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName timestamp
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1172,6 +2602,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1181,6 +2621,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1188,6 +2638,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties x
 
@@ -1197,6 +2657,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName x
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1204,6 +2674,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1213,6 +2693,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1220,6 +2710,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties y
 
@@ -1229,6 +2729,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName y
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1236,6 +2746,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1245,6 +2765,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1252,6 +2782,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ####### !!properties param
 
@@ -1261,6 +2801,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName param
+
+######### !graphqlTypeFlat FilterDataParamInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -1268,6 +2818,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties value
 
@@ -1277,6 +2837,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1284,6 +2854,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1293,6 +2873,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1300,6 +2890,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ####### !!properties event_properties
 
@@ -1309,6 +2909,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName event_properties
+
+######### !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -1316,6 +2926,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties value_str
 
@@ -1325,6 +2945,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_str
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1332,6 +2962,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1341,6 +2981,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1348,6 +2998,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_int
 
@@ -1357,6 +3017,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1364,6 +3034,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1373,6 +3053,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1380,6 +3070,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_bool
 
@@ -1389,6 +3089,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1397,6 +3107,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1404,6 +3124,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_float
 
@@ -1413,6 +3143,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_float
+
+########## !graphqlTypeFlat FilterDataFloatInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties values
 
 !name values
@@ -1420,6 +3160,16 @@ Input for computing funnel
 !type \[Float]
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Float
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -1429,6 +3179,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Float
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1436,6 +3196,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ###### !!properties defined_event_id
 
@@ -1445,6 +3215,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName defined_event_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties stable_id
 
 !name stable\_id
@@ -1453,6 +3233,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName stable_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -1460,6 +3250,16 @@ Input for computing funnel
 !type String
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName parent_filter_stable_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ##### !!properties must_not
 
@@ -1469,6 +3269,16 @@ Input for computing funnel
 
 
 
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName must_not
+
+####### !graphqlTypeFlat FilterInput
+
+####### !graphqlTypeShort input
+
 ###### !!properties name
 
 !name name
@@ -1476,6 +3286,16 @@ Input for computing funnel
 !type String!
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName name
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties unit
 
@@ -1485,6 +3305,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName unit
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties group
 
 !name group
@@ -1492,6 +3322,16 @@ Input for computing funnel
 !type String
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName group
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties data
 
@@ -1501,6 +3341,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName data
+
+######## !graphqlTypeFlat FilterDataInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties string
 
 !name string
@@ -1508,6 +3358,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName string
+
+######### !graphqlTypeFlat FilterDataStringInput
+
+######### !graphqlTypeShort input
 
 ######## !!properties value
 
@@ -1517,6 +3377,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties values
 
 !name values
@@ -1525,6 +3395,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName values
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties operator
 
 !name operator
@@ -1532,6 +3412,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties int
 
@@ -1541,6 +3431,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName int
+
+######### !graphqlTypeFlat FilterDataIntInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties value
 
 !name value
@@ -1548,6 +3448,16 @@ Input for computing funnel
 !type Int
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat Int
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties values
 
@@ -1557,6 +3467,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName values
+
+########## !graphqlTypeFlat Int
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties operator
 
 !name operator
@@ -1564,6 +3484,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties bool
 
@@ -1573,6 +3503,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName bool
+
+######### !graphqlTypeFlat FilterDataBoolInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties value
 
 !name value
@@ -1580,6 +3520,16 @@ Input for computing funnel
 !type Boolean!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat Boolean
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties operator
 
@@ -1589,6 +3539,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName operator
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ####### !!properties event
 
 !name event
@@ -1596,6 +3556,16 @@ Input for computing funnel
 !type FilterDataEventInput
 
 
+
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName event
+
+######### !graphqlTypeFlat FilterDataEventInput
+
+######### !graphqlTypeShort input
 
 ######## !!properties type
 
@@ -1605,6 +3575,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName type
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties group
 
 !name group
@@ -1612,6 +3592,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName group
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -1621,6 +3611,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -1629,6 +3629,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1636,6 +3646,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties element
 
@@ -1645,6 +3665,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName element
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1652,6 +3682,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1661,6 +3701,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1668,6 +3718,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties txt
 
@@ -1677,6 +3737,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName txt
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1684,6 +3754,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1693,6 +3773,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1700,6 +3790,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties element_path
 
@@ -1709,6 +3809,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName element_path
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1716,6 +3826,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1725,6 +3845,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1732,6 +3862,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties location
 
@@ -1741,6 +3881,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName location
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1748,6 +3898,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1757,6 +3917,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1764,6 +3934,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value
 
@@ -1773,6 +3953,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1780,6 +3970,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1789,6 +3989,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1796,6 +4006,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties height
 
@@ -1805,6 +4025,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName height
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1812,6 +4042,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1821,6 +4061,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1828,6 +4078,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties width
 
@@ -1837,6 +4097,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName width
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1844,6 +4114,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1853,6 +4133,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1860,6 +4150,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties timestamp
 
@@ -1869,6 +4169,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName timestamp
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1876,6 +4186,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1885,6 +4205,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1892,6 +4222,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties x
 
@@ -1901,6 +4241,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName x
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1908,6 +4258,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1917,6 +4277,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1924,6 +4294,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties y
 
@@ -1933,6 +4313,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName y
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1940,6 +4330,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1949,6 +4349,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1956,6 +4366,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ####### !!properties param
 
@@ -1965,6 +4385,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName param
+
+######### !graphqlTypeFlat FilterDataParamInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -1972,6 +4402,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties value
 
@@ -1981,6 +4421,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1988,6 +4438,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1997,6 +4457,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2004,6 +4474,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ####### !!properties event_properties
 
@@ -2013,6 +4493,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName event_properties
+
+######### !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -2020,6 +4510,16 @@ Input for computing funnel
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties value_str
 
@@ -2029,6 +4529,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_str
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -2036,6 +4546,16 @@ Input for computing funnel
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -2045,6 +4565,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2052,6 +4582,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_int
 
@@ -2061,6 +4601,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -2068,6 +4618,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -2077,6 +4637,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2084,6 +4654,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_bool
 
@@ -2093,6 +4673,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -2101,6 +4691,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2108,6 +4708,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties value_float
 
@@ -2117,6 +4727,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName value_float
+
+########## !graphqlTypeFlat FilterDataFloatInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties values
 
 !name values
@@ -2124,6 +4744,16 @@ Input for computing funnel
 !type \[Float]
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Float
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -2133,6 +4763,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Float
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2140,6 +4780,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ###### !!properties defined_event_id
 
@@ -2149,6 +4799,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName defined_event_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties stable_id
 
 !name stable\_id
@@ -2156,6 +4816,16 @@ Input for computing funnel
 !type String
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName stable_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties parent_filter_stable_id
 
@@ -2165,6 +4835,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName parent_filter_stable_id
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 #### !!properties steps
 
 !name steps
@@ -2172,6 +4852,16 @@ Input for computing funnel
 !type \[FunnelStepInput]!
 
 
+
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName steps
+
+###### !graphqlTypeFlat FunnelStepInput
+
+###### !graphqlTypeShort input
 
 ##### !!properties name
 
@@ -2181,6 +4871,16 @@ Input for computing funnel
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName name
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
+
 ##### !!properties filters
 
 !name filters
@@ -2188,6 +4888,16 @@ Input for computing funnel
 !type FiltersInput
 
 
+
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName filters
+
+####### !graphqlTypeFlat FiltersInput
+
+####### !graphqlTypeShort input
 
 ###### !!properties must
 
@@ -2197,6 +4907,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName must
+
+######## !graphqlTypeFlat FilterInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties name
 
 !name name
@@ -2204,6 +4924,16 @@ Input for computing funnel
 !type String!
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName name
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties unit
 
@@ -2213,6 +4943,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName unit
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties group
 
 !name group
@@ -2220,6 +4960,16 @@ Input for computing funnel
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName group
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties data
 
@@ -2229,6 +4979,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName data
+
+######### !graphqlTypeFlat FilterDataInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties string
 
 !name string
@@ -2236,6 +4996,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName string
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -2245,6 +5015,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -2253,6 +5033,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2260,6 +5050,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -2269,6 +5069,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -2276,6 +5086,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -2285,6 +5105,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2292,6 +5122,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -2301,6 +5141,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -2308,6 +5158,16 @@ Input for computing funnel
 !type Boolean!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -2317,6 +5177,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######## !!properties event
 
 !name event
@@ -2324,6 +5194,16 @@ Input for computing funnel
 !type FilterDataEventInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event
+
+########## !graphqlTypeFlat FilterDataEventInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties type
 
@@ -2333,6 +5213,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName type
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties group
 
 !name group
@@ -2340,6 +5230,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName group
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -2349,6 +5249,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -2357,6 +5267,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2364,6 +5284,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -2373,6 +5303,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2380,6 +5320,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2389,6 +5339,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2396,6 +5356,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -2405,6 +5375,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName txt
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2412,6 +5392,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2421,6 +5411,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2428,6 +5428,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -2437,6 +5447,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element_path
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2444,6 +5464,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2453,6 +5483,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2460,6 +5500,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -2469,6 +5519,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName location
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2476,6 +5536,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2485,6 +5555,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2492,6 +5572,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -2501,6 +5591,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2508,6 +5608,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2517,6 +5627,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2524,6 +5644,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -2533,6 +5663,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName height
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2540,6 +5680,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2549,6 +5699,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2556,6 +5716,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -2565,6 +5735,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName width
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2572,6 +5752,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2581,6 +5771,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2588,6 +5788,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -2597,6 +5807,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName timestamp
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2604,6 +5824,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2613,6 +5843,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2620,6 +5860,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -2629,6 +5879,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName x
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2636,6 +5896,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2645,6 +5915,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2652,6 +5932,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -2661,6 +5951,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName y
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2668,6 +5968,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2677,6 +5987,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2684,6 +6004,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -2693,6 +6023,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName param
+
+########## !graphqlTypeFlat FilterDataParamInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -2700,6 +6040,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -2709,6 +6059,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2716,6 +6076,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2725,6 +6095,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2732,6 +6112,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -2741,6 +6131,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event_properties
+
+########## !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -2748,6 +6148,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -2757,6 +6167,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_str
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2764,6 +6184,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2773,6 +6203,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2780,6 +6220,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -2789,6 +6239,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2796,6 +6256,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2805,6 +6275,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2812,6 +6292,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -2821,6 +6311,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2829,6 +6329,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2836,6 +6346,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -2845,6 +6365,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_float
+
+########### !graphqlTypeFlat FilterDataFloatInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties values
 
 !name values
@@ -2852,6 +6382,16 @@ Input for computing funnel
 !type \[Float]
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -2861,6 +6401,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2868,6 +6418,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -2877,6 +6437,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName defined_event_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties stable_id
 
 !name stable\_id
@@ -2885,6 +6455,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -2892,6 +6472,16 @@ Input for computing funnel
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName parent_filter_stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ###### !!properties should
 
@@ -2901,6 +6491,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName should
+
+######## !graphqlTypeFlat FilterInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties name
 
 !name name
@@ -2908,6 +6508,16 @@ Input for computing funnel
 !type String!
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName name
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties unit
 
@@ -2917,6 +6527,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName unit
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties group
 
 !name group
@@ -2924,6 +6544,16 @@ Input for computing funnel
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName group
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties data
 
@@ -2933,6 +6563,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName data
+
+######### !graphqlTypeFlat FilterDataInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties string
 
 !name string
@@ -2940,6 +6580,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName string
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -2949,6 +6599,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -2957,6 +6617,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2964,6 +6634,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -2973,6 +6653,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -2980,6 +6670,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -2989,6 +6689,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -2996,6 +6706,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -3005,6 +6725,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -3012,6 +6742,16 @@ Input for computing funnel
 !type Boolean!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -3021,6 +6761,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######## !!properties event
 
 !name event
@@ -3028,6 +6778,16 @@ Input for computing funnel
 !type FilterDataEventInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event
+
+########## !graphqlTypeFlat FilterDataEventInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties type
 
@@ -3037,6 +6797,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName type
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties group
 
 !name group
@@ -3044,6 +6814,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName group
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -3053,6 +6833,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -3061,6 +6851,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3068,6 +6868,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -3077,6 +6887,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3084,6 +6904,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3093,6 +6923,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3100,6 +6940,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -3109,6 +6959,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName txt
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3116,6 +6976,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3125,6 +6995,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3132,6 +7012,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -3141,6 +7031,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element_path
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3148,6 +7048,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3157,6 +7067,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3164,6 +7084,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -3173,6 +7103,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName location
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3180,6 +7120,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3189,6 +7139,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3196,6 +7156,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -3205,6 +7175,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3212,6 +7192,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3221,6 +7211,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3228,6 +7228,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -3237,6 +7247,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName height
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3244,6 +7264,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3253,6 +7283,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3260,6 +7300,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -3269,6 +7319,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName width
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3276,6 +7336,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3285,6 +7355,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3292,6 +7372,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -3301,6 +7391,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName timestamp
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3308,6 +7408,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3317,6 +7427,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3324,6 +7444,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -3333,6 +7463,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName x
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3340,6 +7480,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3349,6 +7499,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3356,6 +7516,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -3365,6 +7535,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName y
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3372,6 +7552,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3381,6 +7571,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3388,6 +7588,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -3397,6 +7607,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName param
+
+########## !graphqlTypeFlat FilterDataParamInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -3404,6 +7624,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -3413,6 +7643,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3420,6 +7660,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3429,6 +7679,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3436,6 +7696,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -3445,6 +7715,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event_properties
+
+########## !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -3452,6 +7732,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -3461,6 +7751,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_str
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3468,6 +7768,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3477,6 +7787,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3484,6 +7804,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -3493,6 +7823,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3500,6 +7840,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3509,6 +7859,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3516,6 +7876,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -3525,6 +7895,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3533,6 +7913,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3540,6 +7930,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -3549,6 +7949,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_float
+
+########### !graphqlTypeFlat FilterDataFloatInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties values
 
 !name values
@@ -3556,6 +7966,16 @@ Input for computing funnel
 !type \[Float]
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -3565,6 +7985,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3572,6 +8002,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -3581,6 +8021,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName defined_event_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties stable_id
 
 !name stable\_id
@@ -3589,6 +8039,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -3596,6 +8056,16 @@ Input for computing funnel
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName parent_filter_stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ###### !!properties must_not
 
@@ -3605,6 +8075,16 @@ Input for computing funnel
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName must_not
+
+######## !graphqlTypeFlat FilterInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties name
 
 !name name
@@ -3612,6 +8092,16 @@ Input for computing funnel
 !type String!
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName name
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties unit
 
@@ -3621,6 +8111,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName unit
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties group
 
 !name group
@@ -3628,6 +8128,16 @@ Input for computing funnel
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName group
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties data
 
@@ -3637,6 +8147,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName data
+
+######### !graphqlTypeFlat FilterDataInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties string
 
 !name string
@@ -3644,6 +8164,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName string
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -3653,6 +8183,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -3661,6 +8201,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -3668,6 +8218,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -3677,6 +8237,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -3684,6 +8254,16 @@ Input for computing funnel
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -3693,6 +8273,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -3700,6 +8290,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -3709,6 +8309,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -3716,6 +8326,16 @@ Input for computing funnel
 !type Boolean!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -3725,6 +8345,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######## !!properties event
 
 !name event
@@ -3732,6 +8362,16 @@ Input for computing funnel
 !type FilterDataEventInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event
+
+########## !graphqlTypeFlat FilterDataEventInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties type
 
@@ -3741,6 +8381,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName type
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties group
 
 !name group
@@ -3748,6 +8398,16 @@ Input for computing funnel
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName group
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -3757,6 +8417,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -3765,6 +8435,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3772,6 +8452,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -3781,6 +8471,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3788,6 +8488,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3797,6 +8507,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3804,6 +8524,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -3813,6 +8543,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName txt
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3820,6 +8560,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3829,6 +8579,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3836,6 +8596,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -3845,6 +8615,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element_path
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3852,6 +8632,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3861,6 +8651,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3868,6 +8668,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -3877,6 +8687,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName location
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3884,6 +8704,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3893,6 +8723,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3900,6 +8740,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -3909,6 +8759,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3916,6 +8776,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3925,6 +8795,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3932,6 +8812,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -3941,6 +8831,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName height
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3948,6 +8848,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3957,6 +8867,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3964,6 +8884,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -3973,6 +8903,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName width
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3980,6 +8920,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3989,6 +8939,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3996,6 +8956,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -4005,6 +8975,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName timestamp
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -4012,6 +8992,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -4021,6 +9011,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4028,6 +9028,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -4037,6 +9047,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName x
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -4044,6 +9064,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -4053,6 +9083,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4060,6 +9100,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -4069,6 +9119,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName y
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -4076,6 +9136,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -4085,6 +9155,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4092,6 +9172,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -4101,6 +9191,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName param
+
+########## !graphqlTypeFlat FilterDataParamInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -4108,6 +9208,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -4117,6 +9227,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -4124,6 +9244,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -4133,6 +9263,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4140,6 +9280,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -4149,6 +9299,16 @@ Input for computing funnel
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event_properties
+
+########## !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -4156,6 +9316,16 @@ Input for computing funnel
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -4165,6 +9335,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_str
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -4172,6 +9352,16 @@ Input for computing funnel
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -4181,6 +9371,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4188,6 +9388,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -4197,6 +9407,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -4204,6 +9424,16 @@ Input for computing funnel
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -4213,6 +9443,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4220,6 +9460,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -4229,6 +9479,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -4237,6 +9497,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4244,6 +9514,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -4253,6 +9533,16 @@ Input for computing funnel
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_float
+
+########### !graphqlTypeFlat FilterDataFloatInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties values
 
 !name values
@@ -4260,6 +9550,16 @@ Input for computing funnel
 !type \[Float]
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -4269,6 +9569,16 @@ Input for computing funnel
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -4276,6 +9586,16 @@ Input for computing funnel
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -4285,6 +9605,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName defined_event_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties stable_id
 
 !name stable\_id
@@ -4292,6 +9622,16 @@ Input for computing funnel
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties parent_filter_stable_id
 
@@ -4301,6 +9641,16 @@ Input for computing funnel
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName parent_filter_stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 #### !!properties conversion_value
 
 !name conversion\_value
@@ -4308,6 +9658,16 @@ Input for computing funnel
 !type FunnelConversionValueInput
 
 
+
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName conversion_value
+
+###### !graphqlTypeFlat FunnelConversionValueInput
+
+###### !graphqlTypeShort input
 
 ##### !!properties property_name
 
@@ -4317,6 +9677,16 @@ Input for computing funnel
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName property_name
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
+
 ##### !!properties value_type
 
 !name value\_type
@@ -4324,6 +9694,16 @@ Input for computing funnel
 !type String!
 
 
+
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName value_type
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
 
 ##### !!properties label
 
@@ -4333,9 +9713,30 @@ Input for computing funnel
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName label
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
+
 #### !!properties type
 
 !name type
 
 !type String
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName type
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar

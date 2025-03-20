@@ -1,11 +1,11 @@
 ---
 title: FilterDataFloat
 ---
-## !description
+## !!references FilterDataFloat
+
+### !description
 
 Filter data float object
-
-## !!references FilterDataFloat
 
 ### !canonical object-FilterDataFloat
 
@@ -13,7 +13,7 @@ Filter data float object
 
 #### !graphqlName FilterDataFloat
 
-#### !graphqlType object
+#### !graphqlTypeShort object
 
 ### !examples
 
@@ -29,6 +29,16 @@ Filter data float object
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat Float
+
+###### !graphqlTypeShort scalar
+
 #### !!properties values
 
 !name values
@@ -37,9 +47,30 @@ Filter data float object
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName values
+
+###### !graphqlTypeFlat Float
+
+###### !graphqlTypeShort scalar
+
 #### !!properties operator
 
 !name operator
 
 !type String!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName operator
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar

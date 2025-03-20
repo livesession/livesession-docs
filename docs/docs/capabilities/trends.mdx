@@ -3,6 +3,13 @@ title: Trends
 description: Trends
 ---
 
+export const reactFrontmatter = {
+    title: () => <Frontmatter.Title>
+        Trends
+        <Badge kind="info">DEV</Badge>
+    </Frontmatter.Title>
+}
+
 # Trends
 <Subtitle>
     Analyze key metrics and trends to gain insights into user behavior and performance.
@@ -66,7 +73,7 @@ curl https://api.livesession.io/v1/compute/metric \\
 ```
 
 This request computes the number of sessions where the `Signup Form: filled` event occurred.
-The result is aggregated by week in histogram format.
+The result is aggregated by week in [histogram](#test) format.
 
 About more compute options read [API reference](https://livesession.io).
 

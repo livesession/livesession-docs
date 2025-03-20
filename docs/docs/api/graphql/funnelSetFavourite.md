@@ -1,11 +1,11 @@
 ---
 title: Set Funnel Favourite
 ---
-## !description
+## !!references funnelSetFavourite
+
+### !description
 
 Set a funnel as favourite
-
-## !!references funnelSetFavourite
 
 ### !canonical funnelSetFavourite
 
@@ -45,6 +45,12 @@ mutation funnelSetFavourite ($input: FunnelSetFavouriteInput) {
 
 
 
+##### !context
+
+###### !graphqlName input
+
+###### !graphqlTypeShort input
+
 ##### !!properties is_favourite
 
 !name is\_favourite
@@ -52,6 +58,16 @@ mutation funnelSetFavourite ($input: FunnelSetFavouriteInput) {
 !type Boolean!
 
 
+
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName is_favourite
+
+####### !graphqlTypeFlat Boolean
+
+####### !graphqlTypeShort scalar
 
 ### !!definitions
 

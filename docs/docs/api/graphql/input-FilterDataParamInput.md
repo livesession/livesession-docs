@@ -1,11 +1,11 @@
 ---
 title: FilterDataParamInput
 ---
-## !description
+## !!references FilterDataParamInput
+
+### !description
 
 Input for filter data param
-
-## !!references FilterDataParamInput
 
 ### !canonical input-FilterDataParamInput
 
@@ -13,7 +13,7 @@ Input for filter data param
 
 #### !graphqlName FilterDataParamInput
 
-#### !graphqlType input
+#### !graphqlTypeShort input
 
 ### !examples
 
@@ -29,6 +29,16 @@ Input for filter data param
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName name
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar
+
 #### !!properties value
 
 !name value
@@ -36,6 +46,16 @@ Input for filter data param
 !type FilterDataStringInput
 
 
+
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat FilterDataStringInput
+
+###### !graphqlTypeShort input
 
 ##### !!properties value
 
@@ -45,6 +65,16 @@ Input for filter data param
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName value
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
+
 ##### !!properties values
 
 !name values
@@ -53,9 +83,30 @@ Input for filter data param
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName values
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
+
 ##### !!properties operator
 
 !name operator
 
 !type String!
 
+
+
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName operator
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar

@@ -1,11 +1,11 @@
 ---
 title: FunnelConversionValueResponse
 ---
-## !description
+## !!references FunnelConversionValueResponse
+
+### !description
 
 Response for funnel conversion value
-
-## !!references FunnelConversionValueResponse
 
 ### !canonical object-FunnelConversionValueResponse
 
@@ -13,7 +13,7 @@ Response for funnel conversion value
 
 #### !graphqlName FunnelConversionValueResponse
 
-#### !graphqlType object
+#### !graphqlTypeShort object
 
 ### !examples
 
@@ -29,9 +29,30 @@ Response for funnel conversion value
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat Float
+
+###### !graphqlTypeShort scalar
+
 #### !!properties label
 
 !name label
 
 !type String!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName label
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar

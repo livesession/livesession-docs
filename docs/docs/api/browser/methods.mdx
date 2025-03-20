@@ -18,13 +18,31 @@ You can find your `trackingID` in **LiveSession** -> **Settings** -> **Websites*
 function ("init", trackingID: string, options?: InitOptions)
 ```
 ###### **Examples:**
-```js
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.init("accountID.websiteID");
+```
+
+```js window
 __ls("init", "accountID.websiteID");
 ```
+:::
+
 with options:
-```js init and track every input
+:::code-group{title="Init and track every input"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.init("accountID.websiteID", { keystrokes: true });
+```
+
+```js window
 __ls("init", "accountID.websiteID", { keystrokes: true });
 ```
+:::
+
 #### options signature:
 ```ts
 interface InitOptions {
@@ -57,11 +75,34 @@ Identify user and custom data to session.
 function("identify", data: IdentifyData)
 ```
 ###### **Examples:**
-```js
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.identify({ name: "John Doe", email: "john.doe@example.com" });
+```
+
+```js window
 __ls("identify", { name: "John Doe", email: "john.doe@example.com" });
 ```
+:::
+
 with params:
-```js
+:::code-group{title="Identify with parameters"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.identify({
+  name: "John Doe",
+  email: "john.doe@example.com",
+  params: {
+    order_id: "123-abc-def",
+    plan: "premium",
+  },
+});
+```
+
+```js window
 __ls("identify", {
   name: "John Doe",
   email: "john.doe@example.com",
@@ -71,6 +112,8 @@ __ls("identify", {
   },
 });
 ```
+:::
+
 #### data signature:
 ```ts
 interface IdentifyData {
@@ -100,20 +143,54 @@ This method allows you to send [custom event](https://livesession.io) that your 
 function("track", event: string, properties?: EventProperties)
 ```
 ###### **Examples:**
-```js
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.track("User Subscribed");
+```
+
+```js window
 __ls("track", "User Subscribed");
 ```
+:::
+
 with properties:
-```js
+:::code-group{title="Track with properties"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.track("User Subscribed", {
+  plan_str: "premium",
+  seats_int: 1,
+  total_float: 255.50,
+  isPatron_bool: true,
+});
+```
+
+```js window
 __ls("track", "User Subscribed", {
   plan_str: "premium",
   seats_int: 1,
   total_float: 255.50,
-  isPatron_bool: true
+  isPatron_bool: true,
 });
 ```
+:::
+
 without properties type suffix (not recommended):
-```js
+:::code-group{title="Track with properties without suffix"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.track("User Subscribed", {
+  plan: "premium",
+  seats: 1,
+  total: 255.50,
+  isPatron: true
+});
+```
+```js window
 __ls("track", "User Subscribed", {
   plan: "premium",
   seats: 1,
@@ -121,6 +198,8 @@ __ls("track", "User Subscribed", {
   isPatron: true
 });
 ```
+:::
+
 #### properties signature:
 ```ts
 // Maximum length: 50 items
@@ -133,7 +212,7 @@ type TypedEventProperty =
     EventPropertyBool
 ```
 ```ts
-// 	String property value, eg. {plan_str: "premium"}
+// String property value, eg. {plan_str: "premium"}
 // Maximum length: 256 characters
 type EventPropertyString = {[key: `${string}_str`]: string }
 
@@ -148,9 +227,31 @@ type EventPropertyFloat = {[key: `${string}_float`]: number }
 // Bool property value, eg. {isPatron_bool: true}
 type EventPropertyBool = {[key: `${string}_bool`]: boolean }
 ````
-```js example usage
-__ls("track", "User Subscribed", { plan_str: "premium",  price: 1, total_float: 255.50, pro: true });
+:::code-group{title="Example usage"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.track("User Subscribed", {
+  plan_str: "premium",
+  price: 1,
+  total_float: 255.50,
+  pro: true
+});
 ```
+```js window
+__ls(
+  "track",
+  "User Subscribed", 
+  { 
+    plan_str: "premium",  
+    price: 1, 
+    total_float: 255.50, 
+    pro: true 
+  }
+);
+```
+:::
+
 <br/>
 
 ## `newPageView`
@@ -160,23 +261,79 @@ Start recording user's visit and add it to session when conditions fulfilled. If
 function("newPageView", options?: NewPageViewOptions)
 ```
 ###### **Examples:**
-```js
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.newPageView();
+```
+
+```js window
 __ls("newPageView");
 ```
+:::
+
 with options:
-```js
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.newPageView({ title: "Anonimized page title" });
+```
+
+```js window
 __ls("newPageView", { title: "Anonimized page title" });
 ```
+:::
+
 with conditions ([learn more](https://livesession.io)):
-```js
-__ls("newPageView", {
+:::code-group{title="New page view with conditions"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.newPageView({
   conditions: [{
-      type: "event", name: "MouseClick", operator: "contain", key: "path", value: ".add-cart"
+      type: "event",
+      name: "MouseClick",
+      operator: "contain", 
+      key: "path", 
+      value: ".add-cart"
   }],
 });
 ```
+
+```js window
+__ls("newPageView", {
+  conditions: [{
+      type: "event",
+      name: "MouseClick",
+      operator: "contain", 
+      key: "path", 
+      value: ".add-cart"
+  }],
+});
+```
+:::
+
 with base URL:
-```js
+:::code-group{title="New page view with base URL"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.newPageView({
+  baseURL: "https://example.com",
+});
+
+// or
+
+ls.newPageView({
+  baseURL: function(base) {
+    return base
+  },
+});
+```
+
+```js window
 __ls("newPageView", {
   baseURL: "https://example.com",
 });
@@ -187,6 +344,8 @@ __ls("newPageView", {
   },
 });
 ```
+:::
+
 #### options signature:
 ```ts
 interface NewPageViewOptions {
@@ -258,14 +417,27 @@ Set custom properties to session.
 function("setCustomParams", options: CustomParamsOptions)
 ```
 ###### **Examples:**
-```ts
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.setCustomParams({
+  params: {
+    order_id: "123-abc-def",
+    plan: "premium",
+  },
+});
+```
+
+```js window
 __ls("setCustomParams", {
   params: {
     order_id: "123-abc-def",
     plan: "premium",
   },
 });
-````
+```
+:::
 #### options signature:
 ```ts
 type CustomParamsOptions = {
@@ -280,10 +452,22 @@ Get URL to current session.
 
 ###### **Type signture:**
 ```ts
-function("getSessionURL", callback: (url: string, isNewSession: boolean) => void)
+function("getSessionURL", callback: GetSessionURLCallback)
 ```
 ###### **Examples:**
-```ts
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.getSessionURL(function(url, isNewSession) {
+    // do only if it's a new session
+  if (isNewSession) {
+    YOUR_API.addSessionURL(url);
+  }
+});
+```
+
+```js window
 __ls("getSessionURL", function(url, isNewSession) {
   // do only if it's a new session
   if (isNewSession) {
@@ -291,12 +475,23 @@ __ls("getSessionURL", function(url, isNewSession) {
   }
 });
 ```
+:::
+
 integration with other software:
+:::code-group{title=""}
 ```ts
+ls.getSessionURL(function(url, isNewSession) {
+  if (isNewSession) drift.track("LiveSession recording URL", { sessionURL: url });
+});
+```
+
+```ts window
 __ls("getSessionURL", function(url, isNewSession) {
   if (isNewSession) drift.track("LiveSession recording URL", { sessionURL: url });
 });
 ```
+:::
+
 #### callback signature:
 ```ts
 type GetSessionURLCallback = (
@@ -316,13 +511,30 @@ You can find your website ID and account ID in **LiveSession -> Settings -> Webs
 function ("setOptions", options: InitOptions)
 ```
 ###### **Exmaples:**
-```ts
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.setOptions({ accountID: "abc", websiteID: "cdef" });
+```
+
+```js window
 __ls("setOptions", { accountID: "abc", websiteID: "cdef" });
 ```
+:::
+
 with keystrokes:
-```ts
+:::code-group{title="Set options with keystrokes"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.setOptions({ keystrokes: true });
+```
+
+```js window
 __ls("setOptions", { keystrokes: true });
 ```
+:::
 
 <br/>
 
@@ -335,9 +547,17 @@ function ("invalidateSession")
 ```
 
 ###### **Examples:**
-```ts
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.invalidateSession();
+```
+
+```js window
 __ls("invalidateSession");
 ```
+:::
 <br/>
 
 ## `debug`
@@ -349,9 +569,17 @@ function ("debug")
 ```
 
 ###### **Examples:**
-```ts
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.debug();
+```
+
+```js window
 __ls("debug");
 ```
+:::
 <br/>
 
 ## `log`
@@ -364,11 +592,21 @@ function ("log", logLevel?: LogLevel, data?: object)
 ```
 
 ###### **Examples:**
-```ts
-__ls("log","info","demo info message");
-__ls("log","warn","demo warn message");
-__ls("log","error",{ id:2, message:"demo error message" });
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.log("info", "demo info message");
+ls.log("warn", "demo warn message");
+ls.log("error", { id: 2, message: "demo error message" });
 ```
+
+```js window
+__ls("log", "info", "demo info message");
+__ls("log", "warn", "demo warn message");
+__ls("log", "error", { id: 2, message: "demo error message" });
+```
+:::
 
 #### logLevel signature:
 ```ts
@@ -385,8 +623,15 @@ function ("off")
 ```
 
 ###### **Examples:**
-```ts
-__ls("off");
+:::code-group{title=""}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.off();
 ```
 
+```js window
+__ls("off");
+```
+:::
 

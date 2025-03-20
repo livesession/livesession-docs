@@ -12,12 +12,16 @@ To identify users, you can set a user data.
 This is useful for tracking users across multiple devices and sessions.
 Learn more about identify API [here](https://livesession.io).
 
-```js
-__ls("identify", { name: "John Doe", email: "john.doe@example.com" })
+:::code-group{title="User params"}
+```js sdk
+import ls from "@livesession/browser";
+
+ls.setCustomParams({plan: "premium", team: "marketing"})
 ```
 
-You can also set user properties to track additional information about your users.
-```js
-__ls("setCustomParams", { plan: "premium", team: "marketing" })
+```js window
+__ls("setCustomParams", {plan: "premium", team: "marketing"})
 ```
+:::
+
 Learn more about user params API [here](https://livesession.io).

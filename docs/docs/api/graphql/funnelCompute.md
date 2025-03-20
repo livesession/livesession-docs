@@ -1,11 +1,11 @@
 ---
 title: Compute Funnel
 ---
-## !description
+## !!references funnelCompute
+
+### !description
 
 Compute a funnel
-
-## !!references funnelCompute
 
 ### !canonical funnelCompute
 
@@ -64,6 +64,12 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+##### !context
+
+###### !graphqlName input
+
+###### !graphqlTypeShort input
+
 ##### !!properties date_range
 
 !name date\_range
@@ -71,6 +77,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type DateRangeInput!
 
 
+
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName date_range
+
+####### !graphqlTypeFlat DateRangeInput
+
+####### !graphqlTypeShort input
 
 ###### !!properties from
 
@@ -80,6 +96,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName from
+
+######## !graphqlTypeFlat RelativeDate
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties to
 
 !name to
@@ -87,6 +113,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type RelativeDate
 
 
+
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName to
+
+######## !graphqlTypeFlat RelativeDate
+
+######## !graphqlTypeShort scalar
 
 ##### !!properties filters
 
@@ -96,6 +132,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName filters
+
+####### !graphqlTypeFlat FiltersInput
+
+####### !graphqlTypeShort input
+
 ###### !!properties must
 
 !name must
@@ -103,6 +149,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[FilterInput]
 
 
+
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName must
+
+######## !graphqlTypeFlat FilterInput
+
+######## !graphqlTypeShort input
 
 ####### !!properties name
 
@@ -112,6 +168,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName name
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties unit
 
 !name unit
@@ -119,6 +185,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName unit
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties group
 
@@ -128,6 +204,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName group
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties data
 
 !name data
@@ -135,6 +221,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataInput!
 
 
+
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName data
+
+######### !graphqlTypeFlat FilterDataInput
+
+######### !graphqlTypeShort input
 
 ######## !!properties string
 
@@ -144,6 +240,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName string
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -151,6 +257,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -160,6 +276,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -167,6 +293,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -176,6 +312,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -183,6 +329,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -192,6 +348,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -199,6 +365,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -208,6 +384,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -215,6 +401,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Boolean!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -224,6 +420,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######## !!properties event
 
 !name event
@@ -231,6 +437,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataEventInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event
+
+########## !graphqlTypeFlat FilterDataEventInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties type
 
@@ -240,6 +456,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName type
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties group
 
 !name group
@@ -247,6 +473,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName group
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -256,6 +492,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -264,6 +510,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -271,6 +527,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -280,6 +546,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -287,6 +563,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -296,6 +582,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -303,6 +599,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -312,6 +618,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName txt
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -319,6 +635,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -328,6 +654,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -335,6 +671,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -344,6 +690,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element_path
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -351,6 +707,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -360,6 +726,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -367,6 +743,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -376,6 +762,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName location
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -383,6 +779,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -392,6 +798,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -399,6 +815,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -408,6 +834,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -415,6 +851,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -424,6 +870,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -431,6 +887,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -440,6 +906,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName height
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -447,6 +923,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -456,6 +942,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -463,6 +959,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -472,6 +978,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName width
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -479,6 +995,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -488,6 +1014,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -495,6 +1031,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -504,6 +1050,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName timestamp
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -511,6 +1067,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -520,6 +1086,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -527,6 +1103,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -536,6 +1122,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName x
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -543,6 +1139,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -552,6 +1158,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -559,6 +1175,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -568,6 +1194,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName y
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -575,6 +1211,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -584,6 +1230,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -591,6 +1247,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -600,6 +1266,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName param
+
+########## !graphqlTypeFlat FilterDataParamInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -607,6 +1283,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -616,6 +1302,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -623,6 +1319,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -632,6 +1338,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -639,6 +1355,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -648,6 +1374,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event_properties
+
+########## !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -655,6 +1391,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -664,6 +1410,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_str
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -671,6 +1427,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -680,6 +1446,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -687,6 +1463,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -696,6 +1482,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -703,6 +1499,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -712,6 +1518,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -719,6 +1535,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -728,6 +1554,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -736,6 +1572,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -743,6 +1589,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -752,6 +1608,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_float
+
+########### !graphqlTypeFlat FilterDataFloatInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties values
 
 !name values
@@ -759,6 +1625,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[Float]
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -768,6 +1644,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -775,6 +1661,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -784,6 +1680,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName defined_event_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties stable_id
 
 !name stable\_id
@@ -792,6 +1698,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -799,6 +1715,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName parent_filter_stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ###### !!properties should
 
@@ -808,6 +1734,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName should
+
+######## !graphqlTypeFlat FilterInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties name
 
 !name name
@@ -815,6 +1751,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName name
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties unit
 
@@ -824,6 +1770,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName unit
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties group
 
 !name group
@@ -831,6 +1787,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName group
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties data
 
@@ -840,6 +1806,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName data
+
+######### !graphqlTypeFlat FilterDataInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties string
 
 !name string
@@ -847,6 +1823,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName string
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -856,6 +1842,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -864,6 +1860,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -871,6 +1877,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -880,6 +1896,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -887,6 +1913,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -896,6 +1932,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -903,6 +1949,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -912,6 +1968,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -919,6 +1985,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Boolean!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -928,6 +2004,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######## !!properties event
 
 !name event
@@ -935,6 +2021,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataEventInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event
+
+########## !graphqlTypeFlat FilterDataEventInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties type
 
@@ -944,6 +2040,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName type
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties group
 
 !name group
@@ -951,6 +2057,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName group
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -960,6 +2076,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -968,6 +2094,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -975,6 +2111,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -984,6 +2130,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -991,6 +2147,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1000,6 +2166,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1007,6 +2183,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -1016,6 +2202,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName txt
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1023,6 +2219,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1032,6 +2238,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1039,6 +2255,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -1048,6 +2274,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element_path
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1055,6 +2291,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1064,6 +2310,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1071,6 +2327,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -1080,6 +2346,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName location
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1087,6 +2363,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1096,6 +2382,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1103,6 +2399,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -1112,6 +2418,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1119,6 +2435,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1128,6 +2454,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1135,6 +2471,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -1144,6 +2490,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName height
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1151,6 +2507,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1160,6 +2526,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1167,6 +2543,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -1176,6 +2562,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName width
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1183,6 +2579,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1192,6 +2598,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1199,6 +2615,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -1208,6 +2634,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName timestamp
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1215,6 +2651,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1224,6 +2670,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1231,6 +2687,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -1240,6 +2706,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName x
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1247,6 +2723,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1256,6 +2742,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1263,6 +2759,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -1272,6 +2778,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName y
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1279,6 +2795,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1288,6 +2814,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1295,6 +2831,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -1304,6 +2850,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName param
+
+########## !graphqlTypeFlat FilterDataParamInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -1311,6 +2867,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -1320,6 +2886,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1327,6 +2903,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1336,6 +2922,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1343,6 +2939,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -1352,6 +2958,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event_properties
+
+########## !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -1359,6 +2975,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -1368,6 +2994,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_str
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1375,6 +3011,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1384,6 +3030,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1391,6 +3047,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -1400,6 +3066,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1407,6 +3083,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1416,6 +3102,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1423,6 +3119,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -1432,6 +3138,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1440,6 +3156,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1447,6 +3173,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -1456,6 +3192,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_float
+
+########### !graphqlTypeFlat FilterDataFloatInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties values
 
 !name values
@@ -1463,6 +3209,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[Float]
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -1472,6 +3228,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1479,6 +3245,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -1488,6 +3264,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName defined_event_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties stable_id
 
 !name stable\_id
@@ -1496,6 +3282,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -1503,6 +3299,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName parent_filter_stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ###### !!properties must_not
 
@@ -1512,6 +3318,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName must_not
+
+######## !graphqlTypeFlat FilterInput
+
+######## !graphqlTypeShort input
+
 ####### !!properties name
 
 !name name
@@ -1519,6 +3335,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName name
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties unit
 
@@ -1528,6 +3354,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName unit
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties group
 
 !name group
@@ -1535,6 +3371,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName group
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties data
 
@@ -1544,6 +3390,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName data
+
+######### !graphqlTypeFlat FilterDataInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties string
 
 !name string
@@ -1551,6 +3407,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName string
+
+########## !graphqlTypeFlat FilterDataStringInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties value
 
@@ -1560,6 +3426,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties values
 
 !name values
@@ -1568,6 +3444,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1575,6 +3461,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties int
 
@@ -1584,6 +3480,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName int
+
+########## !graphqlTypeFlat FilterDataIntInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1591,6 +3497,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties values
 
@@ -1600,6 +3516,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName values
+
+########### !graphqlTypeFlat Int
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties operator
 
 !name operator
@@ -1607,6 +3533,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######## !!properties bool
 
@@ -1616,6 +3552,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName bool
+
+########## !graphqlTypeFlat FilterDataBoolInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties value
 
 !name value
@@ -1623,6 +3569,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Boolean!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat Boolean
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties operator
 
@@ -1632,6 +3588,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName operator
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######## !!properties event
 
 !name event
@@ -1639,6 +3605,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataEventInput
 
 
+
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event
+
+########## !graphqlTypeFlat FilterDataEventInput
+
+########## !graphqlTypeShort input
 
 ######### !!properties type
 
@@ -1648,6 +3624,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName type
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
+
 ######### !!properties group
 
 !name group
@@ -1655,6 +3641,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName group
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -1664,6 +3660,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -1672,6 +3678,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1679,6 +3695,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element
 
@@ -1688,6 +3714,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1695,6 +3731,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1704,6 +3750,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1711,6 +3767,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties txt
 
@@ -1720,6 +3786,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName txt
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1727,6 +3803,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1736,6 +3822,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1743,6 +3839,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties element_path
 
@@ -1752,6 +3858,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName element_path
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1759,6 +3875,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1768,6 +3894,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1775,6 +3911,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties location
 
@@ -1784,6 +3930,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName location
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1791,6 +3947,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1800,6 +3966,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1807,6 +3983,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -1816,6 +4002,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1823,6 +4019,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1832,6 +4038,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1839,6 +4055,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties height
 
@@ -1848,6 +4074,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName height
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1855,6 +4091,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1864,6 +4110,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1871,6 +4127,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties width
 
@@ -1880,6 +4146,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName width
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1887,6 +4163,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1896,6 +4182,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1903,6 +4199,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties timestamp
 
@@ -1912,6 +4218,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName timestamp
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1919,6 +4235,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1928,6 +4254,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1935,6 +4271,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties x
 
@@ -1944,6 +4290,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName x
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1951,6 +4307,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1960,6 +4326,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1967,6 +4343,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties y
 
@@ -1976,6 +4362,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName y
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -1983,6 +4379,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -1992,6 +4398,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -1999,6 +4415,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties param
 
@@ -2008,6 +4434,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName param
+
+########## !graphqlTypeFlat FilterDataParamInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -2015,6 +4451,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value
 
@@ -2024,6 +4470,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2031,6 +4487,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2040,6 +4506,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2047,6 +4523,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######## !!properties event_properties
 
@@ -2056,6 +4542,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName event_properties
+
+########## !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties name
 
 !name name
@@ -2063,6 +4559,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########## !context
+
+########### !graphqlBuiltInType true
+
+########### !graphqlName name
+
+########### !graphqlTypeFlat String
+
+########### !graphqlTypeShort scalar
 
 ######### !!properties value_str
 
@@ -2072,6 +4578,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_str
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2079,6 +4595,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2088,6 +4614,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2095,6 +4631,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_int
 
@@ -2104,6 +4650,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2111,6 +4667,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2120,6 +4686,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2127,6 +4703,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_bool
 
@@ -2136,6 +4722,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2144,6 +4740,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2151,6 +4757,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties value_float
 
@@ -2160,6 +4776,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName value_float
+
+########### !graphqlTypeFlat FilterDataFloatInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties values
 
 !name values
@@ -2167,6 +4793,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[Float]
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -2176,6 +4812,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Float
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2183,6 +4829,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ####### !!properties defined_event_id
 
@@ -2192,6 +4848,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName defined_event_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ####### !!properties stable_id
 
 !name stable\_id
@@ -2199,6 +4865,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
 
 ####### !!properties parent_filter_stable_id
 
@@ -2208,6 +4884,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType true
+
+######### !graphqlName parent_filter_stable_id
+
+######### !graphqlTypeFlat String
+
+######### !graphqlTypeShort scalar
+
 ##### !!properties steps
 
 !name steps
@@ -2215,6 +4901,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[FunnelStepInput]!
 
 
+
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName steps
+
+####### !graphqlTypeFlat FunnelStepInput
+
+####### !graphqlTypeShort input
 
 ###### !!properties name
 
@@ -2224,6 +4920,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName name
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties filters
 
 !name filters
@@ -2231,6 +4937,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FiltersInput
 
 
+
+####### !context
+
+######## !graphqlBuiltInType false
+
+######## !graphqlName filters
+
+######## !graphqlTypeFlat FiltersInput
+
+######## !graphqlTypeShort input
 
 ####### !!properties must
 
@@ -2240,6 +4956,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName must
+
+######### !graphqlTypeFlat FilterInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -2247,6 +4973,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties unit
 
@@ -2256,6 +4992,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName unit
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties group
 
 !name group
@@ -2263,6 +5009,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName group
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties data
 
@@ -2272,6 +5028,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName data
+
+########## !graphqlTypeFlat FilterDataInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties string
 
 !name string
@@ -2279,6 +5045,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName string
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -2288,6 +5064,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -2296,6 +5082,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2303,6 +5099,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties int
 
@@ -2312,6 +5118,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2319,6 +5135,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -2328,6 +5154,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -2335,6 +5171,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties bool
 
@@ -2344,6 +5190,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -2351,6 +5207,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Boolean!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties operator
 
@@ -2360,6 +5226,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ######### !!properties event
 
 !name event
@@ -2367,6 +5243,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataEventInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName event
+
+########### !graphqlTypeFlat FilterDataEventInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties type
 
@@ -2376,6 +5262,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName type
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties group
 
 !name group
@@ -2383,6 +5279,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName group
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
 
 ########### !!properties value
 
@@ -2392,6 +5298,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties values
 
 !name values
@@ -2400,6 +5316,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2407,6 +5333,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties element
 
@@ -2416,6 +5352,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName element
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2423,6 +5369,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2432,6 +5388,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2439,6 +5405,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties txt
 
@@ -2448,6 +5424,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName txt
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2455,6 +5441,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2464,6 +5460,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2471,6 +5477,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties element_path
 
@@ -2480,6 +5496,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName element_path
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2487,6 +5513,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2496,6 +5532,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2503,6 +5549,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties location
 
@@ -2512,6 +5568,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName location
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2519,6 +5585,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2528,6 +5604,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2535,6 +5621,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -2544,6 +5640,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2551,6 +5657,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2560,6 +5676,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2567,6 +5693,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties height
 
@@ -2576,6 +5712,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName height
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2583,6 +5729,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2592,6 +5748,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2599,6 +5765,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties width
 
@@ -2608,6 +5784,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName width
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2615,6 +5801,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2624,6 +5820,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2631,6 +5837,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties timestamp
 
@@ -2640,6 +5856,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName timestamp
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2647,6 +5873,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2656,6 +5892,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2663,6 +5909,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties x
 
@@ -2672,6 +5928,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName x
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2679,6 +5945,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2688,6 +5964,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2695,6 +5981,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties y
 
@@ -2704,6 +6000,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName y
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2711,6 +6017,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2720,6 +6036,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2727,6 +6053,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######### !!properties param
 
@@ -2736,6 +6072,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName param
+
+########### !graphqlTypeFlat FilterDataParamInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties name
 
 !name name
@@ -2743,6 +6089,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName name
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -2752,6 +6108,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2759,6 +6125,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2768,6 +6144,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2775,6 +6161,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######### !!properties event_properties
 
@@ -2784,6 +6180,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName event_properties
+
+########### !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties name
 
 !name name
@@ -2791,6 +6197,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName name
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value_str
 
@@ -2800,6 +6216,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_str
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2807,6 +6233,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2816,6 +6252,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2823,6 +6269,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_int
 
@@ -2832,6 +6288,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_int
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2839,6 +6305,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -2848,6 +6324,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2855,6 +6341,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_bool
 
@@ -2864,6 +6360,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_bool
+
+############ !graphqlTypeFlat FilterDataBoolInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -2872,6 +6378,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Boolean
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2879,6 +6395,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_float
 
@@ -2888,6 +6414,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_float
+
+############ !graphqlTypeFlat FilterDataFloatInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties values
 
 !name values
@@ -2895,6 +6431,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[Float]
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Float
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties value
 
@@ -2904,6 +6450,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Float
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -2911,6 +6467,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######## !!properties defined_event_id
 
@@ -2920,6 +6486,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName defined_event_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties stable_id
 
 !name stable\_id
@@ -2928,6 +6504,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName stable_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -2935,6 +6521,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName parent_filter_stable_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties should
 
@@ -2944,6 +6540,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName should
+
+######### !graphqlTypeFlat FilterInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -2951,6 +6557,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties unit
 
@@ -2960,6 +6576,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName unit
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties group
 
 !name group
@@ -2967,6 +6593,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName group
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties data
 
@@ -2976,6 +6612,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName data
+
+########## !graphqlTypeFlat FilterDataInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties string
 
 !name string
@@ -2983,6 +6629,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName string
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -2992,6 +6648,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -3000,6 +6666,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3007,6 +6683,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties int
 
@@ -3016,6 +6702,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3023,6 +6719,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3032,6 +6738,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3039,6 +6755,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties bool
 
@@ -3048,6 +6774,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3055,6 +6791,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Boolean!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties operator
 
@@ -3064,6 +6810,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ######### !!properties event
 
 !name event
@@ -3071,6 +6827,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataEventInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName event
+
+########### !graphqlTypeFlat FilterDataEventInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties type
 
@@ -3080,6 +6846,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName type
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties group
 
 !name group
@@ -3087,6 +6863,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName group
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
 
 ########### !!properties value
 
@@ -3096,6 +6882,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties values
 
 !name values
@@ -3104,6 +6900,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3111,6 +6917,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties element
 
@@ -3120,6 +6936,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName element
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3127,6 +6953,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3136,6 +6972,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3143,6 +6989,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties txt
 
@@ -3152,6 +7008,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName txt
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3159,6 +7025,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3168,6 +7044,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3175,6 +7061,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties element_path
 
@@ -3184,6 +7080,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName element_path
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3191,6 +7097,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3200,6 +7116,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3207,6 +7133,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties location
 
@@ -3216,6 +7152,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName location
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3223,6 +7169,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3232,6 +7188,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3239,6 +7205,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -3248,6 +7224,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3255,6 +7241,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3264,6 +7260,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3271,6 +7277,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties height
 
@@ -3280,6 +7296,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName height
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3287,6 +7313,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3296,6 +7332,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3303,6 +7349,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties width
 
@@ -3312,6 +7368,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName width
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3319,6 +7385,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3328,6 +7404,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3335,6 +7421,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties timestamp
 
@@ -3344,6 +7440,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName timestamp
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3351,6 +7457,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3360,6 +7476,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3367,6 +7493,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties x
 
@@ -3376,6 +7512,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName x
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3383,6 +7529,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3392,6 +7548,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3399,6 +7565,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties y
 
@@ -3408,6 +7584,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName y
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3415,6 +7601,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3424,6 +7620,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3431,6 +7637,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######### !!properties param
 
@@ -3440,6 +7656,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName param
+
+########### !graphqlTypeFlat FilterDataParamInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties name
 
 !name name
@@ -3447,6 +7673,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName name
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -3456,6 +7692,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3463,6 +7709,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3472,6 +7728,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3479,6 +7745,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######### !!properties event_properties
 
@@ -3488,6 +7764,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName event_properties
+
+########### !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties name
 
 !name name
@@ -3495,6 +7781,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName name
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value_str
 
@@ -3504,6 +7800,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_str
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3511,6 +7817,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3520,6 +7836,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3527,6 +7853,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_int
 
@@ -3536,6 +7872,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_int
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3543,6 +7889,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3552,6 +7908,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3559,6 +7925,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_bool
 
@@ -3568,6 +7944,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_bool
+
+############ !graphqlTypeFlat FilterDataBoolInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3576,6 +7962,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Boolean
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3583,6 +7979,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_float
 
@@ -3592,6 +7998,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_float
+
+############ !graphqlTypeFlat FilterDataFloatInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties values
 
 !name values
@@ -3599,6 +8015,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[Float]
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Float
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties value
 
@@ -3608,6 +8034,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Float
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3615,6 +8051,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######## !!properties defined_event_id
 
@@ -3624,6 +8070,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName defined_event_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties stable_id
 
 !name stable\_id
@@ -3632,6 +8088,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName stable_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties parent_filter_stable_id
 
 !name parent\_filter\_stable\_id
@@ -3639,6 +8105,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName parent_filter_stable_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ####### !!properties must_not
 
@@ -3648,6 +8124,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######## !context
+
+######### !graphqlBuiltInType false
+
+######### !graphqlName must_not
+
+######### !graphqlTypeFlat FilterInput
+
+######### !graphqlTypeShort input
+
 ######## !!properties name
 
 !name name
@@ -3655,6 +8141,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName name
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties unit
 
@@ -3664,6 +8160,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName unit
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties group
 
 !name group
@@ -3671,6 +8177,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName group
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties data
 
@@ -3680,6 +8196,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType false
+
+########## !graphqlName data
+
+########## !graphqlTypeFlat FilterDataInput
+
+########## !graphqlTypeShort input
+
 ######### !!properties string
 
 !name string
@@ -3687,6 +8213,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName string
+
+########### !graphqlTypeFlat FilterDataStringInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties value
 
@@ -3696,6 +8232,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties values
 
 !name values
@@ -3704,6 +8250,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3711,6 +8267,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties int
 
@@ -3720,6 +8286,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName int
+
+########### !graphqlTypeFlat FilterDataIntInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3727,6 +8303,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties values
 
@@ -3736,6 +8322,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName values
+
+############ !graphqlTypeFlat Int
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties operator
 
 !name operator
@@ -3743,6 +8339,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ######### !!properties bool
 
@@ -3752,6 +8358,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName bool
+
+########### !graphqlTypeFlat FilterDataBoolInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties value
 
 !name value
@@ -3759,6 +8375,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Boolean!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat Boolean
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties operator
 
@@ -3768,6 +8394,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName operator
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ######### !!properties event
 
 !name event
@@ -3775,6 +8411,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataEventInput
 
 
+
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName event
+
+########### !graphqlTypeFlat FilterDataEventInput
+
+########### !graphqlTypeShort input
 
 ########## !!properties type
 
@@ -3784,6 +8430,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName type
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
+
 ########## !!properties group
 
 !name group
@@ -3791,6 +8447,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FilterDataStringInput
 
 
+
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName group
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
 
 ########### !!properties value
 
@@ -3800,6 +8466,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties values
 
 !name values
@@ -3808,6 +8484,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3815,6 +8501,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties element
 
@@ -3824,6 +8520,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName element
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3831,6 +8537,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3840,6 +8556,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3847,6 +8573,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties txt
 
@@ -3856,6 +8592,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName txt
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3863,6 +8609,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3872,6 +8628,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3879,6 +8645,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties element_path
 
@@ -3888,6 +8664,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName element_path
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3895,6 +8681,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3904,6 +8700,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3911,6 +8717,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties location
 
@@ -3920,6 +8736,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName location
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3927,6 +8753,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3936,6 +8772,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3943,6 +8789,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -3952,6 +8808,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3959,6 +8825,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -3968,6 +8844,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -3975,6 +8861,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties height
 
@@ -3984,6 +8880,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName height
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -3991,6 +8897,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4000,6 +8916,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4007,6 +8933,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties width
 
@@ -4016,6 +8952,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName width
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4023,6 +8969,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4032,6 +8988,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4039,6 +9005,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties timestamp
 
@@ -4048,6 +9024,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName timestamp
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4055,6 +9041,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4064,6 +9060,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4071,6 +9077,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties x
 
@@ -4080,6 +9096,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName x
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4087,6 +9113,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4096,6 +9132,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4103,6 +9149,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties y
 
@@ -4112,6 +9168,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName y
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4119,6 +9185,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4128,6 +9204,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4135,6 +9221,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######### !!properties param
 
@@ -4144,6 +9240,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName param
+
+########### !graphqlTypeFlat FilterDataParamInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties name
 
 !name name
@@ -4151,6 +9257,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName name
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value
 
@@ -4160,6 +9276,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4167,6 +9293,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4176,6 +9312,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4183,6 +9329,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######### !!properties event_properties
 
@@ -4192,6 +9348,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########## !context
+
+########### !graphqlBuiltInType false
+
+########### !graphqlName event_properties
+
+########### !graphqlTypeFlat FilterDataCustomEventPropertyInput
+
+########### !graphqlTypeShort input
+
 ########## !!properties name
 
 !name name
@@ -4199,6 +9365,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+########### !context
+
+############ !graphqlBuiltInType true
+
+############ !graphqlName name
+
+############ !graphqlTypeFlat String
+
+############ !graphqlTypeShort scalar
 
 ########## !!properties value_str
 
@@ -4208,6 +9384,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_str
+
+############ !graphqlTypeFlat FilterDataStringInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4215,6 +9401,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4224,6 +9420,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4231,6 +9437,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_int
 
@@ -4240,6 +9456,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_int
+
+############ !graphqlTypeFlat FilterDataIntInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4247,6 +9473,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties values
 
@@ -4256,6 +9492,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Int
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4263,6 +9509,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_bool
 
@@ -4272,6 +9528,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_bool
+
+############ !graphqlTypeFlat FilterDataBoolInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties value
 
 !name value
@@ -4280,6 +9546,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Boolean
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4287,6 +9563,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ########## !!properties value_float
 
@@ -4296,6 +9582,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+########### !context
+
+############ !graphqlBuiltInType false
+
+############ !graphqlName value_float
+
+############ !graphqlTypeFlat FilterDataFloatInput
+
+############ !graphqlTypeShort input
+
 ########### !!properties values
 
 !name values
@@ -4303,6 +9599,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[Float]
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName values
+
+############# !graphqlTypeFlat Float
+
+############# !graphqlTypeShort scalar
 
 ########### !!properties value
 
@@ -4312,6 +9618,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName value
+
+############# !graphqlTypeFlat Float
+
+############# !graphqlTypeShort scalar
+
 ########### !!properties operator
 
 !name operator
@@ -4319,6 +9635,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+############ !context
+
+############# !graphqlBuiltInType true
+
+############# !graphqlName operator
+
+############# !graphqlTypeFlat String
+
+############# !graphqlTypeShort scalar
 
 ######## !!properties defined_event_id
 
@@ -4328,6 +9654,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName defined_event_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ######## !!properties stable_id
 
 !name stable\_id
@@ -4335,6 +9671,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName stable_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
 
 ######## !!properties parent_filter_stable_id
 
@@ -4344,6 +9690,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+######### !context
+
+########## !graphqlBuiltInType true
+
+########## !graphqlName parent_filter_stable_id
+
+########## !graphqlTypeFlat String
+
+########## !graphqlTypeShort scalar
+
 ##### !!properties conversion_value
 
 !name conversion\_value
@@ -4351,6 +9707,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type FunnelConversionValueInput
 
 
+
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName conversion_value
+
+####### !graphqlTypeFlat FunnelConversionValueInput
+
+####### !graphqlTypeShort input
 
 ###### !!properties property_name
 
@@ -4360,6 +9726,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName property_name
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ###### !!properties value_type
 
 !name value\_type
@@ -4367,6 +9743,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName value_type
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
 
 ###### !!properties label
 
@@ -4376,6 +9762,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+####### !context
+
+######## !graphqlBuiltInType true
+
+######## !graphqlName label
+
+######## !graphqlTypeFlat String
+
+######## !graphqlTypeShort scalar
+
 ##### !!properties type
 
 !name type
@@ -4383,6 +9779,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String
 
 
+
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName type
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
 
 ### !!definitions
 
@@ -4396,6 +9802,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName cached_response
+
+###### !graphqlTypeFlat CachedResponse
+
+###### !graphqlTypeShort object
+
 ##### !!properties ttl
 
 !name ttl
@@ -4403,6 +9819,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type String!
 
 
+
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName ttl
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
 
 ##### !!properties id
 
@@ -4412,6 +9838,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName id
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
+
 ##### !!properties computed_at
 
 !name computed\_at
@@ -4419,6 +9855,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type UnixTimestamp!
 
 
+
+###### !context
+
+####### !graphqlBuiltInType false
+
+####### !graphqlName computed_at
+
+####### !graphqlTypeFlat UnixTimestamp
+
+####### !graphqlTypeShort scalar
 
 ##### !!properties fresh
 
@@ -4428,6 +9874,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName fresh
+
+####### !graphqlTypeFlat Boolean
+
+####### !graphqlTypeShort scalar
+
 #### !!properties total_sessions
 
 !name total\_sessions
@@ -4435,6 +9891,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int!
 
 
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName total_sessions
+
+###### !graphqlTypeFlat Int
+
+###### !graphqlTypeShort scalar
 
 #### !!properties total_visitors
 
@@ -4444,6 +9910,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName total_visitors
+
+###### !graphqlTypeFlat Int
+
+###### !graphqlTypeShort scalar
+
 #### !!properties total_events
 
 !name total\_events
@@ -4451,6 +9927,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Int!
 
 
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName total_events
+
+###### !graphqlTypeFlat Int
+
+###### !graphqlTypeShort scalar
 
 #### !!properties conversion_value
 
@@ -4460,6 +9946,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName conversion_value
+
+###### !graphqlTypeFlat FunnelConversionValueResponse
+
+###### !graphqlTypeShort object
+
 ##### !!properties value
 
 !name value
@@ -4467,6 +9963,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type Float!
 
 
+
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName value
+
+####### !graphqlTypeFlat Float
+
+####### !graphqlTypeShort scalar
 
 ##### !!properties label
 
@@ -4476,6 +9982,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName label
+
+####### !graphqlTypeFlat String
+
+####### !graphqlTypeShort scalar
+
 #### !!properties steps
 
 !name steps
@@ -4483,6 +9999,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 !type \[FunnelStepCompute]!
 
 
+
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName steps
+
+###### !graphqlTypeFlat FunnelStepCompute
+
+###### !graphqlTypeShort object
 
 ##### !!properties sessions
 
@@ -4492,6 +10018,16 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName sessions
+
+####### !graphqlTypeFlat Int
+
+####### !graphqlTypeShort scalar
+
 ##### !!properties visitors
 
 !name visitors
@@ -4500,9 +10036,30 @@ mutation funnelCompute ($input: FunnelComputeInput) {
 
 
 
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName visitors
+
+####### !graphqlTypeFlat Int
+
+####### !graphqlTypeShort scalar
+
 ##### !!properties events
 
 !name events
 
 !type Int!
 
+
+
+###### !context
+
+####### !graphqlBuiltInType true
+
+####### !graphqlName events
+
+####### !graphqlTypeFlat Int
+
+####### !graphqlTypeShort scalar

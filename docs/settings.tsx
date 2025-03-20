@@ -189,7 +189,7 @@ export default {
                     {
                         "group": "EVENT TYPES",
                         "pages": [
-                            "docs/api/webhooks/session.event",
+                            "docs/api/webhooks/type-session-event"
                         ],
                     }
                 ]

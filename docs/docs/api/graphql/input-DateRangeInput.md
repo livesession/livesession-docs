@@ -1,11 +1,11 @@
 ---
 title: DateRangeInput
 ---
-## !description
+## !!references DateRangeInput
+
+### !description
 
 Input for date range
-
-## !!references DateRangeInput
 
 ### !canonical input-DateRangeInput
 
@@ -13,7 +13,7 @@ Input for date range
 
 #### !graphqlName DateRangeInput
 
-#### !graphqlType input
+#### !graphqlTypeShort input
 
 ### !examples
 
@@ -29,9 +29,30 @@ Input for date range
 
 
 
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName from
+
+###### !graphqlTypeFlat RelativeDate
+
+###### !graphqlTypeShort scalar
+
 #### !!properties to
 
 !name to
 
 !type RelativeDate
 
+
+
+##### !context
+
+###### !graphqlBuiltInType false
+
+###### !graphqlName to
+
+###### !graphqlTypeFlat RelativeDate
+
+###### !graphqlTypeShort scalar

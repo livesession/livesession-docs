@@ -1,11 +1,11 @@
 ---
 title: FilterDataStringInput
 ---
-## !description
+## !!references FilterDataStringInput
+
+### !description
 
 Input for filter data string
-
-## !!references FilterDataStringInput
 
 ### !canonical input-FilterDataStringInput
 
@@ -13,7 +13,7 @@ Input for filter data string
 
 #### !graphqlName FilterDataStringInput
 
-#### !graphqlType input
+#### !graphqlTypeShort input
 
 ### !examples
 
@@ -29,6 +29,16 @@ Input for filter data string
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar
+
 #### !!properties values
 
 !name values
@@ -37,9 +47,30 @@ Input for filter data string
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName values
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar
+
 #### !!properties operator
 
 !name operator
 
 !type String!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName operator
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar

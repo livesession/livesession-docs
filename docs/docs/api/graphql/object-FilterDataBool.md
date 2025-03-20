@@ -1,11 +1,11 @@
 ---
 title: FilterDataBool
 ---
-## !description
+## !!references FilterDataBool
+
+### !description
 
 Filter data bool object
-
-## !!references FilterDataBool
 
 ### !canonical object-FilterDataBool
 
@@ -13,7 +13,7 @@ Filter data bool object
 
 #### !graphqlName FilterDataBool
 
-#### !graphqlType object
+#### !graphqlTypeShort object
 
 ### !examples
 
@@ -29,9 +29,30 @@ Filter data bool object
 
 
 
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName value
+
+###### !graphqlTypeFlat Boolean
+
+###### !graphqlTypeShort scalar
+
 #### !!properties operator
 
 !name operator
 
 !type String!
 
+
+
+##### !context
+
+###### !graphqlBuiltInType true
+
+###### !graphqlName operator
+
+###### !graphqlTypeFlat String
+
+###### !graphqlTypeShort scalar
