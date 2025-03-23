@@ -164,9 +164,10 @@ export default {
                 "match": "docs/api/rest",
                 "items": [
                     {
-                        "group": "GET STARTED",
+                        "group": "TYPES",
                         "pages": [
-                            "docs/api/rest/overview",
+                            "docs/api/rest/RelativeDateString",
+                            "docs/api/rest/EventKind",
                         ],
                     }
                 ]
@@ -311,5 +312,11 @@ export default {
                 // "webhooks": "docs/api/webhooks", // TODO: in the future
             }
         }
-    }
+    },
+    "redirects": [
+        {
+            "source": "",
+            "destination": "/docs/get-started/quickstart",
+        }
+    ]
 }

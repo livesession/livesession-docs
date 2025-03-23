@@ -9,14 +9,14 @@ export const installationTabs = {
 
 # Developer quickstart
 <Subtitle>
-    Learn how to start with LiveSession.
+    Learn how to get started with LiveSession.
 </Subtitle>
 
 LiveSession is a powerful tool that helps you understand how users [interact](https://livesession.io) with your product.
 This guide will help you get started with LiveSession and start capturing [user interactions](https://livesession.io) and analyzing them.
 
 ## Overview
-LiveSession collects data about [user interactions](https://livesession.io), such as clicks, scrolls or touches in different platforms like [web](https://livesession.io)
+LiveSession collects data about [user interactions](https://livesession.io), such as clicks, scrolls or touches in different platforms like [web](https://en.wikipedia.org/wiki/Web_application)
 or [mobile](https://livesession.io). Each platform can be accessed in different environment like [specific framework](https://livesession.) or using a raw protocol like http.
 That's why we provide a variety of ways to integrate LiveSession into your product.
 
@@ -144,7 +144,7 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             Most of events are [autocaptured](https://livesession.io) by LiveSession, but you can also send custom
             events.
 
-            :::code-group{title="Send events"}
+            :::code-group{title="Send custom events"}
             ```js sdk
             import ls from "@livesession/browser";
 
@@ -166,8 +166,8 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
 
             LiveSession provides SDKs for popular frameworks and languages to make it easier to integrate into your
             product
-            like [React](https://livesession.io), [Vue](https://livesession.io) or [Angular](https://livesession.io).
-            More information about how to install and use the SDKs can be found [here](https://livesession.io).
+            like [React](https://react.dev), [Vue](https://vuejs.org/) or [Angular](https://angular.dev/).
+            More information about how to install and use the SDKs can be found [here](/docs/get-started/frameworks).
         </Content>
     </Tabs.Content>
 
@@ -185,14 +185,14 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                 <Tabs.Content value="mac OS / Linux">
                     <Content>
                         ```bash Export an environment variable on macOS or Linux systems
-                        export LIVESESSION_PAT="you_pat_here"
+                        export LIVESESSION_PAT="YOUR_PAT_HERE"
                         ```
                     </Content>
                 </Tabs.Content>
                 <Tabs.Content value="Windows">
                     <Content>
                         ```bash Export an environment variable in PowerShell
-                        setx LIVESESSION_PAT="you_pat_here"
+                        setx LIVESESSION_PAT="YOUR_PAT_HERE"
                         ```
                     </Content>
                 </Tabs.Content>
@@ -217,25 +217,29 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                         ```
 
                         With the LiveSession SDK installed, copy one of the following examples into it:
-                        <Tabs items={["Get sessions", "Get funnels"]}>
+                        <Tabs items={["Get sessions", "Get websites"]}>
                             <Tabs.Content value="Get sessions">
                                 ```js
                                 import livesession from 'livesession';
 
-                                const ls = new livesession();
+                                const ls = new livesession(
+                                    livesession.optionApiKey(process.env.LIVESESSION_PAT)
+                                );
 
                                 const sessions = await ls.sessions.list();
                                 console.log(sessions);
                                 ```
                             </Tabs.Content>
-                            <Tabs.Content value="Get funnels">
+                            <Tabs.Content value="Get websites">
                                 ```js
                                 import livesession from 'livesession';
 
-                                const ls = new livesession();
+                                const ls = new livesession(
+                                    livesession.optionApiKey(process.env.LIVESESSION_PAT)
+                                );
 
-                                const funnels = await ls.funnels.list();
-                                console.log(funnels);
+                                const websites = await ls.websites.list();
+                                console.log(websites);
                                 ```
                             </Tabs.Content>
                         </Tabs>
@@ -247,7 +251,7 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                         The following commands assume that you have exported the LIVESESSION_PAT system environment
                         variable as shown above.
 
-                        <Tabs items={["Get sessions", "Get funnels"]}>
+                        <Tabs items={["Get sessions", "Get websites"]}>
                             <Tabs.Content value="Get sessions">
                                 ```bash
                                 curl https://api.livesession.io/v1/sessions \
@@ -255,9 +259,9 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                                 -H "Authorization: Bearer $LIVESESSION_PAT"
                                 ```
                             </Tabs.Content>
-                            <Tabs.Content value="Get funnels">
+                            <Tabs.Content value="Get websites">
                                 ```bash
-                                curl https://api.livesession.io/v1/funnels \
+                                curl https://api.livesession.io/v1/websites \
                                 -H "Content-Type: application/json" \
                                 -H "Authorization: Bearer $LIVESESSION_PAT"
                                 ```
@@ -272,16 +276,17 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
 </Tabs>
 
 ## Samples
-The [LiveSession Samples](https://livesession.io) has several end-to-end examples to help you start in different platforms.
+The LiveSession Samples has several end-to-end examples to help you get started with LiveSession.
 <GuideCard
     icon={<IconCode/>}
     title="Quickstart"
+    href="https://github.com/livesession/livesession-samples"
 >
     Explore our sample projects to get started with LiveSession.
 </GuideCard>
 
-## Next Steps
-Now that you've set up your LiveSession instance, now you can explore the following resources:
+{/* ## Next Steps TODO: in the future */}
+{/* Now that you've set up your LiveSession instance, now you can explore the following resources:
 <GuideCard
     icon={<IconSessionReplay/>}
     title="Session Replay"
@@ -301,4 +306,4 @@ Now that you've set up your LiveSession instance, now you can explore the follow
     title="Data I/O"
 >
     Learn how to import and export data from LiveSession.
-</GuideCard>
+</GuideCard> */}

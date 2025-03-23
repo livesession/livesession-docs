@@ -27,6 +27,10 @@ Triggers when a JS error is handled.
   "website_id": "8d53ea3",
   "created_at": 1691161881,
   "payload": {
+    "event_name": "JSError",
+    "value": "ProductCatalog: product is not valid",
+    "count": 1,
+    "time": 16911618810,
     "visitor": {
       "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
       "name": "John Doe",
@@ -42,11 +46,7 @@ Triggers when a JS error is handled.
         "city": "Wroclaw",
         "region": "Dolnoslaskie"
       }
-    },
-    "event_name": "JSError",
-    "time": 16911618810,
-    "count": 1,
-    "value": "ProductCatalog: product is not valid"
+    }
   }
 }
 ```
@@ -64,6 +64,11 @@ Triggers when a network request error is handled.
   "website_id": "8d53ea3",
   "created_at": 1691161881,
   "payload": {
+    "event_name": "NetError",
+    "method": "GET",
+    "url": "https://api.livesession.io/products/1",
+    "status": 500,
+    "time": 16911618810,
     "visitor": {
       "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
       "name": "John Doe",
@@ -79,12 +84,7 @@ Triggers when a network request error is handled.
         "city": "Wroclaw",
         "region": "Dolnoslaskie"
       }
-    },
-    "event_name": "NetError",
-    "time": 16911618810,
-    "method": "GET",
-    "url": "https://api.livesession.io/products/1",
-    "status": 500
+    }
   }
 }
 ```
@@ -101,6 +101,9 @@ Triggers when a [error click](https://livesession.io) is handled.
   "website_id": "8d53ea3",
   "created_at": 1691161881,
   "payload": {
+    "event_name": "ErrorClick",
+    "messsage": "product is not defined",
+    "time": 16911618810,
     "visitor": {
       "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
       "name": "John Doe",
@@ -116,10 +119,7 @@ Triggers when a [error click](https://livesession.io) is handled.
         "city": "Wroclaw",
         "region": "Dolnoslaskie"
       }
-    },
-    "event_name": "ErrorClick",
-    "time": 16911618810,
-    "messsage": "product is not defined"
+    }
   }
 }
 ```
@@ -137,6 +137,9 @@ Triggers when a [rage click](https://livesession.io) is handled.
   "website_id": "8d53ea3",
   "created_at": 1691161881,
   "payload": {
+    "event_name": "RageClick",
+    "clicks": 5,
+    "time": 16911618810,
     "visitor": {
       "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
       "name": "John Doe",
@@ -152,10 +155,7 @@ Triggers when a [rage click](https://livesession.io) is handled.
         "city": "Wroclaw",
         "region": "Dolnoslaskie"
       }
-    },
-    "event_name": "RageClick",
-    "time": 16911618810,
-    "clicks": 5
+    }
   }
 }
 ```
@@ -179,6 +179,13 @@ Additional details are available in the knowledge base.
   "website_id": "8d53ea3",
   "created_at": 1691161881,
   "payload": {
+    "event_name": "Custom",
+    "name": "Product added",
+    "properties": {
+      "product_id_int": 1,
+      "product_name_str": "Product 1"
+    },
+    "time": 16911618810,
     "visitor": {
       "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
       "name": "John Doe",
@@ -194,13 +201,6 @@ Additional details are available in the knowledge base.
         "city": "Wroclaw",
         "region": "Dolnoslaskie"
       }
-    },
-    "event_name": "Custom",
-    "time": 16911618810,
-    "name": "Product added",
-    "properties": {
-      "product_id_int": 1,
-      "product_name_str": "Product 1"
     }
   }
 }

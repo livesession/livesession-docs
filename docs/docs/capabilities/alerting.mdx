@@ -17,14 +17,14 @@ Second, you can set up a custom workflow using [webhooks](https://livesession.io
 
 :::code-group{title="Creating a webhook"}
 ```ts sdk
-import {ApiClient} from "livesession"
+import livesession from "livesession"
 
-const client = new ApiClient({
-    apiKey: process.env.LIVESESSION_API_KEY
-})
+const ls = new livesession(
+    livesession.optionApiKey(process.env.LIVESESSION_PAT)
+)
 
-await client.webhooks.create({
-    webhook_id: "YOUR_WEBHOOK_ID",
+await ls.webhooks.create({
+    website_id: "YOUR_WEBSITE_ID",
     url: "YOUR_WEBHOOK_URL",
    version: "v1.0",
 })
@@ -55,13 +55,13 @@ what and when you want to monitor.
 
 :::code-group{title="Creating an alert"}
 ```ts sdk
-import {ApiClient} from "livesession"
+import livesession from "livesession"
 
-const client = new ApiClient({
-    apiKey: process.env.LIVESESSION_API_KEY
-})
+const ls = new livesession(
+    livesession.optionApiKey(process.env.LIVESESSION_PAT)
+)
 
-await client.alerts.create({
+await ls.alerts.create({
     name: "YOUR_ALERT_NAME",
     provider: "webhooks",
     webhook_id: "YOUR_WEBHOOK_ID",

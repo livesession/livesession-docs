@@ -8,16 +8,6 @@ description: Web frameworks
     Learn how to integrate LiveSession with popular web frameworks and services.
 </Subtitle>
 
-<Steps>
-    <Steps.Item>
-        **Install LiveSession:** Add LiveSession to your project to start capturing user interactions and analyzing.
-    </Steps.Item>
-    <Steps.Item>
-        **Improving feature adoption:** Analyze which features are underutilized and develop strategies to improve their
-        discoverability.
-    </Steps.Item>
-</Steps>
-
 Install `livesession` using your package manager:
 
 ```bash @livesession/browser installation
@@ -30,15 +20,15 @@ npm install --save @livesession/browser
 If your React app to uses the app router, you can integrate React by creating a `providers` file in your app folder.
 This is because the `@livesession/browser` library needs to be initialized on the client-side using the React 'use client' [directive](https://livesession.io).
 
-```jsx
-// app/providers.jsx
+```jsx React example
+// src/thirdParty/livesession.jsx
 'use client'
 
 import { useEffect } from 'react'
 import ls from '@livesession/browser'
 import { LiveSessionProvider } from '@livesession/react'
 
-export function livesessionProvider({ children }) {
+export function WithLiveSession({ children }) {
   useEffect(() => {
     ls.init(process.env.NEXT_PUBLIC_LS_KEY, {
     })
@@ -58,8 +48,8 @@ We use the Composition API as it provides better accessibility, maintainability,
 Start by creating a `composables` folder as well as a `useLiveSession.js` file to that folder.
 In `useLiveSession.js`, initialize livesession as a composable:
 
-```js
-// src/composables/useLiveSession.ts
+```js Vue.js example
+// src/thirdParty/useLiveSession.ts
 import ls from '@livesession/browser'
 
 export function uselivesession() {
@@ -74,12 +64,12 @@ export function uselivesession() {
 
 Next, in `router/index.js`, import the useLiveSession composable and call it.
 
-```js
+```js Vue.js usage
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'
-import { useLiveSession } from '@/composables/useLiveSession'
+import { useLiveSession } from '@/thirdParty/useLiveSession'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -113,7 +103,9 @@ This guide walks you through integrating livesession into your Angular app using
 ### Angular setup
 In your `src/main.ts`, initialize LiveSession using your project API key and instance address.
 You can find both in your project settings.
-```js
+
+```js Angular example
+// src/main.ts
 import { bootstrapApplication } from '@angular/platform-browser';
 import ls from '@livesession/browser'
 
@@ -129,15 +121,16 @@ bootstrapApplication(AppComponent, appConfig)
 ```
 
 ## Samples
-The [LiveSession Samples](https://github.com/livesession-samples) has several end-to-end examples to help you start in different frameworks.
+The [LiveSession Samples](https://github.com/livesession/livesession-samples) has several end-to-end examples to help you start in different frameworks.
 <GuideCard
     icon={<IconCode/>}
     title="Framework Starters"
+    href="https://github.com/livesession/livesession-samples/tree/master/frameworks"
 >
     Explore our sample projects to get started with LiveSession in your favorite framework.
 </GuideCard>
 
-### Next Steps
+{/* ### Next Steps TODO: in the future
 <GuideCard
     icon={<IconSessionReplay/>}
     title="Session Replay"
@@ -157,4 +150,4 @@ The [LiveSession Samples](https://github.com/livesession-samples) has several en
     title="Funnel Analysis"
 >
     Track user journeys and identify drop-offs to optimize conversion rates.
-</GuideCard>
+</GuideCard> */}

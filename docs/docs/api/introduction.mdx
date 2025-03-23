@@ -46,18 +46,30 @@ Production requests must be routed through your own backend server where your AP
 All API requests should include your API key in an Authorization HTTP header as follows:
 
 ```bash
-Authorization: Bearer LIVESESSION_PAT
+Authorization: Bearer $LIVESESSION_PAT
 ```
 
 ## Making requests
 You can paste the command below into your terminal to run your first API request.
 Make sure to replace `$LIVESESSION_PAT` with your secret PAT.
 
-```bash
+:::code-group{title=""}
+```js sdk
+import livesession from "livesession";
+
+const ls = new livesession(
+    livesession.optionApikey(process.env.LIVESESSION_PAT)
+)
+
+const sessions = await ls.sessions.list()
+```
+
+```bash curl
 curl https://api.livesession.io/v1/sessions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $LIVESESSION_PAT"
 ```
+:::
 
 ## Rate limits
 Note that by default all tokens are set to 2 Queries Per Second (QPS). This is a per token limit.
