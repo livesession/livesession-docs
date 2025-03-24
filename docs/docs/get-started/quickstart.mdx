@@ -12,12 +12,12 @@ export const installationTabs = {
     Learn how to get started with LiveSession.
 </Subtitle>
 
-LiveSession is a powerful tool that helps you understand how users [interact](https://livesession.io) with your product.
-This guide will help you get started with LiveSession and start capturing [user interactions](https://livesession.io) and analyzing them.
+LiveSession is a powerful tool that helps you understand how users [interact](https://livesession.io/features) with your product.
+This guide will help you get started with LiveSession and start capturing user interactions and [analyzing](https://livesession.io/features) them.
 
 ## Overview
-LiveSession collects data about [user interactions](https://livesession.io), such as clicks, scrolls or touches in different platforms like [web](https://en.wikipedia.org/wiki/Web_application)
-or [mobile](https://livesession.io). Each platform can be accessed in different environment like [specific framework](https://livesession.) or using a raw protocol like http.
+LiveSession collects data about user interactions, such as clicks, scrolls or touches in different platforms like [web](https://en.wikipedia.org/wiki/Web_application)
+or [mobile](https://en.wikipedia.org/wiki/Mobile_app). Each platform can be accessed in different environment like [specific framework](https://en.wikipedia.org/wiki/Comparison_of_JavaScript-based_web_frameworks) or using a raw protocol like [http](https://en.wikipedia.org/wiki/HTTP).
 That's why we provide a variety of ways to integrate LiveSession into your product.
 
 <Tabs items={["Browser", "Frameworks", "API"]}>
@@ -173,12 +173,12 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
 
     <Tabs.Content value="API">
         <Content>
-            #### Create and export a PAT
-            [Create a PAT in the dashboard here](https://livesession.io), which you'll use to securely [access the
-            API](https://livesession.io).
-            Store the key in a safe location, like a [`.zshrc file`](https://livesession.io) or another text file on
+            #### Create and export a Personal Access Token (PAT)
+            [Create a PAT in the dashboard here](https://app.livesession.io/app/settings/api?tab=api_tokens), which you'll use to securely access the
+            API.
+            Store the key in a safe location, like a `.zshrc file` or another text file on
             your computer.
-            Once you've generated a PAT, export it as an [environment variable](https://livesession.io) in your
+            Once you've generated a PAT, export it as an [environment variable](https://en.wikipedia.org/wiki/Environment_variable) in your
             terminal.
 
             <Tabs ijs="os-choose" items={["mac OS / Linux", "Windows"]}>
@@ -199,16 +199,16 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             </Tabs>
 
             #### Making your first API Request
-            With your LiveSession [Personal Access Token (PAT)](https://livesession.io) exported as an environment
+            With your LiveSession Personal Access Token exported as an environment
             variable, you're ready to make your first API request.
-            You can either use the API directly with the HTTP client of your choice, or use one of our official SDKs as
+            You can either use the API directly with the HTTP client of your choice, or use one of our [official SDKs](https://github.com/livesession/livesession-sdk) as
             shown below.
 
             <Tabs ijs="snippet-choose" items={["JavaScript", "curl"]}>
                 <Tabs.Content value="JavaScript">
                     <Content>
-                        To use the [LiveSession API](https://livesession.io) in server-side JavaScript environments
-                        like Node.js, Deno, or Bun, you can use the official [LiveSession SDK](https://livesession.io)
+                        To use the LiveSession API in server-side JavaScript environments
+                        like Node.js, Deno, or Bun, you can use the official [LiveSession SDK](https://github.com/livesession/livesession-sdk/tree/master/sdks/node/livesession-node)
                         for TypeScript and JavaScript.
                         Get started by installing the SDK using npm or your preferred package manager:
 
@@ -216,7 +216,7 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                         npm install livesession
                         ```
 
-                        With the LiveSession SDK installed, copy one of the following examples into it:
+                        Once installed, copy one of the following examples into it:
                         <Tabs items={["Get sessions", "Get websites"]}>
                             <Tabs.Content value="Get sessions">
                                 ```js

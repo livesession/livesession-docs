@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM node:20-alpine AS build
+FROM node:20-18.1-alpine AS build
 
 # Install pnpm globally
 RUN npm install -g @xyd-js/cli
@@ -20,7 +20,7 @@ RUN npm install
 RUN xyd build
 
 # Stage 2: Runtime
-FROM node:20-alpine
+FROM node:20-18.1-alpine
 
 # Set the working directory
 WORKDIR /app/docs

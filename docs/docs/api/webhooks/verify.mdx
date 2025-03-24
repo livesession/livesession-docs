@@ -13,10 +13,10 @@ export const themeSettings = {
 
 ## Quickstart
 Before you proceed with responding to a webhook, it's crucial to ensure that the webhook originated from LiveSession.
-This verification can be accomplished by calculating a digital [signature](https://livesession.io).
+This verification can be accomplished by calculating a digital signature.
 
-Every webhook request incorporates a [base64-encoded HMAC-SHA256](https://livesession.io) signature included in `LiveSession-Signature` header.
-This header is created using the [webhook's secret](https://livesession.io) in conjunction with the data transmitted in the request.
+Every webhook request incorporates a base64-encoded HMAC-SHA256 signature included in `LiveSession-Signature` header.
+This header is created using the webhook's secret in conjunction with the data transmitted in the request.
 
 To compute the HMAC digest, follow below written algorithm:
 

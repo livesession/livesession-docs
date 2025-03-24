@@ -12,7 +12,7 @@ export const themeSettings = {
 </Subtitle>
 
 ## Overview
-When an event ready for [webhook](https://livesession.io) transmission occurs within LiveSession, an [event payload](#) is crafted.
+When an event ready for [webhook](https://en.wikipedia.org/wiki/Webhook) transmission occurs within LiveSession, an event payload is crafted.
 If you've set up endpoints for that specific event type, the payload gets lined up for delivery.
 
 These "trigger-ready" events encompass actions ideal for webhook interaction.
@@ -21,7 +21,7 @@ For instance, when a session event is created, it's trigger-ready.
 Event delivery typically takes mere seconds, though a strict [FIFO order](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) isn't assured.
 Given potential event volume, the webhook platform prioritizes throughput over rigid sequencing.
 
-Once an event is dispatched, a [payload signature](https://livesession.io) is computed and included in the request.
+Once an event is dispatched, a payload signature is computed and included in the request.
 The request sent to your chosen endpoint bears these details:
 
 <Steps>
@@ -109,15 +109,15 @@ User-Agent: LiveSessionWebhooks/1.0
 
 ## Throttling
 To prevent your servers from being overwhelmed or unintentionally participating in a service disruption on your webhook endpoint,
-LiveSession [limits](https://livesession.io) the number of events sent for a given webhook to a maximum of *1000 per minute*.
+LiveSession limits the number of events sent for a given webhook to a maximum of `1000 per minute`.
 
-If you've configured an endpoint for a high-volume event flow, like a frequently triggered custom event during [user sessions](https://livesession.io),
+If you've configured an endpoint for a high-volume event flow, like a frequently triggered custom event during user sessions,
 expect possible webhook delays.
-When the number of events for an endpoint exceeds *1000 per minute*, the extra events will be [queued](https://livesession.io).
+When the number of events for an endpoint exceeds `1000 per minute`, the extra events will be queued].
 
 If the events happen really fast for a little while and then slow down, all the events might still arrive, but it could take longer than when they first happened.
 But if the fast rate continues for a long time, some events might not be delivered.
-If an event is undeliverable for *24 hours*, it's treated as **failed**, and no more tries will be made.
+If an event is undeliverable for `24 hours`, it's treated as **failed**, and no more tries will be made.
 
 <Callout>
 The limit of 1000 events per minute is per account.
@@ -125,4 +125,4 @@ The limit of 1000 events per minute is per account.
 
 ## Retry behavior
 LiveSession attempts to deliver a given event to your webhook endpoint for *up to 8 hours* with an exponential [backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
-in *beetwen 1-10 minutes* interval gap from the previous attempt.
+in `beetwen 1-10 minutes` interval gap from the previous attempt.

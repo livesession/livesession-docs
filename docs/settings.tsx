@@ -262,25 +262,25 @@ export default {
                 {
                     "icon": "icon-cookbook",
                     "name": "Cookbook",
-                    "url": "#"
+                    "url": "http://cookbook.livesession.io"
                 },
 
                 {
                     "icon": "icon-community",
                     "name": "Community",
-                    "url": "#"
+                    "url": "http://community.livesession.io/"
                 },
 
                 {
                     "icon": "icon-marketplace",
                     "name": "Marketplace",
-                    "url": "#"
+                    "url": "https://livesession.io/integrations"
                 },
 
                 {
                     "icon": "icon-sdk",
                     "name": "SDKs",
-                    "url": "#"
+                    "url": "https://github.com/livesession/livesession-sdk"
                 },
             ]
         }

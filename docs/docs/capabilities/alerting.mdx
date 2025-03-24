@@ -8,12 +8,12 @@ description: Alerting
     Learn how to react on events.
 </Subtitle>
 
-LiveSession [event stream](https://livesession.io) was designed to be a powerful tool helpful for example in monitoring and alerting purposes.
+LiveSession [event stream](https://livesession.io/features) was designed to be a powerful tool helpful for example in monitoring and alerting purposes.
 It allows you to react on events in real-time and take actions based on them.
 
 ## Quickstart
-Alerts delivery can be configured in two ways. First, you can use third party delivery provider like [Slack](https://livesession.io).
-Second, you can set up a custom workflow using [webhooks](https://livesession.io). All methods receive events in real-time.
+Alerts delivery can be configured in two ways. First, you can use third party delivery provider like `Slack`.
+Second, you can set up a custom workflow using [webhooks](https://en.wikipedia.org/wiki/Webhook). All methods receive events in real-time.
 
 :::code-group{title="Creating a webhook"}
 ```ts sdk
@@ -46,11 +46,11 @@ curl https://api.livesession.io/v1/webhooks \
 Once you have a webhook set up, you can create an alert to receive events in real-time.
 
 The main duty of alerts is to filter events and send them to the configured delivery provider.
-You can for example create a [custom event](https://livesession.io) and based on that event send a message to your server.
+You can for example create a [custom event](https://help.livesession.io/en/articles/8496404-custom-events) and based on that event send a message to your server.
 
 ## Creating an alert
 Alerts gives you a robust control which events you want to receive.
-You can use [built-in](https://livesession) events like `Error Click`, `Network Error` or based on [custom event](https://livesession) which gives you a full control of
+You can use built-in events like `Error Click`, `Network Error` or based on [custom event](https://help.livesession.io/en/articles/8496404-custom-events) which gives you a full control of
 what and when you want to monitor.
 
 :::code-group{title="Creating an alert"}
@@ -94,9 +94,8 @@ curl https://api.livesession.io/v1/alerts \
 :::
 
 <Callout>
-    Based on above example, please make sure you used [Browser SDK](https://livesession.io) custom event tracking like
-    [`ls("track",
-    "YOUR_CUSTOM_EVENT_NAME")`](https://livesession.io).
+    Based on above example, please make sure you used `Browser SDK` custom event tracking like
+    `ls.track("YOUR_CUSTOM_EVENT_NAME")`
 </Callout>
 
 ## Samples
@@ -104,7 +103,8 @@ More code samples for custom events you can explore the following resources:
 
 <GuideCard
     icon={<IconCode/>}
-    title="Custom Event alerting"
+    title="Start alerting"
+    href="https://github.com/livesession/livesession-samples/tree/master/capabilities/alerting"
 >
     Show code how to create an alert based on custom event.
 </GuideCard>
