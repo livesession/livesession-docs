@@ -223,10 +223,10 @@ export default {
                             "name": "REST",
                             "url": "/docs/api/rest"
                         },
-                        {
-                            "name": "GraphQL",
-                            "url": "/docs/api/graphql"
-                        },
+                        // {
+                        //     "name": "GraphQL",
+                        //     "url": "/docs/api/graphql"
+                        // },
                         {
                             "name": "Webhooks",
                             "url": "/docs/api/webhooks"
