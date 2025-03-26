@@ -16,12 +16,7 @@ This is useful for tracking users across multiple devices and sessions.
 ```js sdk
 import ls from "@livesession/browser";
 
-ls.setCustomParams({plan: "premium", team: "marketing"})
-```
-
-```js window
-__ls("setCustomParams", {plan: "premium", team: "marketing"})
-```
+ls.identify({name: "John Doe", email: "john.doe@example.com"})
 :::
 
 Learn more about user browser methods [here](/docs/api/browser/methods).
