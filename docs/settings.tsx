@@ -145,7 +145,6 @@ export default {
                     },
                 ]
             },
-
             {
                 "match": "docs/api/browser",
                 "items": [
@@ -195,6 +194,10 @@ export default {
                     }
                 ]
             },
+            {
+                "match": "docs/api/sources",
+                "items": [],
+            }
         ],
 
         "header": [
@@ -223,13 +226,17 @@ export default {
                             "name": "REST",
                             "url": "/docs/api/rest"
                         },
-                        // {
-                        //     "name": "GraphQL",
-                        //     "url": "/docs/api/graphql"
-                        // },
+                        {
+                            "name": "GraphQL",
+                            "url": "/docs/api/graphql"
+                        },
                         {
                             "name": "Webhooks",
                             "url": "/docs/api/webhooks"
+                        },
+                        {
+                            "name": "Sources",
+                            "url": "/docs/api/sources"
                         },
                     ]
                 }
@@ -305,12 +312,14 @@ export default {
             // "webhooks": "./api/webhooks/openapi.yaml" // TODO: in the future
         },
         "graphql": "./api/graphql/schema.graphqls",
-        "match": {
+        "sources": "/Users/zdunecki/Code/livesession/xyd/packages/xyd-sources/example", // TODO: finish
+        "match": { // TODO: it should not be a part of 'api' object
             "graphql": "docs/api/graphql",
             "openapi": {
                 "rest": "docs/api/rest",
                 // "webhooks": "docs/api/webhooks", // TODO: in the future
-            }
+            },
+            "sources": "docs/api/sources",
         }
     },
     "redirects": [
