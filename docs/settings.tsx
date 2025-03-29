@@ -312,7 +312,7 @@ export default {
             // "webhooks": "./api/webhooks/openapi.yaml" // TODO: in the future
         },
         "graphql": "./api/graphql/schema.graphqls",
-        "sources": "/Users/zdunecki/Code/livesession/xyd/packages/xyd-sources/example", // TODO: finish
+        "sources": "", // TODO: finish
         "match": { // TODO: it should not be a part of 'api' object
             "graphql": "docs/api/graphql",
             "openapi": {
