@@ -1,0 +1,17 @@
+// // Define a variable for the common prefix
+// $writer: ".XydComponents-Component-writer";
+// $badge: $writer + "-Badge";
+
+// // Define styles using the variable
+// #{$badge}__BadgeHostInfo {
+//     background-color: blue !important;
+// }
+
+// #{$badge}__BadgeHostWarning {
+//     background-color: yellow !important;
+// }
+
+// #{$badge}__BadgeHostError {
+//     background-color: yellow;
+//     color: red;
+// }
