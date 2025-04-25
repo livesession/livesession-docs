@@ -1,0 +1,168 @@
+{
+  "theme": {
+    "name": "cosmo",
+    "logo": "/public/logo.svg"
+  },
+  "navigation": {
+    "sidebar": [
+      {
+        "route": "docs",
+        "items": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/get-started/quickstart",
+              "docs/get-started/frameworks"
+            ]
+          },
+          {
+            "group": "Capabilities",
+            "pages": [
+              "docs/capabilities/alerting",
+              "docs/capabilities/funnels",
+              "docs/capabilities/trends",
+              "docs/capabilities/user-paths"
+            ]
+          }
+        ]
+      },
+
+      {
+        "route": "docs/api",
+        "items": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/api/quickstart",
+              "docs/api/introduction",
+              "docs/api/access-scopes"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "docs/api/browser",
+        "items": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/api/browser/introduction",
+              "docs/api/browser/identification",
+              "docs/api/browser/recording-conditions",
+              "docs/api/browser/methods"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "docs/api/rest",
+        "items": [
+          {
+            "group": "Types",
+            "pages": [
+             
+            ]
+          }
+        ]
+      },
+      {
+        "route": "docs/api/graphql",
+        "items": []
+      },
+      {
+        "route": "docs/api/webhooks",
+        "items": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/api/webhooks/configuration",
+              "docs/api/webhooks/delivery",
+              "docs/api/webhooks/verify"
+            ]
+          },
+          {
+            "group": "Event Types",
+            "pages": ["docs/api/webhooks/type-session-event"]
+          }
+        ]
+      }
+    ],
+
+    "header": [
+      {
+        "name": "Docs",
+        "url": "/docs"
+      },
+      {
+        "name": "APIs and references",
+        "url": "/docs/api"
+      },
+      {
+        "sub": {
+          "route": "/docs/api",
+          "name": "API",
+          "items": [
+            {
+              "name": "Get started",
+              "url": "/docs/api"
+            },
+            {
+              "name": "Browser",
+              "url": "/docs/api/browser"
+            },
+            {
+              "name": "REST",
+              "url": "/docs/api/rest"
+            },
+            {
+              "name": "GraphQL",
+              "url": "/docs/api/graphql"
+            },
+            {
+              "name": "Webhooks",
+              "url": "/docs/api/webhooks"
+            }
+          ]
+        }
+      },
+      {
+        "sub": {
+          "route": "/docs/apps",
+          "name": "Apps",
+          "items": [
+            {
+              "name": "Build",
+              "url": "/docs/apps/build"
+            },
+            {
+              "name": "Design",
+              "url": "/docs/apps/design"
+            },
+            {
+              "name": "Launch",
+              "url": "/docs/apps/launch"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "api": {
+    "openapi": {
+      "rest": "./api/rest/openapi.yaml"
+    },
+    "graphql": "./api/graphql/schema.graphql",
+    "route": {
+      "graphql": "docs/api/graphql",
+      "openapi": {
+        "rest": "docs/api/rest"
+      }
+    }
+  },
+  "redirects": [
+    {
+      "source": "",
+      "destination": "/docs/get-started/quickstart"
+    }
+  ]
+}

@@ -580,7 +580,7 @@ type Mutation {
     """
     ---
     title: Create Funnel
-    group: [GraphQL, Funnels]
+    group: [Endpoints]
     ---
     Create a new funnel
     """
@@ -589,7 +589,7 @@ type Mutation {
     """
     ---
     title: Delete Funnel
-    group: [GraphQL, Funnels]
+    group: [Endpoints]
     ---
     Delete a funnel by ID
     """
@@ -598,7 +598,7 @@ type Mutation {
     """
     ---
     title: Update Funnel
-    group: [GraphQL, Funnels]
+    group: [Endpoints]
     ---
     Update an existing funnel
     """
@@ -607,7 +607,7 @@ type Mutation {
     """
     ---
     title: Set Funnel Favourite
-    group: [GraphQL, Funnels]
+    group: [Endpoints]
     ---
     Set a funnel as favourite
     """
@@ -616,7 +616,7 @@ type Mutation {
     """
     ---
     title: Compute Funnel
-    group: [GraphQL, Funnels]
+    group: [Endpoints]
     ---
     Compute a funnel
     """

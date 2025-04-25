@@ -22,7 +22,7 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
 
 <Tabs items={["Browser", "Frameworks", "API"]}>
     <Tabs.Content value="Browser">
-        <Content>
+        <>
             #### Install code snippet
             This is the simplest way to get LiveSession up and running on browser environment. It only takes a few
             minutes.
@@ -96,11 +96,11 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             <Details kind="secondary" title="(recommended)" label="Set up a reverse proxy">
                 We recommend setting up a reverse proxy so that events are less likely to be intercepted by tracking
                 blockers.
-                <br/>
+                
                 We have our [own managed reverse proxy service](https://livesession.io) included in the Teams plan,
                 which routes
                 through our infrastructure and makes setting up your proxy easy.
-                <br/>
+                
                 If you don't want to use our managed service then there are several other
                 [options for creating a reverse proxy](https://livesession.io),
                 including using [Cloudflare](https://livesession.io),
@@ -157,7 +157,7 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             :::
 
             More details about events API can be found [here](/docs/api/browser/methods).
-        </Content>
+        </>
     </Tabs.Content>
 
     <Tabs.Content value="Frameworks">

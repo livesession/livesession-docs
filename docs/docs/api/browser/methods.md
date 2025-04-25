@@ -3,21 +3,17 @@ title: Methods
 description: Methods
 ---
 
-export const themeSettings = {
-    bigArticle: true
-}
-
 # Methods
 
 ## `init`
-This method is an entry point for LiveSession tracking script used to initialize tracking script on your website.<br/>
+This method is an entry point for LiveSession tracking script used to initialize tracking script on your website.
 You can find your `trackingID` in **LiveSession** -> **Settings** -> **Websites**.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function ("init", trackingID: string, options?: InitOptions)
 ```
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -60,21 +56,21 @@ interface InitOptions {
     rootHostname?: string
 }
 ```
-<Callout>
-    More info about `keystrokes` you can find
-    [here](https://help.livesession.io/en/articles/8825436-recording-user-s-keystrokes).
-</Callout>
+:::callout
+More info about `keystrokes` you can find [here](https://help.livesession.io/en/articles/8825436-recording-user-s-keystrokes).
+:::
 
-<br/>
+
+&nbsp;
 
 ## `identify`
 Identify user and custom data to session.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function("identify", data: IdentifyData)
 ```
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -130,19 +126,20 @@ interface IdentifyData {
     params?: {[key: string]: string | number | boolean}
 }
 ```
-<Callout>
-    User's `name` and `email` will be the same across all of their sessions.
-</Callout>
-<br/>
+:::callout
+User's `name` and `email` will be the same across all of their sessions.
+:::
+
+&nbsp;
 
 ## `track`
 This method allows you to send [custom event](https://help.livesession.io/en/articles/8496404-custom-events) that your users perform along with custom properties.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function("track", event: string, properties?: EventProperties)
 ```
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -252,15 +249,16 @@ __ls(
 ```
 :::
 
-<br/>
+&nbsp;
 
 ## `newPageView`
 Start recording user's visit and add it to session when conditions fulfilled. If session doesn't exists it also create new session.
-###### **Type signture:**
+
+**Type signture:**
 ```ts
 function("newPageView", options?: NewPageViewOptions)
 ```
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -403,20 +401,20 @@ type EventKey =
     // e.g `Add to cart`
     "txt";
 ```
-<Callout>
-    More info how to use `recording conditions` you can find
-    [here](https://help.livesession.io/en/articles/8825436-recording-user-s-keystrokes).
-</Callout>
-<br/>
+:::callout
+More info how to use `recording conditions` you can find [here](https://help.livesession.io/en/articles/8825436-recording-user-s-keystrokes).
+:::
+
+&nbsp;
 
 ## `setCustomParams`
 Set custom properties to session.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function("setCustomParams", options: CustomParamsOptions)
 ```
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -445,16 +443,17 @@ type CustomParamsOptions = {
     params: {[key: string]: string | number | boolean}
 }
 ```
-<br/>
+
+&nbsp;
 
 ## `getSessionURL`
 Get URL to current session.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function("getSessionURL", callback: GetSessionURLCallback)
 ```
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -500,17 +499,18 @@ type GetSessionURLCallback = (
     isNewSession: boolean
 ) => void
 ```
-<br/>
+
+&nbsp;
 
 ## `setOptions`
 Set options and init LiveSession tracking stript (if it's not inited).
 You can find your website ID and account ID in **LiveSession -> Settings -> Websites**.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function ("setOptions", options: InitOptions)
 ```
-###### **Exmaples:**
+**Exmaples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -536,17 +536,17 @@ __ls("setOptions", { keystrokes: true });
 ```
 :::
 
-<br/>
+&nbsp;
 
 ## `invalidateSession`
 Close curent session.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function ("invalidateSession")
 ```
 
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -558,17 +558,18 @@ ls.invalidateSession();
 __ls("invalidateSession");
 ```
 :::
-<br/>
+
+&nbsp;
 
 ## `debug`
 Set debug logging mode.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function ("debug")
 ```
 
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -580,18 +581,19 @@ ls.debug();
 __ls("debug");
 ```
 :::
-<br/>
+
+&nbsp;
 
 ## `log`
 Standard `console.log()` statements will be recorded by LiveSession,
 but you have the option to log messages without adding additional noise to your users browser consoles.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function ("log", logLevel?: LogLevel, data?: object)
 ```
 
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
@@ -610,19 +612,20 @@ __ls("log", "error", { id: 2, message: "demo error message" });
 
 #### logLevel signature:
 ```ts
-type LogLevel = "info" | "warn" | "error"
+type LogLevel = "info" | "warn" | "error"  
 ````
-<br/>
+
+&nbsp;
 
 ## `off`
 Turn LiveSession script off.
 
-###### **Type signture:**
+**Type signture:**
 ```ts
 function ("off")
 ```
 
-###### **Examples:**
+**Examples:**
 :::code-group{title=""}
 ```js sdk
 import ls from "@livesession/browser";
