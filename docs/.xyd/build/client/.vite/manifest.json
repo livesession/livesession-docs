@@ -1,0 +1,60 @@
+{
+  "_chunk-LSOULM7L-ZsbqoCmN.js": {
+    "file": "assets/chunk-LSOULM7L-ZsbqoCmN.js",
+    "name": "chunk-LSOULM7L"
+  },
+  "_index-5yaj3xhN.js": {
+    "file": "assets/index-5yaj3xhN.js",
+    "name": "index",
+    "imports": [
+      "_chunk-LSOULM7L-ZsbqoCmN.js"
+    ]
+  },
+  "_with-props-wWpwuoXc.js": {
+    "file": "assets/with-props-wWpwuoXc.js",
+    "name": "with-props",
+    "imports": [
+      "_chunk-LSOULM7L-ZsbqoCmN.js"
+    ]
+  },
+  "app/entry.client.tsx": {
+    "file": "assets/entry.client-BsPVvsA0.js",
+    "name": "entry.client",
+    "src": "app/entry.client.tsx",
+    "isEntry": true,
+    "imports": [
+      "_chunk-LSOULM7L-ZsbqoCmN.js",
+      "_index-5yaj3xhN.js"
+    ]
+  },
+  "app/public.ts?__react-router-build-client-route": {
+    "file": "assets/public-l0sNRNKZ.js",
+    "name": "public",
+    "src": "app/public.ts?__react-router-build-client-route",
+    "isEntry": true
+  },
+  "app/root.tsx?__react-router-build-client-route": {
+    "file": "assets/root-BY3wLbd2.js",
+    "name": "root",
+    "src": "app/root.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_with-props-wWpwuoXc.js",
+      "_chunk-LSOULM7L-ZsbqoCmN.js"
+    ]
+  },
+  "plugins/xyd-plugin-zero/src/pages/docs.tsx?__react-router-build-client-route": {
+    "file": "assets/docs-CXoCQjws.js",
+    "name": "docs",
+    "src": "plugins/xyd-plugin-zero/src/pages/docs.tsx?__react-router-build-client-route",
+    "isEntry": true,
+    "imports": [
+      "_with-props-wWpwuoXc.js",
+      "_chunk-LSOULM7L-ZsbqoCmN.js",
+      "_index-5yaj3xhN.js"
+    ],
+    "css": [
+      "assets/docs-DpGH1xU7.css"
+    ]
+  }
+}
