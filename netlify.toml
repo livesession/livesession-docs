@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/docs/get-started/quickstart"
+  status = 301
