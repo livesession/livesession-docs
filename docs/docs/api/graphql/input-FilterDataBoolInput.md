@@ -1,5 +1,0 @@
----
-title: FilterDataBoolInput
-layout: wide
----
-

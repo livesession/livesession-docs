@@ -1,5 +1,0 @@
----
-title: FilterDataBool
-layout: wide
----
-

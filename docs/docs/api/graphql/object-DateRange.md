@@ -1,5 +1,0 @@
----
-title: DateRange
-layout: wide
----
-

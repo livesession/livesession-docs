@@ -1,5 +1,0 @@
----
-title: FilterData
-layout: wide
----
-

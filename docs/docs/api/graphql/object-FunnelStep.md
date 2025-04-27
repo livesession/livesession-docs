@@ -1,5 +1,0 @@
----
-title: FunnelStep
-layout: wide
----
-

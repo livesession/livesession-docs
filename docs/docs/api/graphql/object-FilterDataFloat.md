@@ -1,5 +1,0 @@
----
-title: FilterDataFloat
-layout: wide
----
-

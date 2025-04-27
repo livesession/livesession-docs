@@ -1,5 +1,0 @@
----
-title: FunnelInput
-layout: wide
----
-

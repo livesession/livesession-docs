@@ -1,5 +1,0 @@
----
-title: Funnel
-layout: wide
----
-

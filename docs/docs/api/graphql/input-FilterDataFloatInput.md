@@ -1,5 +1,0 @@
----
-title: FilterDataFloatInput
-layout: wide
----
-

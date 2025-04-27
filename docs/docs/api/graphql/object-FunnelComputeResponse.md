@@ -1,5 +1,0 @@
----
-title: FunnelComputeResponse
-layout: wide
----
-

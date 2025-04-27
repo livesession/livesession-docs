@@ -1,5 +1,0 @@
----
-title: FilterDataInt
-layout: wide
----
-

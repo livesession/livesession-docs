@@ -1,5 +1,0 @@
----
-title: FilterDataIntInput
-layout: wide
----
-

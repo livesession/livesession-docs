@@ -20,14 +20,19 @@ LiveSession collects data about user interactions, such as clicks, scrolls or to
 or [mobile](https://en.wikipedia.org/wiki/Mobile_app). Each platform can be accessed in different environment like [specific framework](https://en.wikipedia.org/wiki/Comparison_of_JavaScript-based_web_frameworks) or using a raw protocol like [http](https://en.wikipedia.org/wiki/HTTP).
 That's why we provide a variety of ways to integrate LiveSession into your product.
 
-<Tabs items={["Browser", "Frameworks", "API"]}>
+<Tabs items={["Browser", "API"]}>
     <Tabs.Content value="Browser">
         <>
             ### Install code snippet
             This is the simplest way to get LiveSession up and running on browser environment. It only takes a few
             minutes.
 
-            Copy the snippet below and replace `YOUR_TRACK_ID` with your project's values.
+            First, install LiveSession browser SDK via package manager:
+            ```bash
+            npm install @livesession/browser
+            ```
+
+            After, copy the snippet below and replace `YOUR_TRACK_ID` with your project's values.
             :::code-group{title="Snippet for browser via SDK"}
                 ```ts ts
                 import ls from "@livesession/browser";
@@ -37,75 +42,9 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
                 ```
             :::
 
-            Or, if you want to use `window API` then add below snippet within the `<head>` tags at the base of your product - ideally just before the closing `</head>` tag.
+            Or, if you want to use `window API` then add snippet within the `<head>` tags at the base of your product - ideally just before the closing `</head>` tag.
             This ensures LiveSession loads on any page users visit.
-
-            You can find the snippet pre-filled with this data in [your project settings](https://app.livesession.io/app/settings/websites).
-
-            :::code-group{title="Snippet via window API"}
-                ```html html
-                <script type="text/javascript">
-                    window["__ls_namespace"] = "__ls";
-                    window["__ls_script_url"] = "https://cdn.livesession.io/track.js";
-
-                    !(function (w, d, t, u, n
-                    ) {
-                    if (n in w) {
-                    if (w.console && w.console.log) {
-                    w.console.log(
-                    'LiveSession namespace conflict. Please set window["__ls_namespace"].',
-                    );
-                }
-
-                    return;
-                }
-
-                    if (w[n]) return;
-
-                    var f = (w[n] = function() {
-                    f.push ? f.push.apply(f, arguments) : f.store.push(arguments);
-                });
-
-                    if (!w[n]) w[n] = f;
-                    f.store = [];
-                    f.v = "1.1";
-
-                    var ls = d.createElement(t);
-                    ls.async = true;
-                    ls.src = u;
-                    var s = d.getElementsByTagName(t)[0];
-                    s.parentNode.insertBefore(ls, s);
-                })
-                    (
-                    window,
-                    document,
-                    "script",
-                    window["__ls_script_url"],
-                    window["__ls_namespace"],
-                    )
-                    ;
-
-                    __ls("init", "<YOUR_TRACK_ID>", {
-                    keystrokes: false
-                });
-                    __ls("newPageView");
-                </script>
-                ```
-            :::
-
-            <Details kind="secondary" title="(recommended)" label="Set up a reverse proxy">
-                We recommend setting up a reverse proxy so that events are less likely to be intercepted by tracking
-                blockers.
-                
-                We have our [own managed reverse proxy service](https://livesession.io) included in the Teams plan,
-                which routes
-                through our infrastructure and makes setting up your proxy easy.
-                
-                If you don't want to use our managed service then there are several other
-                [options for creating a reverse proxy](https://livesession.io),
-                including using [Cloudflare](https://livesession.io),
-                [AWS Cloudfront](https://livesession.io), and [Vercel](https://livesession.io).
-            </Details>
+            Full pre-filled snippet is available in [your website settings](https://app.livesession.io/app/settings/websites).
 
             ### Identify users
             To identify users, you can set a user data.
@@ -157,18 +96,14 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             :::
 
             More details about events API can be found [here](/docs/api/browser/methods).
-        </>
-    </Tabs.Content>
 
-    <Tabs.Content value="Frameworks">
-        <Content>
-            ### Choose a framework
+            ### Choose a web framework
 
             LiveSession provides SDKs for popular frameworks and languages to make it easier to integrate into your
             product
             like [React](https://react.dev), [Vue](https://vuejs.org/) or [Angular](https://angular.dev/).
             More information about how to install and use the SDKs can be found [here](/docs/get-started/frameworks).
-        </Content>
+        </>
     </Tabs.Content>
 
     <Tabs.Content value="API">

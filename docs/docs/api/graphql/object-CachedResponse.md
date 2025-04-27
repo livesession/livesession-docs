@@ -1,5 +1,0 @@
----
-title: CachedResponse
-layout: wide
----
-

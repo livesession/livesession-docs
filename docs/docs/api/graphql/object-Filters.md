@@ -1,5 +1,0 @@
----
-title: Filters
-layout: wide
----
-

@@ -1,0 +1,1 @@
+import{u as e,b as r,c as s,d as o,r as n}from"./chunk-LSOULM7L-0P-7VKF_.js";function u(a){return function(){const t={params:o(),loaderData:s(),actionData:r(),matches:e()};return n.createElement(a,t)}}export{u as w};

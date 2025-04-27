@@ -1,30 +1,30 @@
 {
-  "_chunk-LSOULM7L-ZsbqoCmN.js": {
-    "file": "assets/chunk-LSOULM7L-ZsbqoCmN.js",
+  "_chunk-LSOULM7L-0P-7VKF_.js": {
+    "file": "assets/chunk-LSOULM7L-0P-7VKF_.js",
     "name": "chunk-LSOULM7L"
   },
-  "_index-5yaj3xhN.js": {
-    "file": "assets/index-5yaj3xhN.js",
+  "_index-BNaRg1MQ.js": {
+    "file": "assets/index-BNaRg1MQ.js",
     "name": "index",
     "imports": [
-      "_chunk-LSOULM7L-ZsbqoCmN.js"
+      "_chunk-LSOULM7L-0P-7VKF_.js"
     ]
   },
-  "_with-props-wWpwuoXc.js": {
-    "file": "assets/with-props-wWpwuoXc.js",
+  "_with-props-p4yolT18.js": {
+    "file": "assets/with-props-p4yolT18.js",
     "name": "with-props",
     "imports": [
-      "_chunk-LSOULM7L-ZsbqoCmN.js"
+      "_chunk-LSOULM7L-0P-7VKF_.js"
     ]
   },
   "app/entry.client.tsx": {
-    "file": "assets/entry.client-BsPVvsA0.js",
+    "file": "assets/entry.client-CvtzP57Q.js",
     "name": "entry.client",
     "src": "app/entry.client.tsx",
     "isEntry": true,
     "imports": [
-      "_chunk-LSOULM7L-ZsbqoCmN.js",
-      "_index-5yaj3xhN.js"
+      "_chunk-LSOULM7L-0P-7VKF_.js",
+      "_index-BNaRg1MQ.js"
     ]
   },
   "app/public.ts?__react-router-build-client-route": {
@@ -34,27 +34,27 @@
     "isEntry": true
   },
   "app/root.tsx?__react-router-build-client-route": {
-    "file": "assets/root-BY3wLbd2.js",
+    "file": "assets/root-DmQGrVaL.js",
     "name": "root",
     "src": "app/root.tsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
-      "_with-props-wWpwuoXc.js",
-      "_chunk-LSOULM7L-ZsbqoCmN.js"
+      "_with-props-p4yolT18.js",
+      "_chunk-LSOULM7L-0P-7VKF_.js"
     ]
   },
   "plugins/xyd-plugin-zero/src/pages/docs.tsx?__react-router-build-client-route": {
-    "file": "assets/docs-CXoCQjws.js",
+    "file": "assets/docs-B9vN6agB.js",
     "name": "docs",
     "src": "plugins/xyd-plugin-zero/src/pages/docs.tsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
-      "_with-props-wWpwuoXc.js",
-      "_chunk-LSOULM7L-ZsbqoCmN.js",
-      "_index-5yaj3xhN.js"
+      "_with-props-p4yolT18.js",
+      "_chunk-LSOULM7L-0P-7VKF_.js",
+      "_index-BNaRg1MQ.js"
     ],
     "css": [
-      "assets/docs-DpGH1xU7.css"
+      "assets/docs-ixWteAve.css"
     ]
   }
 }

@@ -1,5 +1,0 @@
----
-title: FilterInput
-layout: wide
----
-

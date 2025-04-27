@@ -1,5 +1,0 @@
----
-title: DateTime
-layout: wide
----
-

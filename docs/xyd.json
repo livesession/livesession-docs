@@ -60,7 +60,8 @@
           {
             "group": "Types",
             "pages": [
-             
+              "docs/api/rest/EventKind",
+              "docs/api/rest/RelativeDateString"
             ]
           }
         ]

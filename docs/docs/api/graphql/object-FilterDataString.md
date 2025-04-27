@@ -1,5 +1,0 @@
----
-title: FilterDataString
-layout: wide
----
-

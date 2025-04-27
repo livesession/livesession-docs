@@ -1,5 +1,0 @@
----
-title: FunnelComputeInput
-layout: wide
----
-

@@ -47,11 +47,10 @@ export function WithLiveSession({ children }) {
 ## Vue.js
 We use the Composition API as it provides better accessibility, maintainability, and type safety.
 
-Start by creating a `composables` folder as well as a `useLiveSession.js` file to that folder.
-In `useLiveSession.js`, initialize livesession as a composable:
+Start by creating a `composables` folder as well as a `useLiveSession.ts` file to that folder.
+In `useLiveSession.ts`, initialize livesession as a composable:
 
-```js Vue.js example
-// src/thirdParty/useLiveSession.ts
+```ts useLiveSession.ts
 import ls from '@livesession/browser'
 
 export function uselivesession() {
@@ -64,10 +63,9 @@ export function uselivesession() {
 }
 ````
 
-Next, in `router/index.js`, import the useLiveSession composable and call it.
+Next, in `router/index.ts`, import the useLiveSession composable and call it.
 
-```js Vue.js usage
-// src/router/index.js
+```js router/index.ts
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'

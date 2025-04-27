@@ -1,5 +1,0 @@
----
-title: MetricSetFavouriteInput
-layout: wide
----
-

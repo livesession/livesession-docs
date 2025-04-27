@@ -1,5 +1,0 @@
----
-title: FunnelSetFavouriteInput
-layout: wide
----
-

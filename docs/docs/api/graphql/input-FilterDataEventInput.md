@@ -1,5 +1,0 @@
----
-title: FilterDataEventInput
-layout: wide
----
-
