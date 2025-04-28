@@ -12,7 +12,8 @@
             "group": "Get Started",
             "pages": [
               "docs/get-started/quickstart",
-              "docs/get-started/frameworks"
+              "docs/get-started/frameworks",
+              "docs/get-started/web-integrations"
             ]
           },
           {
@@ -34,7 +35,7 @@
             "group": "Get Started",
             "pages": [
               "docs/api/quickstart",
-              "docs/api/introduction",
+              "docs/api/authentication",
               "docs/api/access-scopes"
             ]
           }
@@ -108,11 +109,11 @@
               "url": "/docs/api"
             },
             {
-              "name": "Browser",
+              "name": "Browser SDK",
               "url": "/docs/api/browser"
             },
             {
-              "name": "REST",
+              "name": "REST API",
               "url": "/docs/api/rest"
             },
             {

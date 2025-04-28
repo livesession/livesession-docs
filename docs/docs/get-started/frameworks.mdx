@@ -1,27 +1,64 @@
 ---
 title: Web frameworks
 description: Web frameworks
+tocGithub: 
+    link: "https://github.com/livesession/livesession-browser-samples"
+    title: "Web Framework Starters"
+    description: "Sample projects for LiveSession in your favorite web framework."
 ---
 
 # Web frameworks
-<Subtitle>
-    Learn how to integrate LiveSession with popular web frameworks and services.
-</Subtitle>
+:::Subtitle
+Learn how to integrate LiveSession with popular web frameworks and services.
+:::
 
-Install `livesession` using your package manager:
+First, install [livesession](https://www.npmjs.com/package/livesession) using your package manager:
 
-```bash @livesession/browser installation
-yarn add @livesession/browser
-# or
+:::code-group{title="Install @livesession/browser"}
+```bash npm
 npm install --save @livesession/browser
 ```
 
-## React
-If your React app to uses the app router, you can integrate React by creating a `providers` file in your app folder.
-This is because the `@livesession/browser` library needs to be initialized on the client-side using the React 'use client' [directive](https://livesession.io).
+```bash pnpm
+pnpm add @livesession/browser
+```
 
-```jsx React example
-// src/thirdParty/livesession.jsx
+```bash yarn
+yarn add @livesession/browser
+```
+:::
+
+## React
+You can integrate React by creating a `providers` file in your app folder.
+
+```tsx 
+'use client'
+
+import { useEffect } from 'react'
+import ls from '@livesession/browser'
+import { LiveSessionProvider } from '@livesession/react'
+
+export function WithLiveSession({ children }) {
+  useEffect(() => {
+    ls.init(process.env.NEXT_PUBLIC_LS_KEY, {
+    })
+  }, [])
+
+  return (
+    <LiveSessionProvider client={livesession}>
+      {children}
+    </LiveSessionProvider>
+  )
+}
+```
+
+&nbsp;
+
+## Next.js
+If your React app to uses the app router, you can integrate React by creating a `providers` file in your app folder.
+This is because the `@livesession/browser` library needs to be initialized on the client-side using the React 'use client' directive.
+
+```tsx livesession.tsx
 'use client'
 
 import { useEffect } from 'react'
@@ -61,7 +98,7 @@ export function uselivesession() {
     ls
   }
 }
-````
+```
 
 Next, in `router/index.ts`, import the useLiveSession composable and call it.
 
@@ -90,7 +127,21 @@ const router = createRouter({
 const { ls } = useLiveSession()
 
 export default router
-````
+```
+
+&nbsp;
+
+## Nuxt
+For Nuxt, you can integrate LiveSession by creating a `composables` folder as well as a `useLiveSession.ts` file to that folder.
+
+```ts useLiveSession.ts
+import ls from '@livesession/browser'
+
+export function uselivesession() {
+  ls.init('<ls_api_key>', {
+  })
+}
+```
 
 &nbsp;
 
@@ -106,8 +157,7 @@ This guide walks you through integrating livesession into your Angular app using
 In your `src/main.ts`, initialize LiveSession using your project API key and instance address.
 You can find both in your project settings.
 
-```js Angular example
-// src/main.ts
+```js src/main.ts
 import { bootstrapApplication } from '@angular/platform-browser';
 import ls from '@livesession/browser'
 
@@ -123,35 +173,13 @@ bootstrapApplication(AppComponent, appConfig)
 ```
 
 &nbsp;
+## Svelte
+Svelte is a popular JavaScript framework for building user interfaces.
 
-## Samples
-The [LiveSession Samples](https://github.com/livesession/livesession-samples) has several end-to-end examples to help you start in different frameworks.
-<GuideCard
-    icon={<IconCode/>}
-    title="Framework Starters"
-    href="https://github.com/livesession/livesession-samples/tree/master/frameworks"
->
-    Explore our sample projects to get started with LiveSession in your favorite framework.
-</GuideCard>
+To integrate LiveSession into your Svelte app, you can use the `@livesession/svelte` package.
 
-{/* ### Next Steps TODO: in the future
-<GuideCard
-    icon={<IconSessionReplay/>}
-    title="Session Replay"
->
-    Visualize user interactions in your product with detailed session replays.
-</GuideCard>
+```ts useLiveSession.ts
+import ls from '@livesession/browser'
 
-<GuideCard
-    icon={<IconMetrics/>}
-    title="Product Analysis"
->
-    Analyze key metrics to understand user behavior and optimize your product workflows.
-</GuideCard>
+```
 
-<GuideCard
-    icon={<IconFunnels/>}
-    title="Funnel Analysis"
->
-    Track user journeys and identify drop-offs to optimize conversion rates.
-</GuideCard> */}

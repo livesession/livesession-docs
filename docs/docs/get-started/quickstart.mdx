@@ -17,28 +17,32 @@ This guide will help you get started with LiveSession and start capturing user i
 
 ## Overview
 LiveSession collects data about user interactions, such as clicks, scrolls or touches in different platforms like [web](https://en.wikipedia.org/wiki/Web_application)
-or [mobile](https://en.wikipedia.org/wiki/Mobile_app). Each platform can be accessed in different environment like [specific framework](https://en.wikipedia.org/wiki/Comparison_of_JavaScript-based_web_frameworks) or using a raw protocol like [http](https://en.wikipedia.org/wiki/HTTP).
+or [mobile](https://en.wikipedia.org/wiki/Mobile_app). Each platform can be accessed in different environment like [specific web framework](https://en.wikipedia.org/wiki/Comparison_of_JavaScript-based_web_frameworks) or via servier using a raw protocol like [http](https://en.wikipedia.org/wiki/HTTP).
 That's why we provide a variety of ways to integrate LiveSession into your product.
 
-<Tabs items={["Browser", "API"]}>
-    <Tabs.Content value="Browser">
+<Tabs items={["Browser SDK", "API"]}>
+    <Tabs.Content value="Browser SDK">
         <>
             ### Install code snippet
             This is the simplest way to get LiveSession up and running on browser environment. It only takes a few
             minutes.
 
-            First, install LiveSession browser SDK via package manager:
+            First, install [LiveSession browser SDK](https://github.com/livesession/livesession-browser) via package manager:
             ```bash
             npm install @livesession/browser
             ```
 
             After, copy the snippet below and replace `YOUR_TRACK_ID` with your project's values.
-            :::code-group{title="Snippet for browser via SDK"}
-                ```ts ts
+            :::code-group{title="Init LiveSession Browser"}
+                ```ts sdk
                 import ls from "@livesession/browser";
 
                 // init a script, trackID is required
                 ls.init("<YOUR_TRACK_ID>", options, sdkOptions);
+                ```
+
+                ```ts window
+                __ls("init", "<YOUR_TRACK_ID>", options, sdkOptions);
                 ```
             :::
 
@@ -102,7 +106,7 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             LiveSession provides SDKs for popular frameworks and languages to make it easier to integrate into your
             product
             like [React](https://react.dev), [Vue](https://vuejs.org/) or [Angular](https://angular.dev/).
-            More information about how to install and use the SDKs can be found [here](/docs/get-started/frameworks).
+            More information about how to install and use the web frameworks can be found [here](/docs/get-started/frameworks).
         </>
     </Tabs.Content>
 
@@ -136,20 +140,29 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             ### Making your first API Request
             With your LiveSession Personal Access Token exported as an environment
             variable, you're ready to make your first API request.
-            You can either use the API directly with the HTTP client of your choice, or use one of our [official SDKs](https://github.com/livesession/livesession-sdk) as
-            shown below.
+            You can either use the API directly with the HTTP client of your choice, or use one of our official SDKs as shown below.
 
             <Tabs ijs="snippet-choose" items={["JavaScript", "curl"]}>
                 <Tabs.Content value="JavaScript">
                     <Content>
                         To use the LiveSession API in server-side JavaScript environments
-                        like Node.js, Deno, or Bun, you can use the official [LiveSession SDK](https://github.com/livesession/livesession-sdk/tree/master/sdks/node/livesession-node)
+                        like Node.js, Deno, or Bun, you can use the official [LiveSession SDK](https://github.com/livesession/livesession-node)
                         for TypeScript and JavaScript.
                         Get started by installing the SDK using npm or your preferred package manager:
 
-                        ```bash Install the LiveSession SDK with npm
+                        :::code-group{title="Install the LiveSession SDK"}
+                        ```bash npm
                         npm install livesession
                         ```
+
+                        ```bash pnpm
+                        pnpm add livesession
+                        ```
+                        
+                        ```bash yarn
+                        yarn add livesession
+                        ```
+                        :::
 
                         Once installed, copy one of the following examples into it:
                         <Tabs items={["Get sessions", "Get websites"]}>
@@ -209,18 +222,6 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
         </Content>
     </Tabs.Content>
 </Tabs>
-
-&nbsp;
-
-## Samples
-The LiveSession Samples has several end-to-end examples to help you get started with LiveSession.
-<GuideCard
-    icon={<IconCode/>}
-    title="Quickstart"
-    href="https://github.com/livesession/livesession-samples"
->
-    Explore our sample projects to get started with LiveSession.
-</GuideCard>
 
 {/* ## Next Steps TODO: in the future */}
 {/* Now that you've set up your LiveSession instance, now you can explore the following resources:

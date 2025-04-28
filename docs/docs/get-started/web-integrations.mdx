@@ -1,0 +1,77 @@
+---
+title: Other web integrations
+description: Other web integrations
+tocGithub: 
+    link: "https://github.com/livesession/livesession-browser-samples"
+    title: "Web Platform Starters"
+    description: "Sample projects for LiveSession in your favorite web platform."
+---
+
+# Web integrations
+:::subtitle
+Learn how to integrate LiveSession with other web platforms.
+:::
+
+## Gatsby
+1. Install [gatsby-plugin-livesession](https://www.gatsbyjs.com/plugins/@livesession/gatsby-plugin-livesession)
+2. Go to gatsby-config.js
+3. Configure a plugin like in following example:
+```js
+plugins: [
+  {
+    resolve: `@livesession/gatsby-plugin-livesession`,
+    options: {
+      trackID: YOUR_LIVESESSION_TRACKID, // Required, string
+      keystrokes: true || false, // Optional, default to false
+      rootHostname: ".example.com", // Optional
+    },
+  },
+];
+```
+Read more about an options you can provide [here](http://localhost:5175/docs/api/browser/methods).
+
+:::callout
+Plugin adds code to your site only in production mode.
+:::
+
+## Capacitor
+
+In general LiveSession support that technology, but you must be sure that resources on your app are available publicly on the Internet.
+
+If you use local server for some reasons you'll need to pass baseURL option like the following:
+```js
+__ls("newPageView", {
+  baseURL: "https://your-site.com"
+});
+```
+:::callout
+For example if you set up your [local server](https://capacitorjs.com/docs/config#schema)
+with **hostname:'frontend', androidScheme:'capacitor-app'** and 
+href to css in your app is /static/style.css the following style resource must be available 
+at `https://your-site.com/static/style.css` assuming you set baseURL to `https://you-site.com`
+:::
+
+## Electron
+Electron doesn't natively support cookies, so LiveSession JavaScript web tracking code won't work because internally we use client-side cookies. We're currently working on a of the electron-cookies package to support tracking.
+
+:::callout
+In the future we'll switch to another browser storage instead of cookies and Electron should works out of the box.
+:::
+
+So, to use LiveSession in Electron apps you should:
+
+Install electron-cookies package
+
+Configure a like in following example:
+```js
+import ElectronCookies from '@livesession/electron-cookies';
+// enable
+ElectronCookies.enable({
+  origin: 'https://example.com'
+}); // or ElectronCookies.enable() for default
+// disable
+ElectronCookies.disable();
+```
+The browser cookies needs to know the current URL, but in Electron files are usually served from local filesystem which is not compatibile with cookies. Treat origin as a special key for cookies store within all data is saved.
+
+Read more about a package [here](https://github.com/livesession/electron-cookies).
