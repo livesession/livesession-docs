@@ -19,9 +19,9 @@
           {
             "group": "Capabilities",
             "pages": [
-              "docs/capabilities/alerting",
+              "docs/capabilities/alerts",
               "docs/capabilities/funnels",
-              "docs/capabilities/trends",
+              "docs/capabilities/metrics",
               "docs/capabilities/user-paths"
             ]
           }
