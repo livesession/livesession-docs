@@ -72,7 +72,7 @@
 
 [[redirects]]
   from = "/webhooks/introduction"
-  to = "docs/api/webhooks/configuration"
+  to = "/docs/api/webhooks/configuration"
   status = 301
   force = true
 
