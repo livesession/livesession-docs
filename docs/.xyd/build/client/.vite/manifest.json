@@ -34,7 +34,7 @@
     "isEntry": true
   },
   "app/root.tsx?__react-router-build-client-route": {
-    "file": "assets/root-DmQGrVaL.js",
+    "file": "assets/root-Tta0AEr1.js",
     "name": "root",
     "src": "app/root.tsx?__react-router-build-client-route",
     "isEntry": true,
@@ -44,7 +44,7 @@
     ]
   },
   "plugins/xyd-plugin-zero/src/pages/docs.tsx?__react-router-build-client-route": {
-    "file": "assets/docs-Co-LqWHQ.js",
+    "file": "assets/docs-DL6rjrXG.js",
     "name": "docs",
     "src": "plugins/xyd-plugin-zero/src/pages/docs.tsx?__react-router-build-client-route",
     "isEntry": true,
@@ -54,7 +54,7 @@
       "_index-BNaRg1MQ.js"
     ],
     "css": [
-      "assets/docs-BPZJQkBD.css"
+      "assets/docs-yemdZUcG.css"
     ]
   }
 }
