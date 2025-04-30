@@ -17,11 +17,17 @@
   force = true
 
 [[redirects]]
-  from = "/javascript-api/platforms"
-  to = "/docs/get-started/frameworks"
+  from = "/javascript-api/introduction"
+  to = "/docs/api/browser/introduction"
   status = 301
   force = true
 
+[[redirects]]
+  from = "/javascript-api/configuration"
+  to = "/docs/api/browser/methods#init"
+  status = 301
+  force = true
+  
 [[redirects]]
   from = "/javascript-api/methods"
   to = "/docs/api/browser/methods"
@@ -29,7 +35,49 @@
   force = true
 
 [[redirects]]
-  from = "/javascript-api/introduction"
+  from = "/javascript-api/recording-conditions"
+  to = "/docs/api/browser/recording-conditions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/javascript-api/rate-limits"
   to = "/docs/api/browser/introduction"
+  status = 301
+  force = true
+ 
+[[redirects]]
+  from = "/javascript-api/tutorials"
+  to = "/docs/get-started/frameworks"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/javascript-api/platforms"
+  to = "/docs/get-started/frameworks"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/rest-api/introduction"
+  to = "/docs/api/authentication"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "/rest-api/reference"
+  to = "/docs/api/rest/getsessions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/webhooks/introduction"
+  to = "docs/api/webhooks/configuration"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/webhooks/event-types"
+  to = "/docs/api/webhooks/type-session-event"
   status = 301
   force = true
