@@ -9,3 +9,9 @@
   to = "/docs/get-started/quickstart/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://developers.livesession.io/*"
+  to = "https://livesession.dev/:splat"
+  status = 301
+  force = true
