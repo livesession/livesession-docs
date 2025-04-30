@@ -401,9 +401,6 @@ type EventKey =
     // e.g `Add to cart`
     "txt";
 ```
-:::callout
-More info how to use `recording conditions` you can find [here](https://help.livesession.io/en/articles/8825436-recording-user-s-keystrokes).
-:::
 
 &nbsp;
 

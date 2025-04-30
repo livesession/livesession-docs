@@ -73,11 +73,11 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             ```js sdk
             import ls from "@livesession/browser";
 
-            ls.setCustomParams({plan: "premium", team: "marketing"})
+            ls.setCustomParams({plan_str: "premium", team_str: "marketing"})
             ```
 
             ```js window
-            __ls("setCustomParams", {plan: "premium", team: "marketing"})
+            __ls("setCustomParams", {plan_str: "premium", team_str: "marketing"})
             ```
             :::
 
@@ -91,11 +91,11 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
             ```js sdk
             import ls from "@livesession/browser";
 
-            ls.track("User Subscribed", {plan: "premium"})
+            ls.track("User Subscribed", {plan_str: "premium"})
             ```
 
             ```js window
-            __ls("track", "User Subscribed", {plan: "premium"})
+            __ls("track", "User Subscribed", {plan_str: "premium"})
             ```
             :::
 
