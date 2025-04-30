@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "https://developers.livesession.io/*"
+  to = "https://livesession.dev/:splat"
+  status = 301
+  force = true
+  
+[[redirects]]
   from = "/"
   to = "/docs/get-started/quickstart/"
   status = 301
@@ -11,7 +17,19 @@
   force = true
 
 [[redirects]]
-  from = "https://developers.livesession.io/*"
-  to = "https://livesession.dev/:splat"
+  from = "/javascript-api/platforms"
+  to = "/docs/get-started/frameworks"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/javascript-api/methods"
+  to = "/docs/api/browser/methods"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/javascript-api/introduction"
+  to = "/docs/api/browser/introduction"
   status = 301
   force = true
