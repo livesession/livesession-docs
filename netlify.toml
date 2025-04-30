@@ -23,7 +23,7 @@
   force = true
 
 [[redirects]]
-  from = "/configuration"
+  from = "/javascript-api/configuration"
   to = "/docs/api/browser/methods#init"
   status = 301
   force = true
