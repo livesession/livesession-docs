@@ -12,8 +12,7 @@
             "group": "Get Started",
             "pages": [
               "docs/get-started/quickstart",
-              "docs/get-started/frameworks",
-              "docs/get-started/web-integrations"
+              "docs/get-started/frameworks"
             ]
           },
           {
@@ -97,7 +96,7 @@
       },
       {
         "name": "APIs and references",
-        "url": "/docs/api"
+        "url": "/docs/api/quickstart"
       },
       {
         "sub": {

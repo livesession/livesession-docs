@@ -1,6 +1,6 @@
 ---
-title: Web frameworks
-description: Web frameworks
+title:  Frameworks
+description: Learn how to integrate LiveSession with popular web frameworks
 tocGithub: 
     link: "https://github.com/livesession/livesession-browser-samples"
     title: "Web Framework Starters"
@@ -12,11 +12,13 @@ tocGithub:
 Learn how to integrate LiveSession with popular web frameworks and services.
 :::
 
-First, install [livesession](https://www.npmjs.com/package/livesession) using your package manager:
+## Quick Start
+
+First, install the LiveSession Browser SDK:
 
 :::code-group{title="Install @livesession/browser"}
 ```bash npm
-npm install --save @livesession/browser
+npm install @livesession/browser
 ```
 
 ```bash pnpm
@@ -28,166 +30,342 @@ yarn add @livesession/browser
 ```
 :::
 
-## React
-You can integrate React by creating a `providers` file in your app folder.
+Then initialize LiveSession in your application:
 
-```tsx 
-'use client'
+```ts
+import ls from "@livesession/browser"
 
-import { useEffect } from 'react'
-import ls from '@livesession/browser'
-import { LiveSessionProvider } from '@livesession/react'
-
-export function WithLiveSession({ children }) {
-  useEffect(() => {
-    ls.init(process.env.NEXT_PUBLIC_LS_KEY, {
-    })
-  }, [])
-
-  return (
-    <LiveSessionProvider client={livesession}>
-      {children}
-    </LiveSessionProvider>
-  )
-}
+ls.init("YOUR_TRACKING_CODE")
 ```
 
-&nbsp;
+Start recording:
 
-## Next.js
-If your React app to uses the app router, you can integrate React by creating a `providers` file in your app folder.
-This is because the `@livesession/browser` library needs to be initialized on the client-side using the React 'use client' directive.
-
-```tsx livesession.tsx
-'use client'
-
-import { useEffect } from 'react'
-import ls from '@livesession/browser'
-import { LiveSessionProvider } from '@livesession/react'
-
-export function WithLiveSession({ children }) {
-  useEffect(() => {
-    ls.init(process.env.NEXT_PUBLIC_LS_KEY, {
-    })
-  }, [])
-
-  return (
-    <LiveSessionProvider client={livesession}>
-      {children}
-    </LiveSessionProvider>
-  )
-}
+```ts
+ls.newPageView()
 ```
 
-&nbsp;
+## Angular
 
-## Vue.js
-We use the Composition API as it provides better accessibility, maintainability, and type safety.
+In your `src/app/app.component.ts`, initialize LiveSession using your project tracking code.
+You can find it in your project settings.
 
-Start by creating a `composables` folder as well as a `useLiveSession.ts` file to that folder.
-In `useLiveSession.ts`, initialize livesession as a composable:
+```ts src/app/app.component.ts
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
-```ts useLiveSession.ts
-import ls from '@livesession/browser'
+import ls from "@livesession/browser";
 
-export function uselivesession() {
-  ls.init('<ls_api_key>', {
-  })
-
-  return {
-    ls
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+})
+export class AppComponent {
+  ngOnInit() {
+    ls.init("YOUR_TRACK_ID")
+    
+    ls.newPageView()
   }
 }
 ```
 
-Next, in `router/index.ts`, import the useLiveSession composable and call it.
+Sample Angular app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/angular)
 
-```js router/index.ts
-import { createRouter, createWebHistory } from 'vue-router'
+## Astro
 
-import HomeView from '../views/HomeView.vue'
-import { useLiveSession } from '@/thirdParty/useLiveSession'
+In your `src/components/LiveSession.astro`, initialize LiveSession using your project tracking code.
+You can find it in your project settings.
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
-    },
-  ],
-})
+```astro src/components/LiveSession.astro
+---
+const trackID = "YOUR_TRACK_ID";
+---
 
-const { ls } = useLiveSession()
+<livesession-astro data-track-id={trackID}></livesession-astro>
 
-export default router
+<script>
+   import ls from "@livesession/browser";
+
+  class LiveSessionAstro extends HTMLElement {
+    connectedCallback() {
+      const trackId = this.dataset.trackId;
+      if (!trackId) {
+        console.warn("(livesession-astro): no 'trackId' provided");
+        return;
+      }
+
+      ls.init(trackId);
+      ls.newPageView();
+    }
+  }
+
+  customElements.define("livesession-astro", LiveSessionAstro);
+</script>
 ```
 
-&nbsp;
+then add the component to your layout:
+```astro
+---
+import LiveSession from '../components/LiveSession.astro';
+---
 
-## Nuxt
-For Nuxt, you can integrate LiveSession by creating a `composables` folder as well as a `useLiveSession.ts` file to that folder.
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Astro Basics</title>
+ </head>
+ <body>
+  <slot />
+  <LiveSession />
+ </body>
+</html>
+```
 
-```ts useLiveSession.ts
+Sample Astro app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/astro)
+
+## Next.js
+In your `src/app/livesession.tsx`, initialize LiveSession using your project tracking code.
+You can find it in your project settings.
+
+```tsx src/app/livesession.tsx
+'use client'
+
+import { useEffect } from 'react'
+
 import ls from '@livesession/browser'
 
-export function uselivesession() {
-  ls.init('<ls_api_key>', {
-  })
+export function LiveSession({ children }: { children: React.ReactNode }) {
+    useEffect(() => {
+      ls.init("YOUR_TRACK_ID")
+      ls.newPageView()
+  }, [])
+
+  return children
 }
 ```
 
-&nbsp;
+then the provider to your root layout:
 
-## Angular
-LiveSession makes it easy to get data about traffic and usage of your [Angular](https://angular.dev) app.
+```tsx
+import { LiveSession } from './livesession'
 
-Integrating LiveSession into your site enables analytics about user behavior,
-custom events capture, session recordings, feature flags, and more.
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body>
+        <LiveSession>{children}</LiveSession>
+      </body>
+    </html>
+  )
+}
+```
 
-This guide walks you through integrating livesession into your Angular app using the [Browser SDK](/docs/api/browser/introduction).
+Sample Next.js app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/next)
 
-### Angular setup
-In your `src/main.ts`, initialize LiveSession using your project API key and instance address.
-You can find both in your project settings.
+## Nuxt
 
-```js src/main.ts
-import { bootstrapApplication } from '@angular/platform-browser';
+Create a plugin for LiveSession in `plugins/livesession.ts` and initialize LiveSession using your project tracking code.
+You can find it in your project settings.
+
+```ts plugins/livesession.ts
+import { defineNuxtPlugin, useRuntimeConfig, useRouter, nextTick } from '#imports'
+
 import ls from '@livesession/browser'
 
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+export default defineNuxtPlugin(() => {
+    const runtimeConfig = useRuntimeConfig()
+    const router = useRouter()
 
-ls.init(
-  '<ls_api_key>',
+    router.afterEach((to) => {
+        nextTick(() => {
+            if (!process.client) {
+                return
+            }
+
+            ls.init("YOUR_TRACK_ID")
+            ls.newPageView()
+        })
+    })
+})
+```
+
+Sample Nuxt app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/nuxt)
+
+## React (Vite + TypeScript)
+
+In your `src/main.tsx`, initialize LiveSession using your project tracking code.
+You can find it in your project settings.
+
+```tsx src/main.tsx
+import {StrictMode} from 'react'
+import {createRoot} from 'react-dom/client'
+
+import ls from "@livesession/browser";
+
+import './index.css'
+import App from './App.jsx'
+
+try {
+    ls.init("YOUR_TRACK_ID")
+    ls.newPageView()
+} catch(e) {
+    console.error(e)
+}
+
+createRoot(document.getElementById('root')).render(
+    <StrictMode>
+        <App/>
+    </StrictMode>,
 )
-
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
 ```
 
-&nbsp;
-## Svelte
-Svelte is a popular JavaScript framework for building user interfaces.
+Sample React app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/react)
 
-To integrate LiveSession into your Svelte app, you can use the `@livesession/svelte` package.
+## React Router
 
-```ts useLiveSession.ts
+In your `app/components/LiveSession.tsx`, initialize LiveSession using your project tracking code.
+You can find it in your project settings.
+
+```tsx app/components/LiveSession.tsx
+import { useEffect } from "react";
+import ls from "@livesession/browser";
+
+export function LiveSession({ children }: { children: React.ReactNode }) {
+    useEffect(() => {
+        ls.init("YOUR_TRACK_ID")
+        ls.newPageView()
+    }, [])
+
+    return children
+}
+```
+
+then add the component to your root layout:
+```tsx root.tsx
+import { LiveSession } from './components/LiveSession'
+export function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <LiveSession />
+      </body>
+    </html>
+  );
+```
+
+Sample React Router app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/react-router)
+
+## Svelte (SvelteKit)
+
+In `src/routes/+layout.ts`, initialize LiveSession using your project tracking code.
+You can find it in your project settings.
+
+```ts src/routes/+layout.ts
 import ls from '@livesession/browser'
+import { browser } from '$app/environment';
 
+export const load = async () => {
+  if (browser) {
+    ls.init("YOUR_TRACK_ID")
+    ls.newPageView()
+  }
+  return
+};
 ```
 
-&nbsp;
+Sample Svelte app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/sveltekit)
 
-## Astro
-LiveSession makes it easy to get data about traffic and usage of your [Astro](https://livesession.io) app.
+## Vue (Vite + TypeScript)
 
-Integrating LiveSession into your site enables analytics about user behavior,
-custom events capture, session recordings, feature flags, and more.
+In `src/main.ts`, initialize LiveSession using your project tracking code.
+You can find it in your project settings.
 
+```ts src/main.ts
+import { createApp } from 'vue'
+
+import ls from "@livesession/browser";
+
+import './style.css'
+import App from './App.vue'
+
+try {
+   ls.init("YOUR_TRACK_ID")
+  ls.newPageView()
+} catch(e) {
+    console.error(e)
+}
+
+createApp(App).mount('#app')
+```
+
+Sample Vue app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/vue)
+
+## Gatsby
+1. Install [gatsby-plugin-livesession](https://www.gatsbyjs.com/plugins/@livesession/gatsby-plugin-livesession)
+2. Go to gatsby-config.js
+3. Configure a plugin like in following example:
+
+```js
+plugins: [
+  {
+    resolve: `@livesession/gatsby-plugin-livesession`,
+    options: {
+      trackID: YOUR_LIVESESSION_TRACKID, // Required, string
+      keystrokes: true || false, // Optional, default to false
+      rootHostname: ".example.com", // Optional
+    },
+  },
+];
+```
+Read more about an options you can provide [here](http://localhost:5175/docs/api/browser/methods).
+
+:::callout
+Plugin adds code to your site only in production mode.
+:::
+
+## Capacitor
+
+In general LiveSession support that technology, but you must be sure that resources on your app are available publicly on the Internet.
+
+If you use local server for some reasons you'll need to pass baseURL option like the following:
+```js
+__ls("newPageView", {
+  baseURL: "https://your-site.com"
+});
+```
+:::callout
+For example if you set up your [local server](https://capacitorjs.com/docs/config#schema)
+with **hostname:'frontend', androidScheme:'capacitor-app'** and 
+href to css in your app is /static/style.css the following style resource must be available 
+at `https://your-site.com/static/style.css` assuming you set baseURL to `https://you-site.com`
+:::
+
+## Electron
+Electron doesn't natively support cookies, so LiveSession JavaScript web tracking code won't work because internally we use client-side cookies. We're currently working on a of the electron-cookies package to support tracking.
+
+:::callout
+In the future we'll switch to another browser storage instead of cookies and Electron should works out of the box.
+:::
+
+So, to use LiveSession in Electron apps you should:
+
+1. Install electron-cookies package
+2. Configure a like in following example:
+
+```js
+import ElectronCookies from '@livesession/electron-cookies';
+// enable
+ElectronCookies.enable({
+  origin: 'https://example.com'
+}); // or ElectronCookies.enable() for default
+// disable
+ElectronCookies.disable();
+```
+The browser cookies needs to know the current URL, but in Electron files are usually served from local filesystem which is not compatibile with cookies. Treat origin as a special key for cookies store within all data is saved.
+
+Read more about a package [here](https://github.com/livesession/electron-cookies).
+
+## Sample Projects
+
+Check out our [sample projects](https://github.com/livesession/livesession-browser-samples) for complete examples of LiveSession integration with each framework. 

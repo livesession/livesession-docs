@@ -54,23 +54,44 @@ Authorization: Bearer $LIVESESSION_PAT
 You can paste the command below into your terminal to run your first API request.
 Make sure to replace `$LIVESESSION_PAT` with your secret PAT.
 
-:::code-group{title=""}
-```js sdk
-import livesession from "livesession";
+<Tabs items={["Node.js", "Go", "Curl"]}>
+    <Tabs.Content value="Node.js">
+        ```ts
+        import livesession from "livesession";
 
-const ls = new livesession(
-    livesession.optionApikey(process.env.LIVESESSION_PAT)
-)
+        const ls = new livesession(
+            livesession.optionApikey(process.env.LIVESESSION_PAT)
+        )
 
-const sessions = await ls.sessions.list()
-```
+        const sessions = await ls.sessions.list()
+        ```
+    </Tabs.Content>
+    <Tabs.Content value="Go">
+        ```go
+        package main
 
-```bash curl
-curl https://api.livesession.io/v1/sessions \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $LIVESESSION_PAT"
-```
-:::
+        import (
+            "context"
+            "fmt"
+            "log"
+            lsClient "go.livesession.dev/livesession-go/client"
+        )
+
+        func main() {
+            ls := lsClient.New(lsClient.WithApiKey(os.Getenv("LIVESESSION_PAT")))
+            
+            sessions, err := ls.Sessions.List(context.Background())
+        }
+        ```
+    </Tabs.Content>
+    <Tabs.Content value="Curl">
+        ```bash curl
+        curl https://api.livesession.io/v1/sessions \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $LIVESESSION_PAT"
+        ```
+    </Tabs.Content>
+</Tabs>
 
 ## Rate limits
 Note that by default all tokens are set to 2 Queries Per Second (QPS). This is a per token limit.
