@@ -111,7 +111,6 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
     </Tabs.Content>
 
     <Tabs.Content value="API">
-        <Content>
             ### Create and export a Personal Access Token (PAT)
             [Create a PAT in the dashboard here](https://app.livesession.io/app/settings/api?tab=api_tokens), which you'll use to securely access the
             API.
@@ -122,18 +121,14 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
 
             <Tabs ijs="os-choose" items={["mac OS / Linux", "Windows"]}>
                 <Tabs.Content value="mac OS / Linux">
-                    <Content>
-                        ```bash Export an environment variable on macOS or Linux systems
-                        export LIVESESSION_PAT="YOUR_PAT_HERE"
-                        ```
-                    </Content>
+                    ```bash Export an environment variable on macOS or Linux systems
+                    export LIVESESSION_PAT="YOUR_PAT_HERE"
+                    ```
                 </Tabs.Content>
                 <Tabs.Content value="Windows">
-                    <Content>
-                        ```bash Export an environment variable in PowerShell
-                        setx LIVESESSION_PAT="YOUR_PAT_HERE"
-                        ```
-                    </Content>
+                    ```bash Export an environment variable in PowerShell
+                    setx LIVESESSION_PAT="YOUR_PAT_HERE"
+                    ```
                 </Tabs.Content>
             </Tabs>
 
@@ -144,82 +139,76 @@ That's why we provide a variety of ways to integrate LiveSession into your produ
 
             <Tabs ijs="snippet-choose" items={["JavaScript", "curl"]}>
                 <Tabs.Content value="JavaScript">
-                    <Content>
-                        To use the LiveSession API in server-side JavaScript environments
-                        like Node.js, Deno, or Bun, you can use the official [LiveSession SDK](https://github.com/livesession/livesession-node)
-                        for TypeScript and JavaScript.
-                        Get started by installing the SDK using npm or your preferred package manager:
+                    To use the LiveSession API in server-side JavaScript environments
+                    like Node.js, Deno, or Bun, you can use the official [LiveSession SDK](https://github.com/livesession/livesession-node)
+                    for TypeScript and JavaScript.
+                    Get started by installing the SDK using npm or your preferred package manager:
 
-                        :::code-group{title="Install the LiveSession SDK"}
-                        ```bash npm
-                        npm install livesession
-                        ```
+                    :::code-group{title="Install the LiveSession SDK"}
+                    ```bash npm
+                    npm install livesession
+                    ```
 
-                        ```bash pnpm
-                        pnpm add livesession
-                        ```
-                        
-                        ```bash yarn
-                        yarn add livesession
-                        ```
-                        :::
+                    ```bash pnpm
+                    pnpm add livesession
+                    ```
+                    
+                    ```bash yarn
+                    yarn add livesession
+                    ```
+                    :::
 
-                        Once installed, copy one of the following examples into it:
-                        <Tabs items={["Get sessions", "Get websites"]}>
-                            <Tabs.Content value="Get sessions">
-                                ```js
-                                import livesession from 'livesession';
+                    Once installed, copy one of the following examples into it:
+                    <Tabs items={["Get sessions", "Get websites"]}>
+                        <Tabs.Content value="Get sessions">
+                            ```js
+                            import livesession from 'livesession';
 
-                                const ls = new livesession(
-                                    livesession.optionApiKey(process.env.LIVESESSION_PAT)
-                                );
+                            const ls = new livesession(
+                                livesession.optionApiKey(process.env.LIVESESSION_PAT)
+                            );
 
-                                const sessions = await ls.sessions.list();
-                                console.log(sessions);
-                                ```
-                            </Tabs.Content>
-                            <Tabs.Content value="Get websites">
-                                ```js
-                                import livesession from 'livesession';
+                            const sessions = await ls.sessions.list();
+                            console.log(sessions);
+                            ```
+                        </Tabs.Content>
+                        <Tabs.Content value="Get websites">
+                            ```js
+                            import livesession from 'livesession';
 
-                                const ls = new livesession(
-                                    livesession.optionApiKey(process.env.LIVESESSION_PAT)
-                                );
+                            const ls = new livesession(
+                                livesession.optionApiKey(process.env.LIVESESSION_PAT)
+                            );
 
-                                const websites = await ls.websites.list();
-                                console.log(websites);
-                                ```
-                            </Tabs.Content>
-                        </Tabs>
-                    </Content>
+                            const websites = await ls.websites.list();
+                            console.log(websites);
+                            ```
+                        </Tabs.Content>
+                    </Tabs>
                 </Tabs.Content>
                 <Tabs.Content value="curl">
-                    <Content>
-                        On Unix-based systems, you can test out the LiveSession API using curl.
-                        The following commands assume that you have exported the LIVESESSION_PAT system environment
-                        variable as shown above.
+                    On Unix-based systems, you can test out the LiveSession API using curl.
+                    The following commands assume that you have exported the LIVESESSION_PAT system environment
+                    variable as shown above.
 
-                        <Tabs items={["Get sessions", "Get websites"]}>
-                            <Tabs.Content value="Get sessions">
-                                ```bash
-                                curl https://api.livesession.io/v1/sessions \
-                                -H "Content-Type: application/json" \
-                                -H "Authorization: Bearer $LIVESESSION_PAT"
-                                ```
-                            </Tabs.Content>
-                            <Tabs.Content value="Get websites">
-                                ```bash
-                                curl https://api.livesession.io/v1/websites \
-                                -H "Content-Type: application/json" \
-                                -H "Authorization: Bearer $LIVESESSION_PAT"
-                                ```
-                            </Tabs.Content>
-                        </Tabs>
-                    </Content>
+                    <Tabs items={["Get sessions", "Get websites"]}>
+                        <Tabs.Content value="Get sessions">
+                            ```bash
+                            curl https://api.livesession.io/v1/sessions \
+                            -H "Content-Type: application/json" \
+                            -H "Authorization: Bearer $LIVESESSION_PAT"
+                            ```
+                        </Tabs.Content>
+                        <Tabs.Content value="Get websites">
+                            ```bash
+                            curl https://api.livesession.io/v1/websites \
+                            -H "Content-Type: application/json" \
+                            -H "Authorization: Bearer $LIVESESSION_PAT"
+                            ```
+                        </Tabs.Content>
+                    </Tabs>
                 </Tabs.Content>
             </Tabs>
-
-        </Content>
     </Tabs.Content>
 </Tabs>
 
