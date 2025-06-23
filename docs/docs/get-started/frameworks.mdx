@@ -49,7 +49,7 @@ ls.newPageView()
 In your `src/app/app.component.ts`, initialize LiveSession using your project tracking code.
 You can find it in your project settings.
 
-```ts src/app/app.component.ts
+```ts src/app/app.component.ts [descHead="Tip" desc="Sample Angular app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/angular)."]
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -68,8 +68,6 @@ export class AppComponent {
   }
 }
 ```
-
-Sample Angular app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/angular)
 
 ## Astro
 
@@ -104,7 +102,7 @@ const trackID = "YOUR_TRACK_ID";
 ```
 
 then add the component to your layout:
-```astro
+```astro [descHead="Tip" desc="Sample Astro app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/astro)."]
 ---
 import LiveSession from '../components/LiveSession.astro';
 ---
@@ -120,8 +118,6 @@ import LiveSession from '../components/LiveSession.astro';
  </body>
 </html>
 ```
-
-Sample Astro app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/astro)
 
 ## Next.js
 In your `src/app/livesession.tsx`, initialize LiveSession using your project tracking code.
@@ -146,7 +142,7 @@ export function LiveSession({ children }: { children: React.ReactNode }) {
 
 then the provider to your root layout:
 
-```tsx
+```tsx [descHead="Tip" desc="Sample Next.js app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/next)."]
 import { LiveSession } from './livesession'
 
 export default function RootLayout({ children }) {
@@ -160,14 +156,12 @@ export default function RootLayout({ children }) {
 }
 ```
 
-Sample Next.js app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/next)
-
 ## Nuxt
 
 Create a plugin for LiveSession in `plugins/livesession.ts` and initialize LiveSession using your project tracking code.
 You can find it in your project settings.
 
-```ts plugins/livesession.ts
+```ts plugins/livesession.ts [descHead="Tip" desc="Sample Nuxt app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/nuxt)."]
 import { defineNuxtPlugin, useRuntimeConfig, useRouter, nextTick } from '#imports'
 
 import ls from '@livesession/browser'
@@ -189,14 +183,12 @@ export default defineNuxtPlugin(() => {
 })
 ```
 
-Sample Nuxt app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/nuxt)
-
 ## React
 
 In your `src/main.tsx`, initialize LiveSession using your project tracking code.
 You can find it in your project settings.
 
-```tsx src/main.tsx
+```tsx src/main.tsx [descHead="Tip" desc="Sample React app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/react)."]
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 
@@ -219,8 +211,6 @@ createRoot(document.getElementById('root')).render(
 )
 ```
 
-Sample React app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/react)
-
 ## React Router
 
 In your `app/components/LiveSession.tsx`, initialize LiveSession using your project tracking code.
@@ -241,7 +231,7 @@ export function LiveSession({ children }: { children: React.ReactNode }) {
 ```
 
 then add the component to your root layout:
-```tsx root.tsx
+```tsx root.tsx [descHead="Tip" desc="Sample React Router app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/react-router)."]
 import { LiveSession } from './components/LiveSession'
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -254,14 +244,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 ```
 
-Sample React Router app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/react-router)
-
 ## Svelte (SvelteKit)
 
 In `src/routes/+layout.ts`, initialize LiveSession using your project tracking code.
 You can find it in your project settings.
 
-```ts src/routes/+layout.ts
+```ts src/routes/+layout.ts [descHead="Tip" desc="Sample Svelte app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/sveltekit)."]
 import ls from '@livesession/browser'
 import { browser } from '$app/environment';
 
@@ -274,14 +262,12 @@ export const load = async () => {
 };
 ```
 
-Sample Svelte app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/sveltekit)
-
 ## Vue
 
 In `src/main.ts`, initialize LiveSession using your project tracking code.
 You can find it in your project settings.
 
-```ts src/main.ts
+```ts src/main.ts [descHead="Tip" desc="Sample Vue app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/vue)."]
 import { createApp } from 'vue'
 
 import ls from "@livesession/browser";
@@ -298,8 +284,6 @@ try {
 
 createApp(App).mount('#app')
 ```
-
-Sample Vue app, you can [View on GitHub](https://github.com/livesession/livesession-browser-samples/tree/master/vue)
 
 ## Gatsby
 1. Install [gatsby-plugin-livesession](https://www.gatsbyjs.com/plugins/@livesession/gatsby-plugin-livesession)
