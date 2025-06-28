@@ -111,9 +111,7 @@
         "pages": [
           {
             "group": "Overview",
-            "pages": [
-              "docs/api/graphql/overview/introduction"
-            ],
+            "pages": ["docs/api/graphql/overview/introduction"],
             "sort": 0
           }
         ]
@@ -131,9 +129,7 @@
           },
           {
             "group": "Event Types",
-            "pages": [
-              "docs/api/webhooks/type-session-event"
-            ]
+            "pages": ["docs/api/webhooks/type-session-event"]
           }
         ]
       }
@@ -151,12 +147,8 @@
   },
   "engine": {
     "paths": {
-      "@core/*": [
-        "../../packages/xyd-core/src/*"
-      ],
-      "@snippets/*": [
-        "./snippets/src/*"
-      ]
+      "@core/*": ["../../packages/xyd-core/src/*"],
+      "@snippets/*": ["./snippets/src/*"]
     }
   }
 }
