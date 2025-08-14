@@ -103,6 +103,14 @@
     "anchors": {
       "header": [
         {
+          "title": "Docs",
+          "page": "docs"
+        },
+        {
+          "title": "APIs and references",
+          "page": "docs/api"
+        },
+        {
           "title": "Login",
           "href": "https://app.livesession.io",
           "button": "primary"
@@ -114,16 +122,6 @@
         }
       ]
     },
-    "tabs": [
-      {
-        "title": "Docs",
-        "page": "docs"
-      },
-      {
-        "title": "APIs and references",
-        "page": "docs/api"
-      }
-    ],
     "segments": [
       {
         "route": "docs/api",
