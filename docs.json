@@ -1,7 +1,7 @@
 {
   "$schema": "https://xyd.dev/public/docs.json",
   "theme": {
-    "name": "opener",
+    "name": "gusto",
     "favicon": "/public/favicon.png",
     "logo": {
       "light": "/public/logo.svg",
@@ -101,18 +101,18 @@
   },
   "navigation": {
     "anchors": {
-      "header": [
-        {
-          "title": "Login",
-          "href": "https://app.livesession.io",
-          "button": "primary"
-        },
-        {
-          "title": "Github",
-          "href": "https://github.com/livesession",
-          "social": "github"
-        }
-      ]
+      "sidebar": {
+        "bottom": [
+          {
+            "title": "Login",
+            "href": "https://app.livesession.io"
+          },
+          {
+            "title": "Github",
+            "href": "https://github.com/livesession"
+          }
+        ]
+      } 
     },
     "tabs": [
       {
