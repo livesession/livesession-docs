@@ -1,7 +1,7 @@
 {
   "$schema": "https://xyd.dev/public/docs.json",
   "theme": {
-    "name": "opener",
+    "name": "cosmo",
     "favicon": "/public/favicon.png",
     "logo": {
       "light": "/public/logo.svg",
