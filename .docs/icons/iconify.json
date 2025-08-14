@@ -1,0 +1,11 @@
+{
+    "prefix": "ls",
+    "lastModified": 1753806946,
+    "icons": {
+      "docs:rest": {
+        "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M18 8A6 6 0 106 8c0 7-3 9-3 9h18s-3-2-3-9m-4.27 13a2 2 0 01-3.46 0\"/>"
+      }
+    },
+    "width": 24,
+    "height": 24
+  }

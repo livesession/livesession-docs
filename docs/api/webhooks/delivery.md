@@ -1,0 +1,105 @@
+---
+title: Delivery
+---
+
+# Delivery
+:::subtitle
+Learn how LiveSession delivers webhook events to your endpoints.
+:::
+
+## Overview
+When an event ready for [webhook](https://en.wikipedia.org/wiki/Webhook) transmission occurs within LiveSession, an event payload is crafted.
+If you've set up endpoints for that specific event type, the payload gets lined up for delivery.
+
+These "trigger-ready" events encompass actions ideal for webhook interaction.
+For instance, when a session event is created, it's trigger-ready.
+
+Event delivery typically takes mere seconds, though a strict [FIFO order](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) isn't assured.
+Given potential event volume, the webhook platform prioritizes throughput over rigid sequencing.
+
+Once an event is dispatched, a payload signature is computed and included in the request.
+The request sent to your chosen endpoint bears these details:
+
+ok
+
+::::steps
+1. **HTTP method:** The request method is always `POST`.
+
+2. **Content-Type:** The request body's content type is always `application/json`.
+
+3. **LiveSession-Signature:** The request header includes a `LiveSession-Signature` header, which contains the request signature.
+
+4. **Request body:** The request body is a JSON object with the following fields:
+    :::steps
+    1. `message_id`: The message identifier
+    2. `webhook_id`: The webhook identifier
+    3. `webhook_type`: The webhook type
+    4. `api_version`: The webhook API version
+    5. `account_id`: The account identifier
+    6. `website_id`: The website identifier
+    7. `created_at`: The message creation timestamp
+    8. `payload`: The event payload
+    :::
+::::
+
+Below is a representation of the entire HTTP request:
+
+```bash
+POST /webhooks HTTP/1.1
+Host: example.com
+Content-Type: application/json; charset=utf-8
+LiveSession-Signature: /NLAt29+UdUod1lyzeWcbNigjzGfvtusP44dNKt4Q3U=
+User-Agent: LiveSessionWebhooks/1.0
+
+{
+  "message_id": "d5932de4-a8da-4546-4439-3c640ba8dc05",
+  "webhook_id": "542de45",
+  "webhook_type": "session.event",
+  "api_version": "v1.0",
+  "account_id": "3ca3b1b",
+  "website_id": "8d53ea3",
+  "created_at": 1691161881,
+  "payload": {
+    "visitor": {
+      "id": "e4d5932d-4439-4546-a8da-a8d40bc053c6",
+      "name": "John Doe",
+      "email": "john.doe@livesession.io",
+      "params": [
+        {
+          "name": "plan",
+          "value": "pro"
+        }
+      ],
+      "geolocation": {
+        "country_code": "PL",
+        "city": "Wroclaw",
+        "region": "Dolnoslaskie"
+      }
+    },
+    "event_name": "Error",
+    "time": 1691161881,
+    "count": 1,
+    "value": "ProductCatalog: product is not valid"
+  }
+}
+```
+
+## Throttling
+To prevent your servers from being overwhelmed or unintentionally participating in a service disruption on your webhook endpoint,
+LiveSession limits the number of events sent for a given webhook to a maximum of `1000 per minute`.
+
+If you've configured an endpoint for a high-volume event flow, like a frequently triggered custom event during user sessions,
+expect possible webhook delays.
+When the number of events for an endpoint exceeds `1000 per minute`, the extra events will be queued].
+
+If the events happen really fast for a little while and then slow down, all the events might still arrive, but it could take longer than when they first happened.
+But if the fast rate continues for a long time, some events might not be delivered.
+If an event is undeliverable for `24 hours` then it's treated as **failed**, and no more tries will be made.
+
+:::callout{kind="warning"}
+The limit of 1000 events per minute is per account.
+:::
+
+## Retry behavior
+LiveSession attempts to deliver a given event to your webhook endpoint for *up to 8 hours* with an exponential [backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
+in `beetwen 1-10 minutes` interval gap from the previous attempt.

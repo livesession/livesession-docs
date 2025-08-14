@@ -1,0 +1,242 @@
+{
+  "$schema": "https://xyd.dev/public/docs.json",
+  "theme": {
+    "name": "gusto",
+    "favicon": "/public/favicon.png",
+    "logo": {
+      "light": "/public/logo.svg",
+      "dark": "/public/logo-dark.svg"
+    },
+    "coder": {
+      "syntaxHighlight": "dark-plus"
+    },
+    "appearance": {
+      "colors": {
+        "primary": "#0a4ed6"
+      }
+    }
+  },
+  "components": {
+    "footer": {
+      "social": {
+        "github": "https://github.com/livesession",
+        "x": "https://x.com/LiveSessionDev"
+      },
+      "links": [
+        {
+          "header": "Resources",
+          "items": [
+            {
+              "label": "Browser SDK",
+              "href": "https://github.com/livesession/livesession-browser"
+            },
+            {
+              "label": "Node SDK",
+              "href": "https://github.com/livesession/livesession-node"
+            },
+            {
+              "label": "Storybook",
+              "href": "http://components.livesession.dev"
+            }
+          ]
+        },
+        {
+          "header": "Company",
+          "items": [
+            {
+              "label": "Careers",
+              "href": "https://livesession.io/careers"
+            },
+            {
+              "label": "Blog",
+              "href": "https://blog.livesession.dev"
+            },
+            {
+              "label": "Feature Requests",
+              "href": "https://livesession.featurebase.app"
+            }
+          ]
+        },
+        {
+          "header": "Legal",
+          "items": [
+            {
+              "label": "Privacy Policy",
+              "href": "https://livesession.io/privacy-policy"
+            },
+            {
+              "label": "Terms of Service",
+              "href": "https://livesession.io/terms-of-service"
+            }
+          ]
+        }
+      ],
+      "footnote": {
+        "component": "a",
+        "props": {
+          "href": "https://github.com/livesession",
+          "target": "_blank",
+          "children": "LiveSession OpenSource ®"
+        }
+      }
+    }
+  },
+  "integrations": {
+    "analytics": {
+      "livesession": {
+        "trackId": "$LIVESESSION_TRACK_ID"
+      }
+    },
+    ".apps": {
+      "githubStar": {
+        "title": "Star",
+        "label": "Show your support! Star us on GitHub ⭐️",
+        "href": "https://github.com/livesession/xyd",
+        "dataIcon": "octicon-star",
+        "dataSize": "large",
+        "dataShowCount": true,
+        "ariaLabel": "Star livesession/xyd on GitHub"
+      }
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "title": "Docs",
+        "page": "docs"
+      },
+      {
+        "title": "APIs and references",
+        "page": "docs/api"
+      }
+    ],
+    "segments": [
+      {
+        "route": "docs/api",
+        "title": "API",
+        "pages": [
+          {
+            "title": "Get started",
+            "page": "docs/api"
+          },
+          {
+            "title": "Browser SDK",
+            "page": "docs/api/browser"
+          },
+          {
+            "title": "REST API",
+            "page": "docs/api/rest"
+          },
+          {
+            "title": "GraphQL",
+            "page": "docs/api/graphql"
+          },
+          {
+            "title": "Webhooks",
+            "page": "docs/api/webhooks"
+          }
+        ]
+      }
+    ],
+    "sidebar": [
+      {
+        "route": "docs",
+        "pages": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/get-started/quickstart",
+              "docs/get-started/frameworks"
+            ]
+          },
+          {
+            "group": "Capabilities",
+            "pages": [
+              "docs/capabilities/alerts",
+              "docs/capabilities/funnels",
+              "docs/capabilities/metrics",
+              "docs/capabilities/user-paths"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "docs/api",
+        "pages": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/api/quickstart",
+              "docs/api/authentication",
+              "docs/api/access-scopes"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "docs/api/browser",
+        "pages": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/api/browser/introduction",
+              "docs/api/browser/identification",
+              "docs/api/browser/recording-conditions",
+              "docs/api/browser/methods"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "docs/api/rest",
+        "pages": [
+          {
+            "group": "Types",
+            "pages": [
+              "docs/api/rest/EventKind",
+              "docs/api/rest/RelativeDateString"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "docs/api/graphql",
+        "pages": []
+      },
+      {
+        "route": "docs/api/webhooks",
+        "pages": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/api/webhooks/configuration",
+              "docs/api/webhooks/delivery",
+              "docs/api/webhooks/verify"
+            ]
+          },
+          {
+            "group": "Event Types",
+            "pages": [
+              "docs/api/webhooks/type-session-event"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "api": {
+    "openapi": {
+      "source": "./api/rest/openapi.yaml",
+      "route": "docs/api/rest"
+    },
+    "graphql": {
+      "source": "./api/graphql/schema.graphql",
+      "route": "docs/api/graphql"
+    }
+  },
+  "engine": {
+    "paths": {
+      "@snippets": ".docs/snippets/*"
+    }
+  }
+}
