@@ -1,3 +1,7 @@
+[build]
+  command = "bunx xyd-js build"
+  publish = ".xyd/build/client"
+  
 [[redirects]]
   from = "https://developers.livesession.io/*"
   to = "https://livesession.dev/:splat"

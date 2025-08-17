@@ -1,2 +1,4 @@
 .idea
+.env
+.xyd
 node_modules
