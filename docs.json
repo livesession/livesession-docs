@@ -5,7 +5,8 @@
     "favicon": "/public/favicon.png",
     "logo": {
       "light": "/public/logo.svg",
-      "dark": "/public/logo-dark.svg"
+      "dark": "/public/logo-dark.svg",
+      "page": "/docs/get-started/quickstart"
     },
     "coder": {
       "syntaxHighlight": "dark-plus"
