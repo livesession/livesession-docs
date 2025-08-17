@@ -91,7 +91,7 @@
   },
   "integrations": {
     "editLink": {
-      "baseUrl": "https://github.com/livesession/livesession-docs/edit/feat/update-docs",
+      "baseUrl": "https://github.com/livesession/livesession-docs/edit/master",
       "title": "Edit page",
       "icon": "docs:github"
     },
