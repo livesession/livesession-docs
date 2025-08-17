@@ -21,6 +21,6 @@ A local preview of your documentation will be available at `http://localhost:517
 
 <div align="center">
 
-**Built with [xyd](https://xyd.dev/docs/guides/quickstart)**
+Built with [xyd](https://xyd.dev/docs/guides/quickstart)
 
 </div>
