@@ -1,5 +1,5 @@
 [build]
-  command = "bunx xyd-js build"
+  command = "bun x xyd-js build"
   publish = ".xyd/build/client"
   
 [[redirects]]
