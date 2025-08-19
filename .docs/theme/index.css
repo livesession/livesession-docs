@@ -2,3 +2,11 @@
     width: auto;
     height: auto;
 }
+
+footer [part="footnote"] {
+    letter-spacing: 2px;
+
+    a {
+        font-weight: 400;
+    }
+}

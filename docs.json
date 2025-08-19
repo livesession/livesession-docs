@@ -12,6 +12,7 @@
       "syntaxHighlight": "dark-plus"
     },
     "appearance": {
+      "colorScheme": false,
       "colors": {
         "primary": "#0a4ed6"
       },
@@ -21,6 +22,10 @@
     },
     "icons": {
       "library": [
+        {
+          "name": "lucide",
+          "default": true
+        },
         "./.docs/icons/iconify.json"
       ]
     }

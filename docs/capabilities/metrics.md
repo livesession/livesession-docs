@@ -69,7 +69,7 @@ About more compute options read [API reference](https://livesession.io).
 
 ## Next steps
 
-:::guide-card{icon="<Icon name='code'/>" title="APIs and references" href="/docs/api/quickstart"}
+:::guide-card{icon="code" title="APIs and references" href="/docs/api/quickstart"}
   Explore the API reference and documentation for more details.
 :::
 
