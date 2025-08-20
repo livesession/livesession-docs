@@ -12,7 +12,8 @@
       "syntaxHighlight": "dark-plus"
     },
     "appearance": {
-      "colorScheme": false,
+      "colorScheme": "light",
+      "colorSchemeButton": false,
       "colors": {
         "primary": "#0a4ed6"
       },
