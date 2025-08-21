@@ -10,19 +10,19 @@
   
 [[redirects]]
   from = "/"
-  to = "/docs/get-started/quickstart/"
+  to = "/docs/get-started/quickstart"
   status = 301
   force = true
 
 [[redirects]]
   from = "/docs"
-  to = "/docs/get-started/quickstart/"
+  to = "/docs/get-started/quickstart"
   status = 301
   force = true
 
 [[redirects]]
   from = "/index.html"
-  to = "/docs/get-started/quickstart/"
+  to = "/docs/get-started/quickstart"
   status = 301
   force = true
 
