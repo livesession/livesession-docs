@@ -31,6 +31,9 @@
       ]
     }
   },
+  "seo": {
+    "domain": "https://livesession.dev"
+  },
   "components": {
     "footer": {
       "social": {
